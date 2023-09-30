@@ -193,3 +193,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0b130770e7c4d4a9ae1fd01cd2d486, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  profile: {fileID: 0}
+  speechTxt: []
+  actorName: 
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  radios: 0
