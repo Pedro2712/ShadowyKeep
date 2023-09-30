@@ -4924,7 +4924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  minIntensity: 1
+  minIntensity: 0.5
   maxIntensity: 5
   scaleSpeed: 1
   scaleAmount: 0.1
