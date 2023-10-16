@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -62,5 +63,9 @@ public class DialogueControl : MonoBehaviour
             }
 
         }
+    }
+
+    public bool getisRunning() {
+        return isRunning;
     }
 }

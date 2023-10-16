@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7644105449710399501}
   - component: {fileID: 6915171617280391361}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: playerShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: -170190
+  m_InstanceId: 75276
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 1802609814729224088}
   - component: {fileID: 5870936099426227733}
   - component: {fileID: 8696761172782753652}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}

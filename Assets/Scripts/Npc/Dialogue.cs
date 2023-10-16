@@ -5,14 +5,15 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
     public Sprite profile;
+    public GameObject keyspace;
     public string[] speechTxt;
     public string actorName;
 
     public LayerMask playerLayer;
-    public float radios;
+    public float radius;
 
     private DialogueControl dc;
-    bool onRadios;
+    private bool onRadios;
 
     private void Start()
     {
@@ -21,7 +22,8 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && onRadios) {
+        if (Input.GetKeyDown(KeyCode.Space) && onRadios && !dc.getisRunning())
+        {
             dc.Speech(profile, speechTxt, actorName);
         }
     }
@@ -31,21 +33,21 @@ public class Dialogue : MonoBehaviour
         Interact();
     }
 
-    public void Interact()
+    private void Interact()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, radios, playerLayer);
-        
-        if (hit != null)
-        {
-            onRadios= true;
-        } else {
-            onRadios= false;
-        }
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
 
+        onRadios = hit != null;
+
+        // Ativa ou desativa o objeto keyspace com base na interação e no diálogo em andamento.
+        if (keyspace != null)
+        {
+            keyspace.SetActive(onRadios && !dc.getisRunning());
+        }
     }
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(transform.position, radios);
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }
