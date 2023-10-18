@@ -7,34 +7,41 @@ public class RoomSwitch : MonoBehaviour
 {
     public Canvas canvas;
     private Animator animator;
-    public Image icon1;
-    public Image icon2;
-    public Image icon3;
 
-    public Sprite[] sprites;
+
+    public LayerMask playerLayer;
+    public float radius;
+
+    private bool onRadios;
+
+    
 
     void Start()
     {
         canvas.gameObject.SetActive(false);
-        animator = canvas.GetComponent<Animator>();
-
-        if (sprites.Length >= 3)
-        {
-            icon1.sprite = sprites[0];
-            icon2.sprite = sprites[1];
-            icon3.sprite = sprites[2];
-        }
-        else
-        {
-            Debug.LogWarning("Insira pelo menos 3 sprites na matriz 'sprites'");
-        }
+        //animator = canvas.GetComponent<Animator>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        Interact();
+    }
+
+    private void Interact()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
+
+        onRadios = hit != null;
+
+        // Ativa ou desativa o objeto keyspace com base na interação e no diálogo em andamento.
+        if (canvas != null)
         {
-            animator.SetTrigger("Switch");
+            canvas.gameObject.SetActive(onRadios);
         }
+    } 
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }
