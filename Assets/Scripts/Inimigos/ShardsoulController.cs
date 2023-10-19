@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class ShardsoulController : MonoBehaviour
 {
-    public Transform player;
     public float speed = 2.5f;
     public Animator animator;
+    public LayerMask playerLayer;
+    public float radius = 7f;
     private Rigidbody2D rb;
-    private bool isWalking = false;
+    private bool walk = false;
+    // private bool attack = false;
+    // private bool takeDamage = false;
+    // private bool die = false;
+    private Transform player;
+    private float distance;
+    private Collider2D hit;
+    private bool onRadios;
+    private Vector2 direction;
+    private bool facingRight = true;
+
 
     private void Start()
     {
@@ -18,60 +29,80 @@ public class ShardsoulController : MonoBehaviour
 
     private void Update()
     {
-        // Get player position
+        
+        GetTarget();
         if (player == null)
         {
-            GetTarget();
-            if (isWalking)
-            {
-                isWalking = false;
-                Idle();
-            }
+            walk = false;
+            animator.SetBool("Walk", walk);
         }
-
-        // Set direction of animation based on player position
-        if (player)
+        if (player != null && !walk)
         {
-            if (!isWalking)
+            walk = true;
+            animator.SetBool("Walk", walk);
+        }
+        if (player != null && walk)
+        {
+            // Flip sprite
+            if (direction.x < 0 && facingRight)
             {
-                Walk();
-                isWalking = true;
-            }            
+                Flip();
+            }
+            else if (direction.x > 0 && !facingRight)
+            {
+                Flip();
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        // Move towards player
-        Vector2 direction = player.position - transform.position;
-        rb.velocity = direction.normalized * speed;
-
+        if (player != null && walk)
+        {
+            // Move towards player
+            direction = player.position - transform.position;
+            rb.velocity = direction.normalized * speed;
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 
     private void GetTarget() 
     {
-        // Get player position
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+         
+        hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
+
+        onRadios = hit != null;
+
+        if (onRadios)
+        {
+            player = hit.transform;
+        }
+        else
+        {
+            player = null;
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnDrawGizmosSelected()
     {
-        // // Destroy on collision with player
-        // if (collision.gameObject.tag == "Player")
-        // {
+        Gizmos.DrawWireSphere(transform.position, radius);
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0f, 180f, 0f);
+    }
+
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     // // Destroy on collision with player
+    //     // if (collision.gameObject.tag == "Player")
+    //     // {
            
-        // }
-    }
-
-    public void Walk()
-    {
-        // Walk animation
-        animator.SetTrigger("Walk");
-    }
-
-    public void Idle()
-    {
-        // Walk animation
-        animator.SetTrigger("Idle");
-    }
+    //     // }
+    // }
 }
