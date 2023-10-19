@@ -8,6 +8,7 @@ public class Switch : MonoBehaviour
     public Image icon;
     public Sprite[] sprites;
     public Animator animator;
+    public static int FinalChoose = 0;
 
     private int position = 0;
     private bool buttonRight = false;
@@ -59,6 +60,7 @@ public class Switch : MonoBehaviour
     public void ChooseIcon()
     {
         print(numberPick[position]);
+        FinalChoose = numberPick[position];
     }
 
     private void SortSprites()

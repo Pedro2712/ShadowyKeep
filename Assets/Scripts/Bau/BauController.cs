@@ -3,14 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.UI;
 
 public class BauController : MonoBehaviour
 {
     public CinemachineVirtualCamera virtualCamera;
     public Light2D luz; // Corrigi a declaração do Light
+    public ParticleSystem particle;
 
     public LayerMask playerLayer;
     public float radius;
+    public List<Sprite> sprites;
+
+    public Image icon;
 
     private Animator animator;
 
@@ -19,6 +24,7 @@ public class BauController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        icon.sprite = sprites[Switch.FinalChoose];
     }
 
     private void FixedUpdate()
@@ -36,21 +42,23 @@ public class BauController : MonoBehaviour
     {
         virtualCamera.m_Priority = 20;
     }
+    private void TurnOffCamera()
+    {
+        virtualCamera.m_Priority = 0;
+    }
 
     public void TurnOffLight()
     {
         luz.enabled = false;
+        particle.Stop();
     }
 
     public void TurnOnLight()
     {
         luz.enabled = true;
+        particle.Play();
     }
 
-    private void TurnOffCamera()
-    {
-        virtualCamera.m_Priority = 0;
-    }
 
     private void Interact()
     {
