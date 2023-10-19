@@ -13,11 +13,12 @@ public class Switch : MonoBehaviour
     private bool buttonRight = false;
     private int iconNumber;
     private List<Sprite> sortSprites = new List<Sprite>();
+    private List<int> numberPick = new List<int>();
 
     void Start()
     {
         icon.sprite = sprites[position];
-        animator = GetComponent <Animator>();
+        animator = GetComponent<Animator>();
         iconNumber = Random.Range(2, sprites.Length + 1);
         SortSprites();
     }
@@ -55,6 +56,11 @@ public class Switch : MonoBehaviour
         buttonRight = false;
     }
 
+    public void ChooseIcon()
+    {
+        print(numberPick[position]);
+    }
+
     private void SortSprites()
     {
         for (int i = 0; i < iconNumber; i++)
@@ -63,8 +69,8 @@ public class Switch : MonoBehaviour
             do
             {
                 randomNumber = Random.Range(0, sprites.Length);
-            } while (sortSprites.Contains(sprites[randomNumber]));
-
+            } while (numberPick.Contains(randomNumber));
+            numberPick.Add(randomNumber);
             sortSprites.Add(sprites[randomNumber]);
         }
         icon.sprite = sortSprites[0];

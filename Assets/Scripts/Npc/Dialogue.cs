@@ -22,7 +22,7 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && onRadios && !dc.getisRunning())
+        if (Input.GetKeyDown(KeyCode.F) && onRadios && !dc.getisRunning())
         {
             dc.Speech(profile, speechTxt, actorName);
         }

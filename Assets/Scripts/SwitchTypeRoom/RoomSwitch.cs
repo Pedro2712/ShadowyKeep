@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RoomSwitch : MonoBehaviour
 {
     public Canvas canvas;
-    private Animator animator;
+    public Switch switchScript;
 
 
     public LayerMask playerLayer;
@@ -19,7 +19,6 @@ public class RoomSwitch : MonoBehaviour
     void Start()
     {
         canvas.gameObject.SetActive(false);
-        //animator = canvas.GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -37,6 +36,9 @@ public class RoomSwitch : MonoBehaviour
         if (canvas != null)
         {
             canvas.gameObject.SetActive(onRadios);
+            if (Input.GetKeyDown(KeyCode.F) && onRadios) {
+                switchScript.ChooseIcon();
+            }
         }
     } 
 
