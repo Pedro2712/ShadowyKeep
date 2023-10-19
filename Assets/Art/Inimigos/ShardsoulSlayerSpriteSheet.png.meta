@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_0
+      name: ShardsoulSlayer_Idle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 256
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02f8470017bcb6649842387dbcffa1e0
-      internalID: 1006652615
+      spriteID: 9041130d393ed34488ec229daf9690f9
+      internalID: -1644132716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_1
+      name: ShardsoulSlayer_Idle_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 78
         y: 256
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d3f6cd9d5d97854b9d0b155b4fadb68
-      internalID: 639075246
+      spriteID: 135f0da988d2bb74c990bdadebceac02
+      internalID: 2014224951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_2
+      name: ShardsoulSlayer_Idle_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 142
         y: 256
-        width: 64
-        height: 64
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff460126bd1d43c40b2084b045924b89
-      internalID: 482117307
+      spriteID: 92a5328babc8bd04ea71a3117a3325bf
+      internalID: -1051842866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_3
+      name: ShardsoulSlayer_Idle_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 205
         y: 256
-        width: 64
-        height: 64
+        width: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfe32c9bd5e30d74c9ec4d4c52868a2b
-      internalID: 1717047360
+      spriteID: d41558ab187558443b1c4ea8eab4c45a
+      internalID: -128071151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_4
+      name: ShardsoulSlayer_Idle_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 270
         y: 256
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51d9822075f40c4cb13096382f79172
-      internalID: 1871943760
+      spriteID: 0569b92f74bbc6040abc7744507952c2
+      internalID: -1690068150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_5
+      name: ShardsoulSlayer_Idle_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 334
         y: 256
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d5c365d46364f846a444d5fd640e034
-      internalID: -595450402
+      spriteID: d9fe0900e36990d469710050c83db827
+      internalID: -1331844059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_6
+      name: ShardsoulSlayer_Idle_6
       rect:
         serializedVersion: 2
-        x: 384
+        x: 398
         y: 256
-        width: 64
-        height: 64
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb4c7d65aa35cb14b9826ea21653b917
-      internalID: 257830229
+      spriteID: c9c1647a07cf7b8429f2de60d76f85c9
+      internalID: -1160661477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerIdle_7
+      name: ShardsoulSlayer_Idle_7
       rect:
         serializedVersion: 2
-        x: 448
+        x: 461
         y: 256
-        width: 64
-        height: 64
+        width: 34
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c6acd7a527fc5b4f8060dabc5c954fc
-      internalID: 1994924848
+      spriteID: 6f09e8ca14a9d4e408696018b656942b
+      internalID: 742065276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerWalk_0
+      name: ShardsoulSlayer_Walk_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 192
-        width: 64
-        height: 64
+        width: 37
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb37468a04d9044f91854f223d7c29b
-      internalID: -252278218
+      spriteID: 93aa64effbd826744a02635ac0414518
+      internalID: -410556622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerWalk_1
+      name: ShardsoulSlayer_Walk_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 74
+        y: 193
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714d468cfbc516e42a044cea76af2166
+      internalID: -1365820151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShardsoulSlayer_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 194
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa4fba2469b86a47935f9071bc76055
+      internalID: -1225365716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShardsoulSlayer_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 193
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5414d877f2f07dd4db22586f5818364b
+      internalID: 1023860202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShardsoulSlayer_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 266
         y: 192
-        width: 64
-        height: 64
+        width: 37
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb90da64c5f7923468fd3c898398eeca
-      internalID: 1179931942
+      spriteID: 654de9d2693f3f842a216a47904b075d
+      internalID: -465503221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerWalk_2
+      name: ShardsoulSlayer_Jump_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 64
-        height: 64
+        x: 330
+        y: 196
+        width: 37
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8fb16b488b8203439957498fd838ee7
-      internalID: 2061323522
+      spriteID: bb5beb320675a78498dcec09e45b4186
+      internalID: -1902285028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerWalk_3
+      name: ShardsoulSlayer_Jump_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 64
-        height: 64
+        x: 394
+        y: 199
+        width: 37
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fc325948608bac48a60c93a2ac03cd7
-      internalID: 1081935130
+      spriteID: 789f66bae5f5e1c45b534d253ce98d16
+      internalID: -546253273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerJump_0
+      name: ShardsoulSlayer_Jump_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 64
-        height: 64
+        x: 458
+        y: 196
+        width: 37
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,83 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bf7098955a7dea4abc95f3239228d71
-      internalID: -1758430090
+      spriteID: 5dd1175b50b44e84fbe80baa30c093f7
+      internalID: 934712636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerJump_1
+      name: ShardsoulSlayer_Attack_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c03952fe4c703404aaed4e5a57ac8b76
-      internalID: -1212908349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShardsoulSlayerJump_2
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5456134e7298f8d4280ef3de5d5c844f
-      internalID: 2132405972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShardsoulSlayerJump_3
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 192
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a66c80ac17f6a5a4097efcf851b7296b
-      internalID: 1300975339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ShardsoulSlayerAttack_0
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 14
         y: 128
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e6764c2a1a46d54493fa40e2574f1bf
-      internalID: -609671676
+      spriteID: 578bab88d5cf9fd419fd48830eb50b2d
+      internalID: 820775337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerAttack_1
+      name: ShardsoulSlayer_Attack_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 74
         y: 128
-        width: 64
-        height: 64
+        width: 35
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,20 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a7cd6cb2dafb640acd0f4465ae1262
-      internalID: 146945874
+      spriteID: 8acba49fbea468a43a4d06791bb95f96
+      internalID: -2095402651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerAttack_2
+      name: ShardsoulSlayer_Attack_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 135
         y: 128
-        width: 64
-        height: 64
+        width: 40
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e4e24a4215466244b84387050206f57
-      internalID: -819052310
+      spriteID: 9e364bf40cf0be741969eec05b72d875
+      internalID: -145160907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerAttack_3
+      name: ShardsoulSlayer_Attack_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 212
         y: 128
-        width: 64
-        height: 64
+        width: 43
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b1d289de4e12e24b9473594c5f4e461
-      internalID: -1552721559
+      spriteID: 99d5764049135fe43800745f51453e64
+      internalID: -393556973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerAttack_4
+      name: ShardsoulSlayer_Attack_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 276
         y: 128
-        width: 64
-        height: 64
+        width: 27
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8399cfdaff09824faca38a307fd663e
-      internalID: 216275264
+      spriteID: 63586959ad29bdf4197b4f357590863c
+      internalID: 106601750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDamage_0
+      name: ShardsoulSlayer_Damage_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 64
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68e6b831379deb744b9ccd0c4218708e
-      internalID: 827767227
+      spriteID: 865a310772a58b7439fd0d4f50be3f86
+      internalID: -643160843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDamage_1
+      name: ShardsoulSlayer_Damage_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 77
         y: 64
-        width: 64
-        height: 64
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4317ca7646d3fe943815002f36625b12
-      internalID: -675542365
+      spriteID: 7973ff24e5e92b24f914642613f5eb95
+      internalID: -1937175257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDamage_2
+      name: ShardsoulSlayer_Damage_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 141
         y: 64
-        width: 64
-        height: 64
+        width: 34
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,20 +620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc7c459dfba92af4da4eae1b8e82498b
-      internalID: -510977757
+      spriteID: 5919cb7b9e6ffb245827653a0abaaf69
+      internalID: 1340600153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDamage_3
+      name: ShardsoulSlayer_Damage_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 206
         y: 64
-        width: 64
-        height: 64
+        width: 33
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,20 +641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79afd4cef3c185a44975fece39560ef4
-      internalID: 770008534
+      spriteID: 84b3eb2d44bbdfd43b70f133d89bca3e
+      internalID: 1524786702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDeath_0
+      name: ShardsoulSlayer_Death_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 14
         y: 0
-        width: 64
-        height: 64
+        width: 33
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8c6e0b58f23c0d44ae11a7e9d3418ae
-      internalID: 1374649357
+      spriteID: 97ae2dd308e9cfc4aa2783a2f83be2a8
+      internalID: 1350440768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDeath_1
+      name: ShardsoulSlayer_Death_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 82
         y: 0
-        width: 64
-        height: 64
+        width: 31
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,20 +683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f988781eebc2484dbb84a80bfa818d6
-      internalID: 1886693095
+      spriteID: 9217ea9d9be73ff48889b80ecd17a661
+      internalID: 1750881528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDeath_2
+      name: ShardsoulSlayer_Death_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 148
         y: 0
-        width: 64
-        height: 64
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,20 +704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bcf66da12504a64e892e4b80263ba04
-      internalID: 1215974810
+      spriteID: 886ea390a22055440bebd6c972df6585
+      internalID: 1819885893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDeath_3
+      name: ShardsoulSlayer_Death_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 210
         y: 0
-        width: 64
-        height: 64
+        width: 37
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -725,20 +725,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92fd6146e159f2a43b8f128f18ec3082
-      internalID: 965717401
+      spriteID: 9845f949c991d874d9c39e6ff3357a19
+      internalID: -947573993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDeath_4
+      name: ShardsoulSlayer_Death_4
       rect:
         serializedVersion: 2
-        x: 256
+        x: 274
         y: 0
-        width: 64
-        height: 64
+        width: 41
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -746,20 +746,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 619d41184240232468359e1469999fee
-      internalID: -16064938
+      spriteID: 2f44c3d5ccb20864484237565d868484
+      internalID: 199280919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ShardsoulSlayerDeath_5
+      name: ShardsoulSlayer_Death_5
       rect:
         serializedVersion: 2
-        x: 320
+        x: 335
         y: 0
-        width: 64
-        height: 64
+        width: 46
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -767,8 +767,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73b6fc9a496d4641abbe3c7018424d2
-      internalID: 416967813
+      spriteID: 24618210df9e45b449f00b9a8db490a6
+      internalID: -349197317
       vertices: []
       indices: 
       edges: []
@@ -784,37 +784,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ShardsoulSlayerAttack_0: 1006652615
-      ShardsoulSlayerAttack_1: 639075246
-      ShardsoulSlayerAttack_2: 482117307
-      ShardsoulSlayerAttack_3: 1717047360
-      ShardsoulSlayerAttack_4: 1871943760
-      ShardsoulSlayerDamage_0: -595450402
-      ShardsoulSlayerDamage_1: 257830229
-      ShardsoulSlayerDamage_2: 1994924848
-      ShardsoulSlayerDamage_3: -252278218
-      ShardsoulSlayerDeath_0: 1179931942
-      ShardsoulSlayerDeath_1: 2061323522
-      ShardsoulSlayerDeath_2: 1081935130
-      ShardsoulSlayerDeath_3: -1758430090
-      ShardsoulSlayerDeath_4: -1212908349
-      ShardsoulSlayerDeath_5: 2132405972
-      ShardsoulSlayerIdle_0: 1300975339
-      ShardsoulSlayerIdle_1: -609671676
-      ShardsoulSlayerIdle_2: 146945874
-      ShardsoulSlayerIdle_3: -819052310
-      ShardsoulSlayerIdle_4: -1552721559
-      ShardsoulSlayerIdle_5: 216275264
-      ShardsoulSlayerIdle_6: 827767227
-      ShardsoulSlayerIdle_7: -675542365
-      ShardsoulSlayerJump_0: 1215974810
-      ShardsoulSlayerJump_1: -1212908349
-      ShardsoulSlayerJump_2: -16064938
-      ShardsoulSlayerJump_3: 416967813
-      ShardsoulSlayerWalk_0: -510977757
-      ShardsoulSlayerWalk_1: 770008534
-      ShardsoulSlayerWalk_2: 1374649357
-      ShardsoulSlayerWalk_3: 1886693095
+      ShardsoulSlayer_Attack_0: 820775337
+      ShardsoulSlayer_Attack_1: -2095402651
+      ShardsoulSlayer_Attack_2: -145160907
+      ShardsoulSlayer_Attack_3: -393556973
+      ShardsoulSlayer_Attack_4: 106601750
+      ShardsoulSlayer_Damage_0: -643160843
+      ShardsoulSlayer_Damage_1: -1937175257
+      ShardsoulSlayer_Damage_2: 1340600153
+      ShardsoulSlayer_Damage_3: 1524786702
+      ShardsoulSlayer_Death_0: 1350440768
+      ShardsoulSlayer_Death_1: 1750881528
+      ShardsoulSlayer_Death_2: 1819885893
+      ShardsoulSlayer_Death_3: -947573993
+      ShardsoulSlayer_Death_4: 199280919
+      ShardsoulSlayer_Death_5: -349197317
+      ShardsoulSlayer_Idle_0: -1644132716
+      ShardsoulSlayer_Idle_1: 2014224951
+      ShardsoulSlayer_Idle_2: -1051842866
+      ShardsoulSlayer_Idle_3: -128071151
+      ShardsoulSlayer_Idle_4: -1690068150
+      ShardsoulSlayer_Idle_5: -1331844059
+      ShardsoulSlayer_Idle_6: -1160661477
+      ShardsoulSlayer_Idle_7: 742065276
+      ShardsoulSlayer_Jump_0: -465503221
+      ShardsoulSlayer_Jump_1: -1902285028
+      ShardsoulSlayer_Jump_2: -546253273
+      ShardsoulSlayer_Jump_3: 934712636
+      ShardsoulSlayer_Walk_0: -410556622
+      ShardsoulSlayer_Walk_1: -1365820151
+      ShardsoulSlayer_Walk_2: -1225365716
+      ShardsoulSlayer_Walk_3: 1023860202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
