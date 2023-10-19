@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,700 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ratblade_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 128
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238d326b90e4fc64d94f8ee3591633dc
+      internalID: -803399705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 128
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3444965fa020643b51ae1dd0f23243
+      internalID: -755006167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 128
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2729800bdd364d04281ea8f3c5ddfe99
+      internalID: -1965291063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 128
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8516e87d9663b4e885e299772b8a16
+      internalID: 826770740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be97e2fdb1719214e8c1fa6b23ad432b
+      internalID: 198199120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b37f1bd23619a45881aeec1be30edd
+      internalID: -237499164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbf8ff37a70df24a8bb73506ca56fc6
+      internalID: -1625782285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395a9c9bb10446d4a9d4c183147e40ca
+      internalID: 1471675759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3fe01f63e035546b0e78426ba12c3c
+      internalID: 1567994064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 96
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd12ffe2fb79114b853d88f70092866
+      internalID: -78693532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61db603a29e5c5643a6e775bddc73bac
+      internalID: 105736430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Walk_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167ce28ed9d2d454d962b0ec09230a6f
+      internalID: 2039556313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 64
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f06b9e83807cf418170fcd677bdaa6
+      internalID: 311703534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 64
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5be41de90f5d5428386b08169fe3db
+      internalID: 2117816514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 64
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d197b74ade7ec48a281d7be9da7b29
+      internalID: 947984969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 64
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112108958a34d5f4bb487eb62884897d
+      internalID: 1721963584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 64
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2351df6b8e44a4786cb82d9b831f6b
+      internalID: 71356008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 64
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baad2a96b7a674247a046ccf80bf0dbe
+      internalID: 1493641231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 64
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecba639c6c52974ea4b297931eefc56
+      internalID: -1440228078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 64
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1049b46d3e9c24c9c0ade053b70650
+      internalID: -890423675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 64
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d265fafbb4fc024283b16544a91abd1
+      internalID: 383513207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 64
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b1ca01a6b4f0743a50bad40083b954
+      internalID: -549469712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 64
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260d9faccd9b32141a002f11e5d4bb8b
+      internalID: 1243281373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a10d9e9a7f575469a0b529cc0e97f9
+      internalID: -209546781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Damage_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 32
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07824800171191e45877f3b6683b943d
+      internalID: 719531438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Damage_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 32
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8786c89537d03e4dbf6f0d2eafbfd91
+      internalID: 1619347152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Damage_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 32
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d19118d4ccb3047b56be3df468f787
+      internalID: -203845310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Damage_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 32
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee49c7120015f3f4bb1817c929903081
+      internalID: 1423770483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Death_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11fce66dc582e4459f8ae32c3233e1f
+      internalID: -1013669586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Death_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 037386b522dcbe24d87cd1a0db26e3fa
+      internalID: -1600909242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Death_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbee386c1f937114994de36fd710daf6
+      internalID: -985751654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Death_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f145fcf5fbca34a85f82f306555c2a
+      internalID: -1760870741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ratblade_Death_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 26
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621e12ba2f37b8e49af58dce9207cf80
+      internalID: -1068838488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +825,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ratblade_Attack_0: 311703534
+      Ratblade_Attack_1: 2117816514
+      Ratblade_Attack_10: 1243281373
+      Ratblade_Attack_11: -209546781
+      Ratblade_Attack_2: 947984969
+      Ratblade_Attack_3: 1721963584
+      Ratblade_Attack_4: 71356008
+      Ratblade_Attack_5: 1493641231
+      Ratblade_Attack_6: -1440228078
+      Ratblade_Attack_7: -890423675
+      Ratblade_Attack_8: 383513207
+      Ratblade_Attack_9: -549469712
+      Ratblade_Damage_0: 719531438
+      Ratblade_Damage_1: 1619347152
+      Ratblade_Damage_2: -203845310
+      Ratblade_Damage_3: 1423770483
+      Ratblade_Death_0: -1013669586
+      Ratblade_Death_1: -1600909242
+      Ratblade_Death_2: -985751654
+      Ratblade_Death_3: -1760870741
+      Ratblade_Death_4: -1068838488
+      Ratblade_Idle_0: -803399705
+      Ratblade_Idle_1: -755006167
+      Ratblade_Idle_2: -1965291063
+      Ratblade_Idle_3: 826770740
+      Ratblade_Walk_0: 198199120
+      Ratblade_Walk_1: -237499164
+      Ratblade_Walk_2: -1625782285
+      Ratblade_Walk_3: 1471675759
+      Ratblade_Walk_4: 1567994064
+      Ratblade_Walk_5: -78693532
+      Ratblade_Walk_6: 105736430
+      Ratblade_Walk_7: 2039556313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
