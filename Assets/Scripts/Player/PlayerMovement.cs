@@ -2,9 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Player))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public Player player;
+    
     public float collisionOffset = 0.05f;
     public Rigidbody2D rb;
     public Animator animator;
@@ -42,12 +44,12 @@ public class PlayerMovement : MonoBehaviour
         if (direction == Vector2.zero)
             return false;
 
-        float moveDistance = moveSpeed * Time.fixedDeltaTime + collisionOffset;
+        float moveDistance = player.entity.speed * Time.fixedDeltaTime + collisionOffset;
         int count = rb.Cast(direction, movementFilter, castCollisions, moveDistance);
 
         if (count == 0)
         {
-            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * player.entity.speed * Time.fixedDeltaTime);
             return true;
         }
 
