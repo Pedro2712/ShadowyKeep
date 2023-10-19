@@ -93,7 +93,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: 75276
+  m_InstanceId: 44382
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 1802609814729224088}
   - component: {fileID: 5870936099426227733}
   - component: {fileID: 8696761172782753652}
+  - component: {fileID: 6506933152625089933}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -226,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb4d49a12c612794b90b43851f468305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  player: {fileID: 6506933152625089933}
   collisionOffset: 0.05
   rb: {fileID: 1900977146344497928}
   animator: {fileID: 5870936099426227733}
@@ -340,3 +341,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5242901, y: 0.10265839}
   m_EdgeRadius: 0
+--- !u!114 &6506933152625089933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446345026694164591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f26e12de872dd40787bd92f0363c3d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entity:
+    name: teste
+    currentHealth: 0
+    maxHealth: 100
+    currentMana: 0
+    maxMana: 0
+    currentStamina: 0
+    maxStamina: 0
+    strength: 1
+    resistence: 1
+    damage: 1
+    defense: 1
+    speed: 2
+  health: {fileID: 0}
+  mana: {fileID: 0}
+  stamina: {fileID: 0}
