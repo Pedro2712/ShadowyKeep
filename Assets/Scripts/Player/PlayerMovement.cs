@@ -13,19 +13,28 @@ public class PlayerMovement : MonoBehaviour
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private bool canMove = true;
 
+    private bool isWalking = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        isWalking = false;
     }
 
     void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
         movement = movementVector;
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        isWalking = (movement.x != 0 || movement.y != 0);
+        
+        if(isWalking){
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+        }
+        animator.SetBool("isWalking", isWalking);
     }
 
     private bool TryMove(Vector2 direction)
