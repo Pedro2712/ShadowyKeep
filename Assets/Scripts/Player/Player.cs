@@ -35,8 +35,8 @@ public class Player : MonoBehaviour
         }
 
         // Setando o valor máximo de Vida e Stamina a depender dos atributos do Player:
-        entity.maxHealth = manager.CalculateHealth(this);
-        entity.maxStamina = manager.CalculateStamina(this);
+        entity.maxHealth = manager.CalculateHealth(entity);
+        entity.maxStamina = manager.CalculateStamina(entity);
         
         // Exemplo de uso do calculateDamage e do calculateDefense
         // int dmg = manager.CalculateDamage(this, 10);   PLAYER ATACA

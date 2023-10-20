@@ -30,4 +30,10 @@ public class Entity
     public int defense = 1;
     public float speed = 2f;
 
+    [Header("Combat")]
+    public bool inCombat = false;
+    public float cooldown = 1f;
+    public GameObject target;
+    public bool dead = false;
+
 }
