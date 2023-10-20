@@ -11,6 +11,8 @@ public class Boss : MonoBehaviour
     public Vector3 attackOffset;
     public float attackRange = 4f;
     public LayerMask attackMask;
+    public int health = 100;
+    public Animator animator;
 
     public void LookAtPlayer(){
         Vector3 flipped = transform.localScale;
@@ -32,6 +34,18 @@ public class Boss : MonoBehaviour
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
-        
     }
+
+   public void Update(){
+        if (health > 0){
+            if (Input.GetKeyDown(KeyCode.M)){
+                health = health - 10;
+            }            
+        } 
+        else if (health == 0) {
+            Debug.Log("entrei aq");
+            animator.SetTrigger("Enraged");
+            health = 100;
+        }
+   }  
 }
