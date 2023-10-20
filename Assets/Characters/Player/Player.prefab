@@ -93,7 +93,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: 44382
+  m_InstanceId: 68648
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -107,12 +107,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3158815568895676729}
   - component: {fileID: 1156567008488122551}
-  - component: {fileID: 1900977146344497928}
   - component: {fileID: 8833838558708489705}
   - component: {fileID: 1802609814729224088}
   - component: {fileID: 5870936099426227733}
-  - component: {fileID: 8696761172782753652}
   - component: {fileID: 6506933152625089933}
+  - component: {fileID: 1900977146344497928}
+  - component: {fileID: 8696761172782753652}
+  - component: {fileID: 268996778964145023}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -188,33 +189,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &1900977146344497928
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446345026694164591}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &8833838558708489705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,6 +270,75 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6506933152625089933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446345026694164591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f26e12de872dd40787bd92f0363c3d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  entity:
+    name: teste
+    level: 0
+    currentHealth: 0
+    maxHealth: 100
+    currentMana: 0
+    maxMana: 0
+    currentStamina: 0
+    maxStamina: 0
+    strength: 1
+    resistence: 1
+    inteligence: 1
+    damage: 1
+    defense: 1
+    speed: 2
+    inCombat: 0
+    cooldown: 1
+    target: {fileID: 0}
+    dead: 0
+  regenHPEnabled: 1
+  regenHPTime: 1
+  regenHPValue: 1
+  regenMPEnabled: 1
+  regenMPTime: 1
+  regenMPValue: 1
+  manager: {fileID: 0}
+  health: {fileID: 0}
+  mana: {fileID: 0}
+  stamina: {fileID: 0}
+  detectionHitBox: {fileID: 0}
+--- !u!50 &1900977146344497928
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446345026694164591}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &8696761172782753652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -341,31 +384,48 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5242901, y: 0.10265839}
   m_EdgeRadius: 0
---- !u!114 &6506933152625089933
-MonoBehaviour:
+--- !u!61 &268996778964145023
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446345026694164591}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f26e12de872dd40787bd92f0363c3d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entity:
-    name: teste
-    currentHealth: 0
-    maxHealth: 100
-    currentMana: 0
-    maxMana: 0
-    currentStamina: 0
-    maxStamina: 0
-    strength: 1
-    resistence: 1
-    damage: 1
-    defense: 1
-    speed: 2
-  health: {fileID: 0}
-  mana: {fileID: 0}
-  stamina: {fileID: 0}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.15}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.4}
+  m_EdgeRadius: 0

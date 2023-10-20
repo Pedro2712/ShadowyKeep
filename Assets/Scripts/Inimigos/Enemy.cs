@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public GameManagerBattle manager;
 
     public LayerMask playerLayer;
+    public GameObject attackHitBox;
     public float detectionRadius = 5f;
 
     // [Header("Enemy UI")]
@@ -23,16 +24,19 @@ public class Enemy : MonoBehaviour
     
     private Rigidbody2D rb;
     private Animator animator;
-    
     private Collider2D targetOnRange;
     private Transform targetTransform;
     private Vector2 direction;
+    private Vector2 newPosition;
+    private Vector2 targetPositionTilted;
     private bool onRange;
     private bool facingRight = true;
-    private int damage = 0;
-    private int targetDefense = 0;
-    private int damageDealt = 0;
+    private int tilt = 3;
     private float cooldownTimer = 0f;
+    // private int damage = 0;
+    // private int targetDefense = 0;
+    // private int damageDealt = 0;
+    // private float distanceToTarget = 0f;
 
     private void Awake()
     {
@@ -48,8 +52,6 @@ public class Enemy : MonoBehaviour
         entity.maxHealth = manager.CalculateHealth(entity);
 
         entity.currentHealth = entity.maxHealth;
-
-        cooldownTimer = entity.cooldown;
 
     }
 
@@ -74,6 +76,7 @@ public class Enemy : MonoBehaviour
 
         if (targetTransform != null)
         {
+            direction = targetTransform.position - transform.position;
             // Flip sprite
             if (direction.x < 0 && facingRight)
             {
@@ -105,8 +108,9 @@ public class Enemy : MonoBehaviour
 
         if (!entity.inCombat && targetTransform != null)
         {
-            direction = targetTransform.position - transform.position;
-            rb.MovePosition(rb.position + direction.normalized * entity.speed * Time.fixedDeltaTime);
+            targetPositionTilted = new Vector2(targetTransform.position.x + tilt, targetTransform.position.y - 1);
+            newPosition = Vector2.MoveTowards(rb.position, targetPositionTilted, entity.speed * Time.fixedDeltaTime);
+            rb.MovePosition(newPosition);
         }
     }
 
@@ -142,16 +146,19 @@ public class Enemy : MonoBehaviour
 
         if (onRange)
         {
+            animator.SetBool("Walk", true);
             targetTransform = targetOnRange.transform;
         }
         else
         {
+            animator.SetBool("Walk", false);
             targetTransform = null;
         }
     }
     private void Flip()
     {
         facingRight = !facingRight;
+        tilt = -tilt;
         transform.Rotate(0f, 180f, 0f);
     }
 
@@ -161,16 +168,17 @@ public class Enemy : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             animator.SetTrigger("Attack");
-            damage = manager.CalculateDamage(entity, entity.damage);
-            targetDefense = manager.CalculateDefense(entity.target.GetComponent<Player>().entity, entity.target.GetComponent<Player>().entity.defense);
-            damageDealt = damage - targetDefense;
-            if (damageDealt <= 0)
-            {
-                damageDealt = 0;
-            }
-            entity.target.GetComponent<Player>().entity.currentHealth -= damageDealt;
-
         }
+    }
+
+    private void EnableHitbox()
+    {
+        attackHitBox.SetActive(true);
+    }
+
+    private void DisableHitbox()
+    {
+        attackHitBox.SetActive(false);
     }
 
     private void Die()
@@ -179,7 +187,7 @@ public class Enemy : MonoBehaviour
         entity.inCombat = false;
         entity.target = null;
 
-        animator.SetTrigger("Die");
+        animator.SetTrigger("Death");
 
         // para add exp no player
         // manager.GainExp(rewardExperience)
