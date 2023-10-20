@@ -124,4 +124,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collision2D other) {
+        if(other.gameObject.CompareTag("Damage")){
+            print("Player colidiu com damage");
+        }
+    }
+
 }
