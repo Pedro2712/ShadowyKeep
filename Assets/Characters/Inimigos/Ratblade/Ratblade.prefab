@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5311750938058665953}
   - component: {fileID: 961432438158501854}
-  - component: {fileID: 5647231241471053152}
   - component: {fileID: 8715783103979380915}
   - component: {fileID: 1401508595505779979}
+  - component: {fileID: 5647231241471053152}
   - component: {fileID: 6528756743262418788}
   m_Layer: 0
   m_Name: Ratblade
@@ -88,27 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5647231241471053152
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7023158848413782914}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6ea0885234c0fe1449944e1caaa44637, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &8715783103979380915
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -138,10 +117,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -152,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.125, y: 1}
+  m_Size: {x: 2, y: 1.2}
   m_EdgeRadius: 0
 --- !u!50 &1401508595505779979
 Rigidbody2D:
@@ -181,6 +160,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &5647231241471053152
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023158848413782914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6ea0885234c0fe1449944e1caaa44637, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6528756743262418788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,12 +190,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 7023158848413782914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a37e4aa1ed3b94ea9e10b50258ae35, type: 3}
+  m_Script: {fileID: 11500000, guid: f46b52fe24c4d964697f218049c55f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.5
-  animator: {fileID: 5647231241471053152}
+  entity:
+    name: 
+    level: 0
+    currentHealth: 0
+    maxHealth: 0
+    currentMana: 0
+    maxMana: 0
+    currentStamina: 0
+    maxStamina: 0
+    strength: 1
+    resistence: 1
+    inteligence: 1
+    damage: 1
+    defense: 1
+    speed: 2
+    inCombat: 0
+    cooldown: 1
+    target: {fileID: 0}
+    dead: 0
+  manager: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  radius: 5
+  detectionRadius: 5

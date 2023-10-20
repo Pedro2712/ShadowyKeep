@@ -21,33 +21,33 @@ public class GameManagerBattle : MonoBehaviour
    private int BASE_DEFENSE_RESISTENCE = 2;
    private int BASE_DEFENSE_LEVEL = 3;
 
-   public int CalculateHealth(Player player)
+   public int CalculateHealth(Entity entity)
    {
         // Formula Proposta : (RESISTENCIA * BASE_HEALTH_RESISTENCE) + (LEVEL + BASE__HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH
-        int result = (player.entity.resistence * BASE_HEALTH_RESISTENCE) + (player.entity.level * BASE__HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH;
+        int result = (entity.resistence * BASE_HEALTH_RESISTENCE) + (entity.level * BASE__HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH;
         Debug.LogFormat("CalculateHealth : {0}", result);
         return result;
    }
    
-   public int CalculateStamina(Player player)
+   public int CalculateStamina(Entity entity)
    {
         // Formula Proposta : (LEVEL * BASE_STAMINA_LEVEL) + CONST_STAMINA;
-        int result = (player.entity.level * BASE_STAMINA_LEVEL) + CONST_STAMINA;
+        int result = (entity.level * BASE_STAMINA_LEVEL) + CONST_STAMINA;
         Debug.LogFormat("CalculateStamina : {0}", result);
         return result;
    }
 
-   public int CalculateDamage(Player player, int weaponDamage){
+   public int CalculateDamage(Entity entity, int weaponDamage){
         // Formula Proposta :  (STRENGTH*BASE_DAMAGE) + (weaponDamage*BASE_DAMAGE) + (LEVEL*BASE_LEVEL_DAMAGE) + random(1-20);
         System.Random rnd = new System.Random();
-        int result = (player.entity.strength * BASE_DAMAGE) + (weaponDamage * BASE_DAMAGE) + (player.entity.level * BASE_DAMAGE_LEVEL) + rnd.Next(1,20);
+        int result = (entity.strength * BASE_DAMAGE) + (weaponDamage * BASE_DAMAGE) + (entity.level * BASE_DAMAGE_LEVEL) + rnd.Next(1,20);
         Debug.LogFormat("CalculateDamage : {0}", result);
         return result;
    }
 
-   public int CalculateDefense(Player player, int armorDefense){
+   public int CalculateDefense(Entity entity, int armorDefense){
         // Formula Proposta :  (RESISTENCIA  * BASE_DEFENSE_RESISTENCE) + (LEVEL * BASE_DEFENSE_LEVEL) + ARMOR_DEFENSE;
-        int result = (player.entity.resistence  * BASE_DEFENSE_RESISTENCE) + (player.entity.level * BASE_DEFENSE_LEVEL) + armorDefense;
+        int result = (entity.resistence  * BASE_DEFENSE_RESISTENCE) + (entity.level * BASE_DEFENSE_LEVEL) + armorDefense;
         Debug.LogFormat("CalculateDefense : {0}", result);
         return result;
    }
