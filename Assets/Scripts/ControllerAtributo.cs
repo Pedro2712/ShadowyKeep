@@ -9,14 +9,16 @@ public class ControllerAtributo : MonoBehaviour
     public Animator animator;
     void Start()
     {
-        animator= GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
-    public void Open() {
+    public void Open()
+    {
         animator.SetBool("isOpen", true);
     }
 
-    public void Close() {
+    public void Close()
+    {
         animator.SetBool("isOpen", false);
     }
 }
