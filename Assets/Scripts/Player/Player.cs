@@ -124,4 +124,20 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void increaseLevel(){
+        entity.level += 1;
+    }
+
+    public int getLevel(){
+        return entity.level; 
+    }
+
+    public void increaseStrength(int value){
+        entity.strength += value;
+    }
+
+    public int getStrength(){
+        return entity.strength; 
+    }
+
 }

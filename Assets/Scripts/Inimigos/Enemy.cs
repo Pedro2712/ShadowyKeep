@@ -190,4 +190,12 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 
+    public void increaseLevel(){
+        entity.level += 1;
+    }
+
+    public int getLevel(){
+        return entity.level; 
+    }
+
 }
