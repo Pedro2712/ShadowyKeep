@@ -17,6 +17,14 @@ public class WaveSpawner : MonoBehaviour
     // Start is called before the first frame update
     public int qtd_enemies; // Quantidade de inimigos que deveram ser gerados
 
+    //Controlando a onda por tempo:
+    public Transform spawnLocation;
+    public int waveDuration;
+    private float waveTimer;
+    private float spawnInterval;
+    private float spawnTimer;
+
+
     public List<GameObject> enemiesToSpawn = new List<GameObject>();
     void Start()
     {
@@ -24,15 +32,37 @@ public class WaveSpawner : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if(spawnTimer <= 0 )
+        {
+            //Spawna um inimigo
+
+            if(enemiesToSpawn.Count > 0 ){ // Enquanto tenho inimigos para Spawnar
+                Instantiate(enemiesToSpawn[0], spawnLocation.position, Quaternion.identity);
+                // Remove o inimigo da lista de Spawn
+                enemiesToSpawn.RemoveAt(0);
+                spawnTimer = spawnInterval;
+            }
+            else
+            {
+                waveTimer = 0;
+            }
+        }
+        else
+        {
+            spawnTimer -= Time.fixedDeltaTime;
+            waveTimer -= Time.fixedDeltaTime;
+        }
     }
 
     public void GenerateWave()
     {
         waveValue = currWave * 10; // Valor que podemos gastar a depender do layer?
         GenerateEnemies();
+
+        spawnInterval = waveDuration; // enemiesToSpawn.Count; // Tempo fixo entre cada spawn de inimigo.
+        waveTimer = waveDuration; // Duração de uma onda.
     }
 
     public void GenerateEnemies()
