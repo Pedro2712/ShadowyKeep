@@ -180,6 +180,7 @@ MonoBehaviour:
   virtualCamera: {fileID: 8442466993347090477}
   luz: {fileID: 3148178858118434850}
   particle: {fileID: 6738506782755136422}
+  keyspace: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -5231,7 +5232,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3879905231320642530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5404,8 +5405,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.70634997, y: 0.020250022, z: 0}
-    m_Extent: {x: 3.5018501, y: 1.7465501, z: 0}
+    m_Center: {x: 0.70659995, y: 0.015100002, z: 0}
+    m_Extent: {x: 3.4889, y: 1.7436, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

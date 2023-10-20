@@ -10,6 +10,7 @@ public class BauController : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera;
     public Light2D luz; // Corrigi a declaração do Light
     public ParticleSystem particle;
+    public GameObject keyspace;
 
     public LayerMask playerLayer;
     public float radius;
@@ -20,6 +21,7 @@ public class BauController : MonoBehaviour
     private Animator animator;
 
     private bool onRadios;
+    private bool isOpen = false;
 
     void Start()
     {
@@ -66,9 +68,13 @@ public class BauController : MonoBehaviour
 
         onRadios = hit != null;
 
+        if (onRadios && !isOpen) {
+            keyspace.SetActive(onRadios);
+        }
         if (onRadios && Input.GetKeyDown(KeyCode.F))
         {
             animator.SetTrigger("BauOpen");
+            isOpen= true;
         }
     }
 
