@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public GameManagerBattle manager;
 
     public LayerMask playerLayer;
-    public HitBox hitbox;
+    public GameObject attackHitBox;
     public float detectionRadius = 5f;
 
     // [Header("Enemy UI")]
@@ -31,12 +31,12 @@ public class Enemy : MonoBehaviour
     private Vector2 targetPositionTilted;
     private bool onRange;
     private bool facingRight = true;
-    private int damage = 0;
-    private int targetDefense = 0;
-    private int damageDealt = 0;
     private int tilt = 3;
     private float cooldownTimer = 0f;
-    private float distanceToTarget = 0f;
+    // private int damage = 0;
+    // private int targetDefense = 0;
+    // private int damageDealt = 0;
+    // private float distanceToTarget = 0f;
 
     private void Awake()
     {
@@ -168,42 +168,17 @@ public class Enemy : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             animator.SetTrigger("Attack");
-            // damage = manager.CalculateDamage(entity, entity.damage);
-            // targetDefense = manager.CalculateDefense(entity.target.GetComponent<Player>().entity, entity.target.GetComponent<Player>().entity.defense);
-            // damageDealt = damage - targetDefense;
-            // distanceToTarget = Vector2.Distance(transform.position, entity.target.transform.position);
-            // damageDealt = (int)(damageDealt * (detectionRadius/distanceToTarget));
-            // if (damageDealt <= 0)
-            // {
-            //     damageDealt = 0;
-            // }
-            // StartCoroutine(ApplyDamageAfterAnimation(animator.GetCurrentAnimatorStateInfo(0).length, damageDealt));
-
         }
     }
 
-    // IEnumerator ApplyDamageAfterAnimation(float seconds, int damageDealt)
-    // {
-    //     yield return new WaitForSeconds(seconds);
-    //     entity.target.GetComponent<Player>().entity.currentHealth -= damageDealt;
-    // }
-
     private void EnableHitbox()
     {
-        switch (facingRight)
-        {
-            case true:
-                hitbox.SetAttackRight();
-                break;
-            case false:
-                hitbox.SetAttackLeft();
-                break;
-        }
+        attackHitBox.SetActive(true);
     }
 
     private void DisableHitbox()
     {
-        hitbox.StopAttack();
+        attackHitBox.SetActive(false);
     }
 
     private void Die()
@@ -212,7 +187,7 @@ public class Enemy : MonoBehaviour
         entity.inCombat = false;
         entity.target = null;
 
-        animator.SetTrigger("Die");
+        animator.SetTrigger("Death");
 
         // para add exp no player
         // manager.GainExp(rewardExperience)

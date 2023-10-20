@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2839267859102264611
+--- !u!1 &5807028322467578871
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1610888583414375985}
-  - component: {fileID: 5924438316729348845}
-  - component: {fileID: 8063012816087792130}
+  - component: {fileID: 7132536371174227109}
+  - component: {fileID: 6365594150050940943}
   m_Layer: 9
-  m_Name: HitBox
+  m_Name: AttackHit
   m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1610888583414375985
+--- !u!4 &7132536371174227109
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2839267859102264611}
+  m_GameObject: {fileID: 5807028322467578871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5311750938058665953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &5924438316729348845
-BoxCollider2D:
+--- !u!70 &6365594150050940943
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2839267859102264611}
+  m_GameObject: {fileID: 5807028322467578871}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -65,31 +64,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.6}
-  m_EdgeRadius: 0
---- !u!114 &8063012816087792130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2839267859102264611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dda3f822fed65e4ab1d793530ae5a0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Offset: {x: 0.3, y: 0}
+  m_Size: {x: 2.5, y: 2}
+  m_Direction: 1
 --- !u!1 &7023158848413782914
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +81,7 @@ GameObject:
   - component: {fileID: 882933114995921261}
   - component: {fileID: 1401508595505779979}
   - component: {fileID: 5647231241471053152}
-  - component: {fileID: 6528756743262418788}
+  - component: {fileID: 2808617116188143386}
   m_Layer: 8
   m_Name: Ratblade
   m_TagString: Enemy
@@ -125,7 +102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1610888583414375985}
+  - {fileID: 7132536371174227109}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &961432438158501854
@@ -298,7 +275,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6528756743262418788
+--- !u!114 &2808617116188143386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -333,5 +310,5 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  hitbox: {fileID: 8063012816087792130}
+  attackHitBox: {fileID: 5807028322467578871}
   detectionRadius: 5

@@ -25,6 +25,10 @@ public class Player : MonoBehaviour
 
     //Para Slider de Level
     //public Slider exp;
+    
+    private int takenDamage = 0;
+    private int playerDefense = 0;
+    private int damageDealt = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -67,9 +71,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        health.value =entity.currentHealth;
-        mana.value =entity.currentMana;
-        stamina.value =entity.currentStamina;
+        health.value = entity.currentHealth;
+        mana.value = entity.currentMana;
+        stamina.value = entity.currentStamina;
         
         // APENAS TESTE  - Atualização de Mana, Vida e Stamina.
         if(Input.GetKeyDown(KeyCode.Space))
@@ -124,10 +128,31 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collision2D other) {
-        if(other.gameObject.CompareTag("Damage")){
-            print("Player colidiu com damage");
+    private void OnTriggerEnter2D(Collider2D collider) 
+    {
+        if(collider.CompareTag("Damage")){
+            ApplyDamage(collider.GetComponentInParent<Enemy>().entity);
         }
     }
+
+    private void ApplyDamage(Entity enemyEntity)
+    {
+        takenDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
+        playerDefense = manager.CalculateDefense(entity, entity.defense);
+        damageDealt = takenDamage - playerDefense;
+        if (damageDealt <= 0)
+        {
+            damageDealt = 0;
+        }
+        entity.currentHealth -= damageDealt;
+    }
+            
+    // StartCoroutine(ApplyDamageAfterAnimation(animator.GetCurrentAnimatorStateInfo(0).length, damageDealt));
+
+    // IEnumerator ApplyDamageAfterAnimation(float seconds, int damageDealt)
+    // {
+    //     yield return new WaitForSeconds(seconds);
+    //     entity.target.GetComponent<Player>().entity.currentHealth -= damageDealt;
+    // }
 
 }
