@@ -218,7 +218,7 @@ MonoBehaviour:
     cooldown: 1
     target: {fileID: 0}
     dead: 0
-  manager: {fileID: 0}
+  enemyName: 
   playerLayer:
     serializedVersion: 2
     m_Bits: 128

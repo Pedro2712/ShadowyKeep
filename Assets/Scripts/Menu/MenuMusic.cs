@@ -12,12 +12,20 @@ public class MenuMusic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Defina a música e configure o loop.
+        // Defina a mï¿½sica e configure o loop.
         _source.clip = _musicMenu;
         _source.loop = true;
         _source.volume = volume;
 
-        // Inicie a reprodução.
+    }
+
+    public void playHomeMusic(){
+        // Inicie 
         _source.Play();
+    }
+
+    public void stopHomeMusic(){
+        // Pare 
+        _source.Stop();
     }
 }

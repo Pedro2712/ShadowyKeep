@@ -8,7 +8,9 @@ using UnityEngine.Events;
 public class Enemy : MonoBehaviour
 {
     public Entity entity = new Entity();
-    public GameManagerBattle manager;
+    private GameManagerBattle manager;
+    private ManagerSFX managerSFX;
+    public string enemyName;
 
     public LayerMask playerLayer;
     public GameObject attackHitBox;
@@ -39,10 +41,17 @@ public class Enemy : MonoBehaviour
     {
         // Use FindObjectOfType para encontrar o GameManagerBattle
         manager = FindObjectOfType<GameManagerBattle>();
-
+        managerSFX = FindObjectOfType<ManagerSFX>();
+        
         entity.maxHealth = manager.CalculateHealth(entity);
 
         entity.currentHealth = entity.maxHealth;
+
+         // Acessa o nome do GameObject
+        string nomeDoObjeto = gameObject.name;
+
+        // Imprime o nome do GameObject no console
+        Debug.Log("O nome do GameObject Ã©: " + nomeDoObjeto);
     }
 
     private void Update()
@@ -101,6 +110,7 @@ public class Enemy : MonoBehaviour
             newPosition = Vector2.MoveTowards(rb.position, targetPositionTilted, entity.speed * Time.fixedDeltaTime);
             rb.MovePosition(newPosition);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -157,7 +167,11 @@ public class Enemy : MonoBehaviour
         if (entity.target != null && !entity.target.GetComponent<Player>().entity.dead)
         {
             rb.velocity = Vector2.zero;
+
+            managerSFX.cocadaemonSound();
             animator.SetTrigger("Attack");
+        }else{
+            managerSFX.stopMonsterSound();
         }
     }
 
@@ -179,7 +193,7 @@ public class Enemy : MonoBehaviour
 
         animator.SetTrigger("Death");
 
-        // Notificar a morte do inimigo através do evento
+        // Notificar a morte do inimigo atravï¿½s do evento
         OnEnemyDeath.Invoke();
     }
 

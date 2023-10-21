@@ -6,6 +6,9 @@ public class Door : MonoBehaviour
 {   
     public ManagerSpawner managerSpawners;
 
+    private ManagerSFX managerSFX;
+    public MenuMusic menuMusic;
+
     public List<Transform> possibleDestinations;
     private bool playerDetected;
     public GameObject playerGO;
@@ -15,6 +18,14 @@ public class Door : MonoBehaviour
         playerDetected = false;
         GameObject temp = GameObject.FindGameObjectsWithTag("WaveSpawner")[0];
         managerSpawners = temp.GetComponent<ManagerSpawner>();
+
+        // Começa a tocar a musica no Home
+        GameObject temp2 = GameObject.FindGameObjectsWithTag("HomeMusic")[0];
+        menuMusic = temp2.GetComponent<MenuMusic>();
+        menuMusic.playHomeMusic();
+
+        //Pega o Objeto responsavel pelas musicas de batalha
+        managerSFX = FindObjectOfType<ManagerSFX>();
     }
 
     void Update()
@@ -42,6 +53,9 @@ public class Door : MonoBehaviour
                     int qtd_enemies = 10;
                     int difficulty  = 1;
                     
+                    //Para musica do menu e começa uma musia Porrada!
+                    menuMusic.stopHomeMusic();
+                    managerSFX.backgroundSound(false); // False indica que não é a musica do boss.
                     managerSpawners.GenerateWave(qtd_enemies , difficulty , randomIndex+1);
                 }
 
