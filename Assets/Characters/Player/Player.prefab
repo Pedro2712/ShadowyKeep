@@ -93,7 +93,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: 68648
+  m_InstanceId: 41990
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -311,7 +311,6 @@ MonoBehaviour:
   health: {fileID: 0}
   mana: {fileID: 0}
   stamina: {fileID: 0}
-  detectionHitBox: {fileID: 0}
 --- !u!50 &1900977146344497928
 Rigidbody2D:
   serializedVersion: 4

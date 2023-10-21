@@ -310,5 +310,5 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
-  attackHitBox: {fileID: 0}
+  attackHitBox: {fileID: 6998539728560834460}
   detectionRadius: 5
