@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Damage
   - WaveSpawner
+  - AudioPlayer
+  - AudioMonster
+  - HomeMusic
   layers:
   - Default
   - TransparentFX

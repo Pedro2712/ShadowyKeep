@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Player player;
     
+    public ManagerSFX managerSFX;
     public float collisionOffset = 0.05f;
     public Rigidbody2D rb;
     public Animator animator;
@@ -35,7 +36,13 @@ public class PlayerMovement : MonoBehaviour
         if(isWalking){
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
+            
+            managerSFX.walkSound();
+            
+        }else{
+            managerSFX.stopWalkSound();
         }
+
         animator.SetBool("isWalking", isWalking);
     }
 
@@ -59,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
                     TryMove(new Vector2(0, movement.y));
                 }
             }
+
         }
     }
 }

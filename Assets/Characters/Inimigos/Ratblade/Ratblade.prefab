@@ -306,9 +306,12 @@ MonoBehaviour:
     cooldown: 1
     target: {fileID: 0}
     dead: 0
-  manager: {fileID: 0}
+  enemyName: r
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
   attackHitBox: {fileID: 5807028322467578871}
   detectionRadius: 5
+  OnEnemyDeath:
+    m_PersistentCalls:
+      m_Calls: []

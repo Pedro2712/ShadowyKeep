@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public Animator animator;
+    public ManagerSFX managerSFX;
+
     void OnSimpleSwordAttack(){
-        print("Attack Pressed");
         animator.SetTrigger("attack");
+        managerSFX.swordSound();
     }
 }
