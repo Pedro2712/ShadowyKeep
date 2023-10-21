@@ -47,3 +47,6 @@ TagManager:
   - name: candle
     uniqueID: 3951675625
     locked: 0
+  - name: Enemy
+    uniqueID: 802617267
+    locked: 0

@@ -93,7 +93,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: 41990
+  m_InstanceId: 235538
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -109,8 +109,8 @@ GameObject:
   - component: {fileID: 1156567008488122551}
   - component: {fileID: 8833838558708489705}
   - component: {fileID: 1802609814729224088}
-  - component: {fileID: 5870936099426227733}
   - component: {fileID: 6506933152625089933}
+  - component: {fileID: 5870936099426227733}
   - component: {fileID: 1900977146344497928}
   - component: {fileID: 8696761172782753652}
   - component: {fileID: 268996778964145023}
@@ -249,27 +249,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!95 &5870936099426227733
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446345026694164591}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 49388bba6039eeb46aee6ce5206e332a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &6506933152625089933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +290,28 @@ MonoBehaviour:
   health: {fileID: 0}
   mana: {fileID: 0}
   stamina: {fileID: 0}
+  animator: {fileID: 5870936099426227733}
+--- !u!95 &5870936099426227733
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446345026694164591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 49388bba6039eeb46aee6ce5206e332a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!50 &1900977146344497928
 Rigidbody2D:
   serializedVersion: 4
@@ -319,13 +320,13 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446345026694164591}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 15
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -415,7 +416,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.15}
+  m_Offset: {x: 0, y: 0.090812325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -426,5 +427,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.4}
+  m_Size: {x: 0.74932265, y: 1.072727}
   m_EdgeRadius: 0

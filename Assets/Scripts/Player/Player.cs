@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
-{   
+{
     public Entity entity;
 
     [Header("Player Regen System")]
     public bool regenHPEnabled = true;
-    public float regenHPTime = 1f; // Segundos 
+    public float regenHPTime = 1f;
     public int regenHPValue = 1;
     public bool regenMPEnabled = true;
-    public float regenMPTime = 1f; // Segundos 
+    public float regenMPTime = 1f;
     public int regenMPValue = 1;
 
     [Header("Game Manager")]
@@ -23,34 +23,35 @@ public class Player : MonoBehaviour
     public Slider mana;
     public Slider stamina;
 
-    //Para Slider de Level
-    //public Slider exp;
-    
+    [Header("Knockback")]
+    public float knockbackForce = 25f;
+
     private int takenDamage = 0;
     private int playerDefense = 0;
     private int damageDealt = 0;
+    private Rigidbody2D rb;
+    private Vector3 lastPosition;
+    public Animator animator;
 
-    // Start is called before the first frame update
+    static public bool isDead = false;
+
     void Start()
-    {   
-        if(manager == null){
+    {
+        if (manager == null)
+        {
             Debug.LogError("Você precisa anexar o Game Manager aqui no player.");
             return;
         }
 
-        // Setando o valor máximo de Vida e Stamina a depender dos atributos do Player:
+        rb = GetComponent <Rigidbody2D>();
+        lastPosition = transform.position;
+
         entity.maxHealth = manager.CalculateHealth(entity);
         entity.maxStamina = manager.CalculateStamina(entity);
-        
-        // Exemplo de uso do calculateDamage e do calculateDefense
-        // int dmg = manager.CalculateDamage(this, 10);   PLAYER ATACA
-        // int def = manager.CalculateDefense(this, 10);  INIMIGO POSSUI UMA DEFESA
-        // delta_dano = dmg - def;   ESSE É O DANO REAL QUE O INIMIGO SOFRE.
 
         entity.currentHealth = entity.maxHealth;
         entity.currentStamina = entity.maxStamina;
-        entity.currentMana = entity.maxMana;         // Por enquanto sem implementação.
-        
+        entity.currentMana = entity.maxMana;
 
         health.maxValue = entity.maxHealth;
         health.value = health.maxValue;
@@ -61,37 +62,31 @@ public class Player : MonoBehaviour
         stamina.maxValue = entity.maxStamina;
         stamina.value = stamina.maxValue;
 
-        //exp.value = 0;
-
-        //Iniciar a regeneração de vida:
         StartCoroutine(RegenHealth());
         StartCoroutine(RegenStamina());
     }
 
-    // Update is called once per frame
     void Update()
     {
         health.value = entity.currentHealth;
         mana.value = entity.currentMana;
         stamina.value = entity.currentStamina;
-        
-        // APENAS TESTE  - Atualização de Mana, Vida e Stamina.
-        if(Input.GetKeyDown(KeyCode.Space))
+
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             entity.currentHealth -= 1;
             entity.currentStamina -= 2;
-        }   
-
+        }
     }
 
-    // IEnumerator é um Loop Infinito
-    // Regerear Vida
-    IEnumerator RegenHealth(){
-        while(true){ // Loop
-
-            if(regenHPEnabled){
-                if(entity.currentHealth < entity.maxHealth){
-                    Debug.LogFormat("Recuperando HP do jogador");
+    IEnumerator RegenHealth()
+    {
+        while (true)
+        {
+            if (regenHPEnabled)
+            {
+                if (entity.currentHealth < entity.maxHealth)
+                {
                     entity.currentHealth += regenHPValue;
                     yield return new WaitForSeconds(regenHPTime);
                 }
@@ -107,12 +102,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    IEnumerator RegenStamina(){
-        while(true){ // Loop
-
-            if(regenMPEnabled){
-                if(entity.currentStamina < entity.maxStamina){
-                    Debug.LogFormat("Recuperando Mana do jogador");
+    IEnumerator RegenStamina()
+    {
+        while (true)
+        {
+            if (regenMPEnabled)
+            {
+                if (entity.currentStamina < entity.maxStamina)
+                {
                     entity.currentStamina += regenMPValue;
                     yield return new WaitForSeconds(regenMPTime);
                 }
@@ -128,11 +125,22 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collider) 
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.CompareTag("Damage")){
+        if (collider.CompareTag("Damage") && !isDead)
+        {
             ApplyDamage(collider.GetComponentInParent<Enemy>().entity);
+            PerformKnockback();
         }
+    }
+
+    void PerformKnockback()
+    {
+        Vector3 direction = (transform.position - lastPosition).normalized;
+        lastPosition = transform.position;
+
+        animator.SetTrigger("damage");
+        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
     }
 
     private void ApplyDamage(Entity enemyEntity)
@@ -145,6 +153,11 @@ public class Player : MonoBehaviour
             damageDealt = 0;
         }
         entity.currentHealth -= damageDealt;
-    }
 
+        if (entity.currentHealth < 0)
+        {
+            animator.SetTrigger("isDead");
+            isDead = true;
+        }
+    }
 }
