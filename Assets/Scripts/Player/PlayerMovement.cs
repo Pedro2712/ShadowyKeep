@@ -41,18 +41,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool TryMove(Vector2 direction)
     {
-        if (direction == Vector2.zero)
-            return false;
-
-        float moveDistance = player.entity.speed * Time.fixedDeltaTime + collisionOffset;
-        int count = rb.Cast(direction, movementFilter, castCollisions, moveDistance);
-
-        if (count == 0)
-        {
+        if (!Player.isDead) {
             rb.MovePosition(rb.position + direction * player.entity.speed * Time.fixedDeltaTime);
             return true;
         }
-
         return false;
     }
 

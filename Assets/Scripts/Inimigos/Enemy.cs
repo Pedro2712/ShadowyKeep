@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
-    [Header("Controller")]
     public Entity entity = new Entity();
     public GameManagerBattle manager;
 
@@ -14,14 +14,6 @@ public class Enemy : MonoBehaviour
     public GameObject attackHitBox;
     public float detectionRadius = 5f;
 
-    // [Header("Enemy UI")]
-    // public Slider health;
-
-    // [Header("Experience Reward")]
-    // public int rewardExperience = 10;
-    // public int lootGoldMin = 0;
-    // public int lootGoldMax = 10;
-    
     private Rigidbody2D rb;
     private Animator animator;
     private Collider2D targetOnRange;
@@ -33,29 +25,26 @@ public class Enemy : MonoBehaviour
     private bool facingRight = true;
     private int tilt = 3;
     private float cooldownTimer = 0f;
-    // private int damage = 0;
-    // private int targetDefense = 0;
-    // private int damageDealt = 0;
-    // private float distanceToTarget = 0f;
+
+    // Evento para notificar a morte do inimigo
+    public UnityEvent OnEnemyDeath;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponent <Animator>();
     }
 
-    // Start is called before the first frame update
     private void Start()
     {
-        manager = GameObject.Find("GameManagerBattle").GetComponent<GameManagerBattle>();
+        // Use FindObjectOfType para encontrar o GameManagerBattle
+        manager = FindObjectOfType<GameManagerBattle>();
 
         entity.maxHealth = manager.CalculateHealth(entity);
 
         entity.currentHealth = entity.maxHealth;
-
     }
 
-    // Update is called once per frame
     private void Update()
     {
         if (entity.dead)
@@ -114,14 +103,13 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag == "Player" && !entity.dead)
         {
             entity.inCombat = true;
             entity.target = collider.gameObject;
         }
-            
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -133,7 +121,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void GetTarget() 
+    private void GetTarget()
     {
         if (entity.dead)
         {
@@ -147,6 +135,7 @@ public class Enemy : MonoBehaviour
         if (onRange)
         {
             animator.SetBool("Walk", true);
+
             targetTransform = targetOnRange.transform;
         }
         else
@@ -155,6 +144,7 @@ public class Enemy : MonoBehaviour
             targetTransform = null;
         }
     }
+
     private void Flip()
     {
         facingRight = !facingRight;
@@ -163,7 +153,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void Attack()
-    {        
+    {
         if (entity.target != null && !entity.target.GetComponent<Player>().entity.dead)
         {
             rb.velocity = Vector2.zero;
@@ -189,13 +179,12 @@ public class Enemy : MonoBehaviour
 
         animator.SetTrigger("Death");
 
-        // para add exp no player
-        // manager.GainExp(rewardExperience)
+        // Notificar a morte do inimigo através do evento
+        OnEnemyDeath.Invoke();
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
-
 }
