@@ -146,13 +146,5 @@ public class Player : MonoBehaviour
         }
         entity.currentHealth -= damageDealt;
     }
-            
-    // StartCoroutine(ApplyDamageAfterAnimation(animator.GetCurrentAnimatorStateInfo(0).length, damageDealt));
-
-    // IEnumerator ApplyDamageAfterAnimation(float seconds, int damageDealt)
-    // {
-    //     yield return new WaitForSeconds(seconds);
-    //     entity.target.GetComponent<Player>().entity.currentHealth -= damageDealt;
-    // }
 
 }
