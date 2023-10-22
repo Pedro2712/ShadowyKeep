@@ -7,8 +7,8 @@ public class PlayerAttack : MonoBehaviour
     public Animator animator;
     public ManagerSFX managerSFX;
 
-    void OnSimpleSwordAttack(){
-        animator.SetTrigger("attack");
-        managerSFX.swordSound();
-    }
+    // void OnSimpleSwordAttack(){
+    //     animator.SetTrigger("attack");
+    //     managerSFX.swordSound();
+    // }
 }

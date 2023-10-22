@@ -169,13 +169,11 @@ public class Player : MonoBehaviour
     }
 
     void OnSimpleSwordAttack(){
-        if (entity.currentStamina < entity.staminaCost)
+        if (entity.currentStamina >= entity.staminaCost)
         {
-            // Da para por um som que indique a falta de stamina
-            return;
+            entity.currentStamina -= entity.staminaCost;
+            animator.SetTrigger("attack");
+            managerSFX.swordSound();
         }
-        entity.currentStamina -= entity.staminaCost;
-        animator.SetTrigger("attack");
-        managerSFX.swordSound();
     }
 }

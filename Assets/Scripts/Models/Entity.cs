@@ -25,7 +25,7 @@ public class Entity
     [Header("Stamina")]
     public int currentStamina;
     public int maxStamina;
-    public int staminaCost = 1;
+    public int staminaCost = 10;
 
     [Header("Stats")]
     public int strength = 1;

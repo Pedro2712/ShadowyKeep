@@ -22,7 +22,8 @@ public class GameManagerBattle : MonoBehaviour
      private int BASE_DEFENSE_LEVEL = 3;
 
      //CalculateEnemyExperience
-     private int BASE_EXPERIENCE = 20;
+     private int BASE_EXPERIENCE = 2;
+     private int CONST_EXPERIENCE = 10;
 
    public int CalculateHealth(Entity entity)
    {
@@ -53,7 +54,7 @@ public class GameManagerBattle : MonoBehaviour
 
    public int CalculateEnemyExperience(Entity entity){
         // Formula Proposta :  (LEVEL * BASE_EXPERIENCE);
-        int result = (entity.level * BASE_EXPERIENCE) + BASE_EXPERIENCE;
+        int result = (entity.level * BASE_EXPERIENCE) + CONST_EXPERIENCE;
         return result;
    }
 

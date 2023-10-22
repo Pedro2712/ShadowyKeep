@@ -185,9 +185,18 @@ MonoBehaviour:
     m_Bits: 128
   radius: 2
   sprites:
-  - {fileID: 21300000, guid: 5be98f21cc364e2419d6b7d019c8fb37, type: 3}
-  - {fileID: 21300000, guid: f4f0c5f43560014499245fbc5d010351, type: 3}
-  - {fileID: 21300000, guid: 8119ba0a5e810944cb39d24a2c9e2f60, type: 3}
+  - name: Coins
+    sprite: {fileID: -142698081, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Speed
+    sprite: {fileID: -1754922841, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Life
+    sprite: {fileID: -314801685, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Power
+    sprite: {fileID: 1851685166, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Swiftness
+    sprite: {fileID: 1335649981, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Armour
+    sprite: {fileID: 1348843335, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
   icon: {fileID: 6369521119457771331}
 --- !u!61 &8551909646571701767
 BoxCollider2D:
@@ -5159,7 +5168,7 @@ GameObject:
   - component: {fileID: 7106192546761421160}
   - component: {fileID: 1294497704075140098}
   - component: {fileID: 3879905231320642530}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5231,7 +5240,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3879905231320642530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5404,8 +5413,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.70634997, y: 0.020250022, z: 0}
-    m_Extent: {x: 3.5018501, y: 1.7465501, z: 0}
+    m_Center: {x: 0.70500004, y: 0.011250019, z: 0}
+    m_Extent: {x: 3.4854002, y: 1.74255, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5430,7 +5439,7 @@ GameObject:
   - component: {fileID: 879099128836736647}
   - component: {fileID: 2298875291508117294}
   - component: {fileID: 6369521119457771331}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5471,7 +5480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8470509886589193315}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 

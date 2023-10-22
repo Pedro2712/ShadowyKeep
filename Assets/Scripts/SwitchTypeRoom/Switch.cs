@@ -5,22 +5,26 @@ using UnityEngine.UI;
 
 public class Switch : MonoBehaviour
 {
+    [System.Serializable]
+    public class SpriteOption {
+        public string name;
+        public Sprite sprite;
+    }
+
+    public List<SpriteOption> sprites;
     public Image icon;
-    public Sprite[] sprites;
     public Animator animator;
-    public static int FinalChoose = 0;
+    public int finalChoose = 0;
 
     private int position = 0;
     private bool buttonRight = false;
-    private int iconNumber;
-    private List<Sprite> sortSprites = new List<Sprite>();
+    private int iconNumber = 3;
+    private List<SpriteOption> sortSprites = new List<SpriteOption>();
     private List<int> numberPick = new List<int>();
 
     void Start()
     {
-        icon.sprite = sprites[position];
         animator = GetComponent<Animator>();
-        iconNumber = Random.Range(2, sprites.Length + 1);
         SortSprites();
     }
 
@@ -34,7 +38,7 @@ public class Switch : MonoBehaviour
         buttonRight = true;
     }
 
-    public void switchIcon()
+    public void SwitchIcon()
     {
         if (buttonRight)
         {
@@ -43,7 +47,7 @@ public class Switch : MonoBehaviour
             {
                 position = 0;
             }
-            icon.sprite = sortSprites[position];
+            icon.sprite = sortSprites[position].sprite;
         }
         else
         {
@@ -52,15 +56,15 @@ public class Switch : MonoBehaviour
             {
                 position = sortSprites.Count - 1;
             }
-            icon.sprite = sortSprites[position];
+            icon.sprite = sortSprites[position].sprite;
         }
         buttonRight = false;
     }
 
     public void ChooseIcon()
     {
-        print(numberPick[position]);
-        FinalChoose = numberPick[position];
+        Debug.Log("Number Pick: " + numberPick[position]);
+        finalChoose = numberPick[position];
     }
 
     private void SortSprites()
@@ -68,13 +72,16 @@ public class Switch : MonoBehaviour
         for (int i = 0; i < iconNumber; i++)
         {
             int randomNumber;
-            do
-            {
-                randomNumber = Random.Range(0, sprites.Length);
-            } while (numberPick.Contains(randomNumber));
+            do { randomNumber = Random.Range(0, sprites.Count); } while (numberPick.Contains(randomNumber)) ;
+            
             numberPick.Add(randomNumber);
             sortSprites.Add(sprites[randomNumber]);
         }
-        icon.sprite = sortSprites[0];
+        icon.sprite = sortSprites[0].sprite;
+    }
+
+    public int GetFinalChoose()
+    {
+        return finalChoose;
     }
 }
