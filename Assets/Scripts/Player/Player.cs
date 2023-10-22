@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
     public Entity entity;
+    public Transform RespawnPosition;
 
     [Header("Player Regen System")]
     public bool regenHPEnabled = true;
@@ -67,16 +69,21 @@ public class Player : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        if(entity.dead){
+            respawnPlayer();
+            return;
+        }
+
+        if(entity.currentHealth <=0 ){
+            entity.currentHealth = 0;
+            entity.dead = true;
+        }
+
         health.value = entity.currentHealth;
         mana.value = entity.currentMana;
         stamina.value = entity.currentStamina;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            entity.currentHealth -= 1;
-            entity.currentStamina -= 2;
-        }
     }
 
     IEnumerator RegenHealth()
@@ -160,5 +167,11 @@ public class Player : MonoBehaviour
             animator.SetTrigger("isDead");
             isDead = true;
         }
+    }
+
+    private void respawnPlayer(){
+        Debug.LogFormat("Nada aqui");
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 }
