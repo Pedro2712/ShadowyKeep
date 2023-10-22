@@ -174,8 +174,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.64195, y: -0.060399994, z: 0}
-    m_Extent: {x: 0.21615, y: 0.2411, z: 0}
+    m_Center: {x: -0.64365, y: -0.06705001, z: 0}
+    m_Extent: {x: 0.20955001, y: 0.23835, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 2874914835284583580}
   - component: {fileID: 2584165218176062463}
   m_Layer: 0
-  m_Name: Button
+  m_Name: RightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,6 +577,8 @@ MonoBehaviour:
   - name: Defense
     sprite: {fileID: -868750059, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
   icon: {fileID: 4851853545567125923}
+  LeftButton: {fileID: 9121089737803137465}
+  RightButton: {fileID: 3562379074021738239}
   animator: {fileID: 3178076803812237264}
 --- !u!1 &7815634965660233637
 GameObject:
@@ -741,7 +743,7 @@ GameObject:
   - component: {fileID: 5047744716979497813}
   - component: {fileID: 6428037915582439091}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: LeftButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

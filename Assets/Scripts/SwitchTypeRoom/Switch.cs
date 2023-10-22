@@ -13,8 +13,10 @@ public class Switch : MonoBehaviour
 
     public List<SpriteOption> sprites;
     public Image icon;
+    public GameObject LeftButton;
+    public GameObject RightButton;
     public Animator animator;
-    public int finalChoose = 0;
+    private int finalChoose = 0;
 
     private int position = 0;
     private bool buttonRight = false;
@@ -61,12 +63,6 @@ public class Switch : MonoBehaviour
         buttonRight = false;
     }
 
-    public void ChooseIcon()
-    {
-        Debug.Log("Number Pick: " + numberPick[position]);
-        finalChoose = numberPick[position];
-    }
-
     private void SortSprites()
     {
         for (int i = 0; i < iconNumber; i++)
@@ -80,8 +76,23 @@ public class Switch : MonoBehaviour
         icon.sprite = sortSprites[0].sprite;
     }
 
-    public int GetFinalChoose()
+    public string ChooseBuff()
     {
-        return finalChoose;
+        finalChoose = numberPick[position];
+        return sprites[finalChoose].name;
+    }
+
+    public void DisableVisibility()
+    {
+        icon.enabled = false;
+        LeftButton.SetActive(false);
+        RightButton.SetActive(false);
+    }
+
+    public void EnableVisibility()
+    {
+        icon.enabled = true;
+        LeftButton.SetActive(true);
+        RightButton.SetActive(true);
     }
 }

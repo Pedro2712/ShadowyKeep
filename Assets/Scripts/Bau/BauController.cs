@@ -11,14 +11,14 @@ public class BauController : MonoBehaviour
     public Light2D luz;
     public ParticleSystem particle;
     public LayerMask playerLayer;
-    public Image icon;
     public float radius;
     public Player player;
+    public Switch buffSwitch;
     
     private Animator animator;
-    private Switch buffSwitch;
     private bool onRadios;
     private string buff;
+    private bool isOpen = false;
 
     private int BASE_COINS_BUFF = 50;
     private int BASE_HEALTH_BUFF = 10;
@@ -36,10 +36,7 @@ public class BauController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        buffSwitch = GetComponentInParent<Switch>();
-
-        buff = buffSwitch.sprites[buffSwitch.GetFinalChoose()].name;
-        icon.sprite = buffSwitch.sprites[buffSwitch.GetFinalChoose()].sprite;
+        buffSwitch.DisableVisibility();
     }
 
     private void Update()
@@ -77,45 +74,59 @@ public class BauController : MonoBehaviour
 
     private void Interact()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
-
-        onRadios = hit != null;
-
-        if (onRadios && Input.GetKeyDown(KeyCode.F))
+        if (!isOpen)
         {
-            StartCoroutine(OpenChest());
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
 
+            onRadios = hit != null;
+
+            if (onRadios && Input.GetKeyDown(KeyCode.F))
+            {
+                StartCoroutine(OpenChest());
+            }
+        }
+        else
+        {
+            if (onRadios && Input.GetKeyDown(KeyCode.F))
+            {
+                buff = buffSwitch.ChooseBuff();
+
+                switch (buff)
+                {
+                    case "Coins":
+                        player.entity.coins += CoinsBuff();
+                        break;
+                    case "Speed":
+                        player.entity.speed += SpeedBuff();
+                        break;
+                    case "Health":
+                        player.entity.maxHealth += HealthBuff();
+                        break;
+                    case "Strength":
+                        player.entity.strength += StrengthBuff();
+                        break;
+                    case "Defense":
+                        player.entity.defense += DefenseBuff();
+                        break;
+                    // case "CooldownReduce":
+                    //     player.entity.cooldown -= 0.1f;
+                    //     break;
+                }
+
+                buffSwitch.DisableVisibility();
+            }
         }
     }
 
     IEnumerator OpenChest()
     {
         animator.SetTrigger("BauOpen");
-        icon.enabled = true;
 
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("BauIdleOpen"));
 
-        switch (buff)
-        {
-            case "Coins":
-                player.entity.coins += CoinsBuff();
-                break;
-            case "Speed":
-                player.entity.speed += SpeedBuff();
-                break;
-            case "Health":
-                player.entity.maxHealth += HealthBuff();
-                break;
-            case "Strength":
-                player.entity.strength += StrengthBuff();
-                break;
-            case "Defense":
-                player.entity.defense += DefenseBuff();
-                break;
-            // case "CooldownReduce":
-            //     player.entity.cooldown -= 0.1f;
-            //     break;
-        }
+        buffSwitch.EnableVisibility();
+
+        isOpen = true;
     }
 
     private int CoinsBuff()

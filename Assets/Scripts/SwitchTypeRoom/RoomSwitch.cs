@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class RoomSwitch : MonoBehaviour
 {
     public Canvas canvas;
-    public Switch switchScript;
 
 
     public LayerMask playerLayer;
@@ -32,13 +31,13 @@ public class RoomSwitch : MonoBehaviour
 
         onRadios = hit != null;
 
-        // Ativa ou desativa o objeto keyspace com base na interação e no diálogo em andamento.
+        // Activate canvas if player is in range
         if (canvas != null)
         {
             canvas.gameObject.SetActive(onRadios);
-            if (Input.GetKeyDown(KeyCode.F) && onRadios) {
-                switchScript.ChooseIcon();
-            }
+            // if (Input.GetKeyDown(KeyCode.F) && onRadios) {
+                
+            // }
         }
     } 
 
