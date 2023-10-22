@@ -18,20 +18,19 @@ public class MiniBossRun : StateMachineBehaviour
         boss = animator.GetComponent<Boss>();
     }
 
+    
+
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //boss.LookAtPlayer();
-        
-        Vector2 moveDirection = (rb.position - (Vector2)player.position).normalized;
-        Vector2 newPos = rb.position + moveDirection * speed * Time.fixedDeltaTime;
+        boss.NotLookAtPlayer();
 
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, moveDirection, speed * Time.fixedDeltaTime, obstacleMask);
-        if (hit.collider == null)
-        {
+        if (boss.isInsideRange){
+
+            Vector2 moveDirection = (rb.position - (Vector2)player.position).normalized;
+            Vector2 newPos = rb.position + moveDirection * speed * Time.fixedDeltaTime;
             rb.MovePosition(newPos);
-        }
-       
+        }  
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

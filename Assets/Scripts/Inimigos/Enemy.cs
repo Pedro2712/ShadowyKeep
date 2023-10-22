@@ -239,7 +239,7 @@ public class Enemy : MonoBehaviour
         // Espera por 3 segundos
         yield return new WaitForSeconds(3f);
 
-        // Chama outra função após a espera
+        // Chama outra funï¿½ï¿½o apï¿½s a espera
         Destroy(enemy);
     }
 
@@ -248,7 +248,7 @@ public class Enemy : MonoBehaviour
         // Espera por 3 segundos
         yield return new WaitForSeconds(1f);
 
-        // Chama outra função após a espera
+        // Chama outra funï¿½ï¿½o apï¿½s a espera
         exclamation.enabled = false;
     }
 

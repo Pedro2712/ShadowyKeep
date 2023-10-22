@@ -34,7 +34,7 @@ public class Door : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (possibleDestinations.Count > 1)
+                if (possibleDestinations.Count > 0)
                 {
                     int randomIndex = Random.Range(0, possibleDestinations.Count);
 

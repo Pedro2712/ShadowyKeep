@@ -9,6 +9,8 @@ public class Boss_Run : StateMachineBehaviour
     Boss boss;
     public float speed = 5f;
     public float attackRange = 4f;
+    private float cooldownTimer = 0f;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -17,23 +19,33 @@ public class Boss_Run : StateMachineBehaviour
         boss = animator.GetComponent<Boss>();
     }
 
+
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         boss.LookAtPlayer();
-        if (rb.position.x < player.position.x){
-            Vector2 target = new Vector2(player.position.x - 3, player.position.y - 1);
-            Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
-            rb.MovePosition(newPos);
-        }
-        else {
-            Vector2 target = new Vector2(player.position.x + 3, player.position.y - 1);
-            Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
-            rb.MovePosition(newPos);
-        }
-        if (Vector2.Distance(player.position, rb.position) <= attackRange){
-            // Attack 
-            animator.SetTrigger("Attack");
+
+        if (boss.isInsideRange){
+            if (rb.position.x < player.position.x){
+                Vector2 target = new Vector2(player.position.x - 3, player.position.y - 1);
+                Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
+                rb.MovePosition(newPos);
+            }
+            else {
+                Vector2 target = new Vector2(player.position.x + 3, player.position.y - 1);
+                Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
+                rb.MovePosition(newPos);
+            }
+            if (Vector2.Distance(player.position, rb.position) <= attackRange){
+
+                cooldownTimer -= Time.deltaTime;
+                if (cooldownTimer <= 0)
+                {
+                    cooldownTimer = 3;
+                    // Attack 
+                    animator.SetTrigger("Attack");
+                }
+            }
         }
     }
 

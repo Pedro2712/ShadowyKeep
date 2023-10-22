@@ -129,7 +129,14 @@ public class Player : MonoBehaviour
     {
         if (collider.CompareTag("Damage") && !isDead)
         {
-            ApplyDamage(collider.GetComponentInParent<Enemy>().entity);
+            Enemy enemy = collider.GetComponentInParent<Enemy>();
+            Boss boss = collider.GetComponentInParent<Boss>();
+            if (enemy != null){
+                ApplyDamage(enemy.entity);
+            }
+            else {
+                ApplyDamage(boss.entity);
+            }
             Vector3 direction = (transform.position - collider.transform.position);
             direction.Normalize();
             animator.SetTrigger("damage");
