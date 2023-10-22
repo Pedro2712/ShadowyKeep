@@ -9,10 +9,13 @@ public class AttackDetector : MonoBehaviour
     void OnTriggerEnter2D (Collider2D collider) {
         if (collider.gameObject.tag == "Enemy") {
             Enemy enemy = collider.GetComponentInParent<Enemy>();
-            if (enemy.entity.currentHealth <= 0)
+            Boss boss = collider.GetComponentInParent<Boss>();
+
+            if (enemy != null && enemy.entity.currentHealth <= 0)
             {
                 player.entity.experience += enemy.entity.experience;
             }
         }
+
     }
 }

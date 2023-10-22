@@ -132,12 +132,14 @@ public class Player : MonoBehaviour
         {
             Enemy enemy = collider.GetComponentInParent<Enemy>();
             Boss boss = collider.GetComponentInParent<Boss>();
+            Debug.Log(collider);
             if (enemy != null){
                 ApplyDamage(enemy.entity);
             }
-            else {
+            else if (boss != null) {
                 ApplyDamage(boss.entity);
             }
+   
             Vector3 direction = (transform.position - collider.transform.position);
             direction.Normalize();
             animator.SetTrigger("damage");
