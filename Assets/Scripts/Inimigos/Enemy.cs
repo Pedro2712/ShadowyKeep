@@ -24,7 +24,6 @@ public class Enemy : MonoBehaviour
     private Vector2 targetPositionTilted;
     private bool onRange;
     private bool facingRight = true;
-    private int tilt = 3;
     private float cooldownTimer = 0f;
 
 
@@ -34,9 +33,9 @@ public class Enemy : MonoBehaviour
     [Header("Knockback")]
     public float knockbackForce = 25f;
 
-    private int takenDamage = 0;
-    private int playerDefense = 0;
-    private int damageDealt = 0;
+    private int receivedDamage = 0;
+    private int enemyDefense = 0;
+    private int totalDamage = 0;
 
     public GameObject enemy;
 
@@ -78,6 +77,11 @@ public class Enemy : MonoBehaviour
         {
             entity.currentHealth = 0;
             Die();
+        }
+
+        if (entity.experience <= 0)
+        {
+            entity.experience = manager.CalculateEnemyExperience(entity);
         }
 
         if (!entity.inCombat)
@@ -155,14 +159,14 @@ public class Enemy : MonoBehaviour
 
     private void ApplyDamage(Entity enemyEntity)
     {
-        takenDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
-        playerDefense = manager.CalculateDefense(entity, entity.defense);
-        damageDealt = takenDamage - playerDefense;
-        if (damageDealt <= 0)
+        receivedDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
+        enemyDefense = manager.CalculateDefense(entity, entity.defense);
+        totalDamage = receivedDamage - enemyDefense;
+        if (totalDamage <= 0)
         {
-            damageDealt = 0;
+            totalDamage = 0;
         }
-        entity.currentHealth -= damageDealt;
+        entity.currentHealth -= totalDamage;
 
         health.value = entity.currentHealth;
     }
@@ -200,7 +204,6 @@ public class Enemy : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        tilt = -tilt;
         transform.Rotate(0f, 180f, 0f);
         exclamation.transform.Rotate(0f, 180f, 0f);
     }
