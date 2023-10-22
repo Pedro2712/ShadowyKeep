@@ -43,7 +43,7 @@ public class Boss : MonoBehaviour
 
         boxCollider = GetComponent<BoxCollider2D>();
 
-        entity.maxHealth = 150;
+        entity.maxHealth = 300;
 
         entity.currentHealth = entity.maxHealth;
 
