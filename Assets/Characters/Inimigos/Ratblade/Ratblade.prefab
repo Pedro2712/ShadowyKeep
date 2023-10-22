@@ -709,6 +709,7 @@ MonoBehaviour:
   enemy: {fileID: 7023158848413782914}
   health: {fileID: 186625982854479150}
   exclamation: {fileID: 7857915748533577307}
+  floatingTextPrefab: {fileID: 229067305480789148, guid: 8d5df315df2d56340b603917c8fc4de3, type: 3}
 --- !u!50 &1401508595505779979
 Rigidbody2D:
   serializedVersion: 4
