@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public Entity entity;
+    public Entity entity = new Entity();
 
     [Header("Player Regen System")]
     public bool regenHPEnabled = true;
@@ -26,14 +26,12 @@ public class Player : MonoBehaviour
     [Header("Knockback")]
     public float knockbackForce = 25f;
 
-    private int takenDamage = 0;
+    private int receivedDamage = 0;
     private int playerDefense = 0;
-    private int damageDealt = 0;
+    private int totalDamage = 0;
     private Rigidbody2D rb;
     private Vector3 lastPosition;
     public Animator animator;
-
-    static public bool isDead = false;
 
     void Start()
     {
@@ -68,14 +66,17 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
         health.value = entity.currentHealth;
         mana.value = entity.currentMana;
         stamina.value = entity.currentStamina;
+        
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (entity.experience >= entity.experienceToNextLevel)
         {
-            entity.currentHealth -= 1;
-            entity.currentStamina -= 2;
+            entity.level += 1;
+            entity.experience = entity.experience - entity.experienceToNextLevel;
+            entity.experienceToNextLevel += 100;
         }
     }
 
@@ -83,7 +84,7 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
-            if (regenHPEnabled)
+            if (regenHPEnabled && !entity.dead)
             {
                 if (entity.currentHealth < entity.maxHealth)
                 {
@@ -106,7 +107,7 @@ public class Player : MonoBehaviour
     {
         while (true)
         {
-            if (regenMPEnabled)
+            if (regenMPEnabled && !entity.dead)
             {
                 if (entity.currentStamina < entity.maxStamina)
                 {
@@ -127,7 +128,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Damage") && !isDead)
+        if (collider.CompareTag("Damage") && !entity.dead)
         {
             Enemy enemy = collider.GetComponentInParent<Enemy>();
             Boss boss = collider.GetComponentInParent<Boss>();
@@ -146,19 +147,19 @@ public class Player : MonoBehaviour
 
     private void ApplyDamage(Entity enemyEntity)
     {
-        takenDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
+        receivedDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
         playerDefense = manager.CalculateDefense(entity, entity.defense);
-        damageDealt = takenDamage - playerDefense;
-        if (damageDealt <= 0)
+        totalDamage = receivedDamage - playerDefense;
+        if (totalDamage <= 0)
         {
-            damageDealt = 0;
+            totalDamage = 0;
         }
-        entity.currentHealth -= damageDealt;
+        entity.currentHealth -= totalDamage;
 
         if (entity.currentHealth < 0)
         {
             animator.SetTrigger("isDead");
-            isDead = true;
+            entity.dead = true;
         }
     }
 }

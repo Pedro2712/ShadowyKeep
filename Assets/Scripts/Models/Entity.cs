@@ -8,7 +8,9 @@ public class Entity
 {
     [Header("Name")]
     public string name;
-    public int level;
+    public int level = 1;
+    public int experience = 0;
+    public int experienceToNextLevel = 100;
 
     [Header("Health")]
     public int currentHealth;

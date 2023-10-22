@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private bool canMove = true;
-
     private bool isWalking = false;
 
     void Start()
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool TryMove(Vector2 direction)
     {
-        if (!Player.isDead) {
+        if (!player.entity.dead) {
             rb.MovePosition(rb.position + direction * player.entity.speed * Time.fixedDeltaTime);
             return true;
         }
