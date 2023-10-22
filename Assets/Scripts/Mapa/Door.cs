@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {   
-    public ManagerSpawner managerSpawners;
+    public ManagerSpawner managerSpawner;
 
     private ManagerSFX managerSFX;
     public MenuMusic menuMusic;
@@ -17,7 +17,7 @@ public class Door : MonoBehaviour
     {
         playerDetected = false;
         GameObject temp = GameObject.FindGameObjectsWithTag("WaveSpawner")[0];
-        managerSpawners = temp.GetComponent<ManagerSpawner>();
+        managerSpawner = temp.GetComponent<ManagerSpawner>();
 
         // Começa a tocar a musica no Home
         GameObject temp2 = GameObject.FindGameObjectsWithTag("HomeMusic")[0];
@@ -48,15 +48,16 @@ public class Door : MonoBehaviour
                     playerGO.transform.position = randomDestination.position;
 
                     GlobalVariables.instance.lastVisitedIndex = randomIndex;
+                    GlobalVariables.instance.roomsVisited++;
 
                     // Spawna inimigos na sala:
                     int qtd_enemies = 10;
-                    int difficulty  = playerGO.GetComponent<Player>().entity.level;
+                    int difficulty = managerSpawner.CalculateEnemyDifficulty(playerGO.GetComponent<Player>().entity.level, playerGO.GetComponent<Player>().entity.maxLevel);
                     
                     //Para musica do menu e começa uma musia Porrada!
                     menuMusic.stopHomeMusic();
                     managerSFX.backgroundSound(false); // False indica que não é a musica do boss.
-                    managerSpawners.GenerateWave(qtd_enemies , difficulty , randomIndex+1);
+                    managerSpawner.GenerateWave(qtd_enemies , difficulty , randomIndex+1);
                 }
 
                 playerDetected = false;

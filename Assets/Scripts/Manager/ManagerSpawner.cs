@@ -62,6 +62,7 @@ public class ManagerSpawner : MonoBehaviour
           
           while(count_enemies < qtd_enemies ){
                spawnedEnemy = Instantiate(enemiesToSpawn[count_enemies], selectedSpawnLocations[count_enemies].position, Quaternion.identity);
+               // Fórmula para calcular a dificuldade do inimigo. Precisa de balanceamento.
                spawnedEnemy.GetComponent<Enemy>().entity.level = difficulty;
                count_enemies+=1;
           }
@@ -94,5 +95,12 @@ public class ManagerSpawner : MonoBehaviour
           enemiesToSpawn.Clear();
           enemiesToSpawn = generatedEnemies;
                             
+     }
+
+     public int CalculateEnemyDifficulty(int playerLevel, int maxLevel)
+     {
+          // Fórmula para calcular a dificuldade (level) do inimigo.
+          int difficulty = (int) maxLevel / ( (GlobalVariables.instance.totalRooms - GlobalVariables.instance.roomsVisited) + (int) ( (maxLevel / 2) / playerLevel ) ) ;
+          return difficulty;
      }
 }

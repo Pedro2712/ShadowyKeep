@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
         stamina.value = entity.currentStamina;
         
 
-        if (entity.experience >= entity.experienceToNextLevel)
+        if (entity.experience >= entity.experienceToNextLevel && entity.level < entity.maxLevel)
         {
             entity.level += 1;
             entity.experience = entity.experience - entity.experienceToNextLevel;
