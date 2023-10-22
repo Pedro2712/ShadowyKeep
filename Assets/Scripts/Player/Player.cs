@@ -130,17 +130,11 @@ public class Player : MonoBehaviour
         if (collider.CompareTag("Damage") && !isDead)
         {
             ApplyDamage(collider.GetComponentInParent<Enemy>().entity);
-            PerformKnockback();
+            Vector3 direction = (transform.position - collider.transform.position);
+            direction.Normalize();
+            animator.SetTrigger("damage");
+            rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
         }
-    }
-
-    void PerformKnockback()
-    {
-        Vector3 direction = (transform.position - lastPosition).normalized;
-        lastPosition = transform.position;
-
-        animator.SetTrigger("damage");
-        rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
     }
 
     private void ApplyDamage(Entity enemyEntity)

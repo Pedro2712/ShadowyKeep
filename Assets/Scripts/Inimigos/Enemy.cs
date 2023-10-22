@@ -8,9 +8,7 @@ using UnityEngine.Events;
 public class Enemy : MonoBehaviour
 {
     public Entity entity = new Entity();
-    private GameManagerBattle manager;
-    private ManagerSFX managerSFX;
-    public string enemyName;
+    public GameManagerBattle manager;
 
     public LayerMask playerLayer;
     public GameObject attackHitBox;
@@ -28,30 +26,33 @@ public class Enemy : MonoBehaviour
     private int tilt = 3;
     private float cooldownTimer = 0f;
 
-    // Evento para notificar a morte do inimigo
-    public UnityEvent OnEnemyDeath;
+
+    public float attackRange = 0.7f;
+
+
+    [Header("Knockback")]
+    public float knockbackForce = 25f;
+
+    private int takenDamage = 0;
+    private int playerDefense = 0;
+    private int damageDealt = 0;
+
+    public GameObject enemy;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent <Animator>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
     {
         // Use FindObjectOfType para encontrar o GameManagerBattle
         manager = FindObjectOfType<GameManagerBattle>();
-        managerSFX = FindObjectOfType<ManagerSFX>();
-        
+
         entity.maxHealth = manager.CalculateHealth(entity);
 
         entity.currentHealth = entity.maxHealth;
-
-         // Acessa o nome do GameObject
-        string nomeDoObjeto = gameObject.name;
-
-        // Imprime o nome do GameObject no console
-        Debug.Log("O nome do GameObject Ã©: " + nomeDoObjeto);
     }
 
     private void Update()
@@ -104,31 +105,52 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        if (!entity.inCombat && targetTransform != null)
-        {
-            targetPositionTilted = new Vector2(targetTransform.position.x + tilt, targetTransform.position.y - 1);
-            newPosition = Vector2.MoveTowards(rb.position, targetPositionTilted, entity.speed * Time.fixedDeltaTime);
-            rb.MovePosition(newPosition);
+        if (targetTransform != null && !entity.dead) {
+            float distance = Vector2.Distance(transform.position, targetTransform.position);
+            Vector2 direction = targetTransform.position - transform.position;
+            direction.Normalize();
+
+            if (distance > attackRange)
+            {
+                entity.inCombat = false;
+                entity.target = null;
+
+                transform.position = Vector2.MoveTowards(this.transform.position, targetTransform.position, entity.speed * Time.deltaTime);
+            }
+            else
+            {
+                entity.inCombat = true;
+                entity.target = targetTransform.gameObject;
+
+                animator.SetBool("Walk", false);
+                Attack();
+            }
         }
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player" && !entity.dead)
+        if (collider.CompareTag("weapon"))
         {
-            entity.inCombat = true;
-            entity.target = collider.gameObject;
+            ApplyDamage(collider.GetComponentInParent<Player>().entity);
+            Vector3 direction = (transform.position - collider.transform.position);
+            direction.Normalize();
+            animator.SetTrigger("Damage");
+            rb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collider)
+    private void ApplyDamage(Entity enemyEntity)
     {
-        if (collider.tag == "Player")
+        takenDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
+        playerDefense = manager.CalculateDefense(entity, entity.defense);
+        damageDealt = takenDamage - playerDefense;
+        if (damageDealt <= 0)
         {
-            entity.inCombat = false;
-            entity.target = null;
+            damageDealt = 0;
         }
+        entity.currentHealth -= damageDealt;
     }
 
     private void GetTarget()
@@ -145,7 +167,6 @@ public class Enemy : MonoBehaviour
         if (onRange)
         {
             animator.SetBool("Walk", true);
-
             targetTransform = targetOnRange.transform;
         }
         else
@@ -167,11 +188,7 @@ public class Enemy : MonoBehaviour
         if (entity.target != null && !entity.target.GetComponent<Player>().entity.dead)
         {
             rb.velocity = Vector2.zero;
-
-            managerSFX.cocadaemonSound();
             animator.SetTrigger("Attack");
-        }else{
-            managerSFX.stopMonsterSound();
         }
     }
 
@@ -191,10 +208,17 @@ public class Enemy : MonoBehaviour
         entity.inCombat = false;
         entity.target = null;
 
-        animator.SetTrigger("Death");
+        animator.SetBool("Dead", true);
+        StartCoroutine(DelayedDeath());
+    }
 
-        // Notificar a morte do inimigo atravï¿½s do evento
-        OnEnemyDeath.Invoke();
+    private IEnumerator DelayedDeath()
+    {
+        // Espera por 3 segundos
+        yield return new WaitForSeconds(3f);
+
+        // Chama outra função após a espera
+        Destroy(enemy);
     }
 
     private void OnDrawGizmosSelected()

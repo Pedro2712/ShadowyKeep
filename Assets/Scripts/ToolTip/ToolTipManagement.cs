@@ -38,7 +38,6 @@ public class ToolTipManagement : MonoBehaviour
         //backgroundRect.sizeDelta = new Vector2(newWidth, textSize.y + 20); // Adicione espaço vertical também
 
         // Ajuste a posição para que a ponta esquerda inferior fique onde o mouse está, movendo 10 pixels para a direita
-        print(backgroundRect.rect.width);
         Vector3 newPosition = new Vector3(mousePosition.x + backgroundRect.rect.width/2, mousePosition.y + 20, 0f);
         transform.position = newPosition;
     }
