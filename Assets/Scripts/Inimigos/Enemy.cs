@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
@@ -40,8 +42,11 @@ public class Enemy : MonoBehaviour
     public GameObject enemy;
 
     [Header("Player UI")]
+    public GameObject EnemyCanvas;
     public Slider health;
     public Image exclamation;
+    public TextMeshProUGUI Name;
+    public TextMeshProUGUI Level;
 
     private bool find = false;
 
@@ -66,6 +71,17 @@ public class Enemy : MonoBehaviour
         health.value = health.maxValue;
 
         exclamation.enabled = false;
+
+        if (name != null && Level != null)
+        {
+            string[] parts = gameObject.name.Split('(', ')');
+            Name.text = parts[0].Trim();
+            Level.text = entity.level.ToString();
+        }
+        else
+        {
+            Debug.LogWarning("As referências aos Textos 'name' e 'Level' não foram atribuídas no Inspector.");
+        }
     }
 
     private void Update()
@@ -78,6 +94,7 @@ public class Enemy : MonoBehaviour
         if (entity.currentHealth <= 0)
         {
             entity.currentHealth = 0;
+            EnemyCanvas.SetActive(false);
             Die();
         }
 
@@ -217,7 +234,7 @@ public class Enemy : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0f, 180f, 0f);
-        exclamation.transform.Rotate(0f, 180f, 0f);
+        EnemyCanvas.transform.Rotate(0f, 180f, 0f);
     }
 
     private void Attack()

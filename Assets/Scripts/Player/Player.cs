@@ -132,11 +132,12 @@ public class Player : MonoBehaviour
         {
             Enemy enemy = collider.GetComponentInParent<Enemy>();
             Boss boss = collider.GetComponentInParent<Boss>();
-            Debug.Log(collider);
+            //Debug.Log(boss);
             if (enemy != null){
                 ApplyDamage(enemy.entity);
             }
             else if (boss != null) {
+                print("Entrou");
                 ApplyDamage(boss.entity);
             }
    
