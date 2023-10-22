@@ -170,7 +170,7 @@ public class Enemy : MonoBehaviour
         }
         entity.currentHealth -= totalDamage;
 
-        showDamage(damageDealt.ToString());
+        showDamage(totalDamage.ToString());
 
         health.value = entity.currentHealth;
     }
