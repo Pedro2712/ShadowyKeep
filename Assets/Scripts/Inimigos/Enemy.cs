@@ -46,6 +46,8 @@ public class Enemy : MonoBehaviour
 
     private bool find = false;
 
+    [SerializeField] private GameObject floatingTextPrefab;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -164,7 +166,17 @@ public class Enemy : MonoBehaviour
         }
         entity.currentHealth -= damageDealt;
 
+        showDamage(damageDealt.ToString());
+
         health.value = entity.currentHealth;
+    }
+
+    private void showDamage(string damage) {
+
+        if (floatingTextPrefab) {
+            GameObject prefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
+            prefab.GetComponentInChildren<TextMesh>().text = damage;
+        }
     }
 
     private void GetTarget()
@@ -231,16 +243,7 @@ public class Enemy : MonoBehaviour
         entity.target = null;
 
         animator.SetBool("Dead", true);
-        StartCoroutine(DelayedDeath());
-    }
-
-    private IEnumerator DelayedDeath()
-    {
-        // Espera por 3 segundos
-        yield return new WaitForSeconds(3f);
-
-        // Chama outra fun��o ap�s a espera
-        Destroy(enemy);
+        Destroy(enemy, 3f);
     }
 
     private IEnumerator DelayedExclamation()
