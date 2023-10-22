@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3145492319952903412}
   - component: {fileID: 5239976942276609961}
+  - component: {fileID: 475340407998675166}
   m_Layer: 0
   m_Name: AttackHitDown
   m_TagString: weapon
@@ -77,6 +78,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8039796, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &475340407998675166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191284599706385462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96954f80f7d2b5443bb0b4d465992fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6506933152625089933}
 --- !u!1 &701067947184197877
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +184,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: 68692
+  m_InstanceId: 41750
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -219,6 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521861842433170788}
   - component: {fileID: 3189636512586915977}
+  - component: {fileID: 4421703636081223343}
   m_Layer: 0
   m_Name: AttackHitTop
   m_TagString: weapon
@@ -286,6 +301,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8039796, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4421703636081223343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411336179187936942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96954f80f7d2b5443bb0b4d465992fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6506933152625089933}
 --- !u!1 &1446345026694164591
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entity:
     name: teste
-    level: 0
+    level: 1
+    experience: 0
+    experienceToNextLevel: 100
     currentHealth: 0
     maxHealth: 100
     currentMana: 0
@@ -648,6 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054628622546217246}
   - component: {fileID: 3892248824634765223}
+  - component: {fileID: 5403638945086175130}
   m_Layer: 0
   m_Name: AttackHitRight
   m_TagString: weapon
@@ -715,6 +746,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.79849684, y: 1.1041738}
   m_EdgeRadius: 0
+--- !u!114 &5403638945086175130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096128647888949464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96954f80f7d2b5443bb0b4d465992fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6506933152625089933}
 --- !u!1 &7347849697688958916
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3497413121153187808}
   - component: {fileID: 4362167677576646694}
+  - component: {fileID: 5755641908252884828}
   m_Layer: 0
   m_Name: AttackHitLeft
   m_TagString: weapon
@@ -792,3 +837,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8039796, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5755641908252884828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7347849697688958916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96954f80f7d2b5443bb0b4d465992fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6506933152625089933}
