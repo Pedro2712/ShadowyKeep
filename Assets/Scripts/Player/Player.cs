@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 lastPosition;
     public Animator animator;
+    public ManagerSFX managerSFX;
 
     void Start()
     {
@@ -77,6 +78,10 @@ public class Player : MonoBehaviour
             entity.level += 1;
             entity.experience = entity.experience - entity.experienceToNextLevel;
             entity.experienceToNextLevel += 100;
+        }
+        else if (entity.experience > entity.experienceToNextLevel && entity.level >= entity.maxLevel)
+        {
+            entity.experience = entity.experienceToNextLevel;
         }
     }
 
@@ -161,5 +166,16 @@ public class Player : MonoBehaviour
             animator.SetTrigger("isDead");
             entity.dead = true;
         }
+    }
+
+    void OnSimpleSwordAttack(){
+        if (entity.currentStamina < entity.staminaCost)
+        {
+            // Da para por um som que indique a falta de stamina
+            return;
+        }
+        entity.currentStamina -= entity.staminaCost;
+        animator.SetTrigger("attack");
+        managerSFX.swordSound();
     }
 }
