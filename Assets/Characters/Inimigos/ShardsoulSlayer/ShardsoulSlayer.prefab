@@ -218,15 +218,15 @@ MonoBehaviour:
     cooldown: 1
     target: {fileID: 0}
     dead: 0
-  enemyName: 
+  manager: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
   attackHitBox: {fileID: 3508516559923935145}
   detectionRadius: 5
-  OnEnemyDeath:
-    m_PersistentCalls:
-      m_Calls: []
+  attackRange: 1
+  knockbackForce: 25
+  enemy: {fileID: 3838784328179292980}
 --- !u!50 &1468699774891357131
 Rigidbody2D:
   serializedVersion: 4
@@ -239,7 +239,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 5
+  m_Mass: 1
   m_LinearDrag: 15
   m_AngularDrag: 0
   m_GravityScale: 0
