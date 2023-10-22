@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ControllerAtributo : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    public Player player;
     public Animator animator;
+    public TextMeshProUGUI strength;
+    public TextMeshProUGUI defense;
+    public TextMeshProUGUI speed;
     void Start()
     {
         animator= GetComponent<Animator>();
@@ -14,6 +17,10 @@ public class ControllerAtributo : MonoBehaviour
 
     public void Open() {
         animator.SetBool("isOpen", true);
+        strength.text = player.entity.strength.ToString();
+        defense.text = player.entity.defense.ToString();
+        speed.text = player.entity.speed.ToString();
+        
     }
 
     public void Close() {

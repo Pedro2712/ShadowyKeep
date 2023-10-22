@@ -10,6 +10,7 @@ public class Boss_Run : StateMachineBehaviour
     public float speed = 5f;
     public float attackRange = 4f;
     private float cooldownTimer = 0f;
+    public List<string> triggerNames;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -41,9 +42,11 @@ public class Boss_Run : StateMachineBehaviour
                 cooldownTimer -= Time.deltaTime;
                 if (cooldownTimer <= 0)
                 {
-                    cooldownTimer = 3;
+                    cooldownTimer = 1;
                     // Attack 
-                    animator.SetTrigger("Attack");
+                    int randomIndex = Random.Range(0, triggerNames.Count);
+                    string triggerName = triggerNames[randomIndex];
+                    animator.SetTrigger(triggerName);
                 }
             }
         }

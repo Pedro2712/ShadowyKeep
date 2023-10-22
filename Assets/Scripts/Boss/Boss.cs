@@ -33,6 +33,10 @@ public class Boss : MonoBehaviour
     public BoxCollider2D boxCollider; 
 
     public GameObject BossBasicHit;
+    public GameObject BossSmashHit;
+    public GameObject BossFireBreath;
+
+    public GameObject[] FireballSpawnerList;
 
     public float knockbackForce = 25f;
 
@@ -43,11 +47,11 @@ public class Boss : MonoBehaviour
 
         boxCollider = GetComponent<BoxCollider2D>();
 
-        entity.maxHealth = 300;
+        entity.maxHealth = 150;
 
         entity.currentHealth = entity.maxHealth;
-
     }
+
 
     public void LookAtPlayer(){
         Vector3 flipped = transform.localScale;
@@ -79,12 +83,7 @@ public class Boss : MonoBehaviour
         }
     }
     
-    public void Attack(){
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
-        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
-    }
+    
 
    public void Update(){
 
@@ -128,6 +127,44 @@ public class Boss : MonoBehaviour
     private void DisableHitbox()
     {
         BossBasicHit.SetActive(false);
+    }
+
+    private void EnableBossSmashHitbox()
+    {
+        BossSmashHit.SetActive(true);
+    }
+
+    private void DisableBossSmashHitbox()
+    {
+        BossSmashHit.SetActive(false);
+    }
+
+    private void EnableBossFireBreathbox()
+    {
+        BossFireBreath.SetActive(true);
+    }
+
+    private void DisableBossFireBreathbox()
+    {
+        BossFireBreath.SetActive(false);
+    }
+
+    void EnableFireballs()
+    {
+        foreach (GameObject objeto in FireballSpawnerList)
+        {
+            objeto.GetComponent<FireballSpawner>().StartSpawnFireballs();
+            objeto.SetActive(true);
+        }
+    }
+
+    void DisableFireballs()
+    {
+        foreach (GameObject objeto in FireballSpawnerList)
+        {
+            objeto.GetComponent<FireballSpawner>().StopSpawnFireballs();
+            objeto.SetActive(false);
+        }
     }
 
     private void ApplyDamage(Entity enemyEntity)

@@ -10,8 +10,8 @@ public class Door : MonoBehaviour
     public MenuMusic menuMusic;
 
     public List<Transform> possibleDestinations;
-    private bool playerDetected;
     public GameObject playerGO;
+    private bool playerDetected;
 
     void Start()
     {
@@ -51,7 +51,7 @@ public class Door : MonoBehaviour
 
                     // Spawna inimigos na sala:
                     int qtd_enemies = 10;
-                    int difficulty  = 1;
+                    int difficulty  = playerGO.GetComponent<Player>().entity.level;
                     
                     //Para musica do menu e começa uma musia Porrada!
                     menuMusic.stopHomeMusic();

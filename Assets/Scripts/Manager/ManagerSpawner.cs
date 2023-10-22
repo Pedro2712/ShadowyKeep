@@ -23,10 +23,12 @@ public class ManagerSpawner : MonoBehaviour
 
      public List<Transform> selectedSpawnLocations;
      public List<GameObject> enemiesToSpawn = new List<GameObject>();
+
+     private GameObject spawnedEnemy;
      
      public void GenerateWave(int qtd_enemies , int difficulty  , int id_room)
      {
-          GenerateEnemies(qtd_enemies , difficulty );
+          GenerateEnemies(qtd_enemies);
 
           int count_location = 0;
           int count_enemies = 0;
@@ -59,14 +61,15 @@ public class ManagerSpawner : MonoBehaviour
           }
           
           while(count_enemies < qtd_enemies ){
-               Instantiate(enemiesToSpawn[count_enemies], selectedSpawnLocations[count_enemies].position, Quaternion.identity);
+               spawnedEnemy = Instantiate(enemiesToSpawn[count_enemies], selectedSpawnLocations[count_enemies].position, Quaternion.identity);
+               spawnedEnemy.GetComponent<Enemy>().entity.level = difficulty;
                count_enemies+=1;
           }
           enemiesToSpawn.Clear();
           selectedSpawnLocations.Clear();
      }
 
-     public void GenerateEnemies(int qtd_enemies , int difficulty )
+     public void GenerateEnemies(int qtd_enemies)
      {
           // Criar uma lita temporária de inimigos para a geração
           // 
@@ -79,11 +82,8 @@ public class ManagerSpawner : MonoBehaviour
           
           int n_enemies = 0;
           while(n_enemies < qtd_enemies){
-               
-               //while(randEnemyForce < difficulty){
                int randEnemyId = Random.Range(0, enemies.Count); 
                //int randEnemyForce = enemies[randEnemyId].force;
-               //}
 
                generatedEnemies.Add(enemies[randEnemyId].enemyPrefab);
                n_enemies+=1;

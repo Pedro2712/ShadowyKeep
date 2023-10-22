@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
@@ -24,7 +26,6 @@ public class Enemy : MonoBehaviour
     private Vector2 targetPositionTilted;
     private bool onRange;
     private bool facingRight = true;
-    private int tilt = 3;
     private float cooldownTimer = 0f;
 
 
@@ -34,17 +35,22 @@ public class Enemy : MonoBehaviour
     [Header("Knockback")]
     public float knockbackForce = 25f;
 
-    private int takenDamage = 0;
-    private int playerDefense = 0;
-    private int damageDealt = 0;
+    private int receivedDamage = 0;
+    private int enemyDefense = 0;
+    private int totalDamage = 0;
 
     public GameObject enemy;
 
     [Header("Player UI")]
+    public GameObject EnemyCanvas;
     public Slider health;
     public Image exclamation;
+    public TextMeshProUGUI Name;
+    public TextMeshProUGUI Level;
 
     private bool find = false;
+
+    [SerializeField] private GameObject floatingTextPrefab;
 
     private void Awake()
     {
@@ -65,6 +71,17 @@ public class Enemy : MonoBehaviour
         health.value = health.maxValue;
 
         exclamation.enabled = false;
+
+        if (name != null && Level != null)
+        {
+            string[] parts = gameObject.name.Split('(', ')');
+            Name.text = parts[0].Trim();
+            Level.text = entity.level.ToString();
+        }
+        else
+        {
+            Debug.LogWarning("As referências aos Textos 'name' e 'Level' não foram atribuídas no Inspector.");
+        }
     }
 
     private void Update()
@@ -77,7 +94,13 @@ public class Enemy : MonoBehaviour
         if (entity.currentHealth <= 0)
         {
             entity.currentHealth = 0;
+            EnemyCanvas.SetActive(false);
             Die();
+        }
+
+        if (entity.experience <= 0)
+        {
+            entity.experience = manager.CalculateEnemyExperience(entity);
         }
 
         if (!entity.inCombat)
@@ -155,16 +178,26 @@ public class Enemy : MonoBehaviour
 
     private void ApplyDamage(Entity enemyEntity)
     {
-        takenDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
-        playerDefense = manager.CalculateDefense(entity, entity.defense);
-        damageDealt = takenDamage - playerDefense;
-        if (damageDealt <= 0)
+        receivedDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
+        enemyDefense = manager.CalculateDefense(entity, entity.defense);
+        totalDamage = receivedDamage - enemyDefense;
+        if (totalDamage <= 0)
         {
-            damageDealt = 0;
+            totalDamage = 0;
         }
-        entity.currentHealth -= damageDealt;
+        entity.currentHealth -= totalDamage;
+
+        showDamage(totalDamage.ToString());
 
         health.value = entity.currentHealth;
+    }
+
+    private void showDamage(string damage) {
+
+        if (floatingTextPrefab) {
+            GameObject prefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
+            prefab.GetComponentInChildren<TextMesh>().text = damage;
+        }
     }
 
     private void GetTarget()
@@ -200,9 +233,8 @@ public class Enemy : MonoBehaviour
     private void Flip()
     {
         facingRight = !facingRight;
-        tilt = -tilt;
         transform.Rotate(0f, 180f, 0f);
-        exclamation.transform.Rotate(0f, 180f, 0f);
+        EnemyCanvas.transform.Rotate(0f, 180f, 0f);
     }
 
     private void Attack()
@@ -231,16 +263,7 @@ public class Enemy : MonoBehaviour
         entity.target = null;
 
         animator.SetBool("Dead", true);
-        StartCoroutine(DelayedDeath());
-    }
-
-    private IEnumerator DelayedDeath()
-    {
-        // Espera por 3 segundos
-        yield return new WaitForSeconds(3f);
-
-        // Chama outra fun��o ap�s a espera
-        Destroy(enemy);
+        Destroy(enemy, 3f);
     }
 
     private IEnumerator DelayedExclamation()
