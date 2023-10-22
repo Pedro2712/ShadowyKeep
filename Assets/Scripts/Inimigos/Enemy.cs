@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
@@ -39,6 +40,12 @@ public class Enemy : MonoBehaviour
 
     public GameObject enemy;
 
+    [Header("Player UI")]
+    public Slider health;
+    public Image exclamation;
+
+    private bool find = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,6 +60,11 @@ public class Enemy : MonoBehaviour
         entity.maxHealth = manager.CalculateHealth(entity);
 
         entity.currentHealth = entity.maxHealth;
+
+        health.maxValue = entity.maxHealth;
+        health.value = health.maxValue;
+
+        exclamation.enabled = false;
     }
 
     private void Update()
@@ -151,6 +163,8 @@ public class Enemy : MonoBehaviour
             damageDealt = 0;
         }
         entity.currentHealth -= damageDealt;
+
+        health.value = entity.currentHealth;
     }
 
     private void GetTarget()
@@ -168,11 +182,18 @@ public class Enemy : MonoBehaviour
         {
             animator.SetBool("Walk", true);
             targetTransform = targetOnRange.transform;
+
+            if (!find) {
+                exclamation.enabled = true;
+                StartCoroutine(DelayedExclamation());
+                find= true;
+            }
         }
         else
         {
             animator.SetBool("Walk", false);
             targetTransform = null;
+            find= false;
         }
     }
 
@@ -181,6 +202,7 @@ public class Enemy : MonoBehaviour
         facingRight = !facingRight;
         tilt = -tilt;
         transform.Rotate(0f, 180f, 0f);
+        exclamation.transform.Rotate(0f, 180f, 0f);
     }
 
     private void Attack()
@@ -219,6 +241,15 @@ public class Enemy : MonoBehaviour
 
         // Chama outra função após a espera
         Destroy(enemy);
+    }
+
+    private IEnumerator DelayedExclamation()
+    {
+        // Espera por 3 segundos
+        yield return new WaitForSeconds(1f);
+
+        // Chama outra função após a espera
+        exclamation.enabled = false;
     }
 
     private void OnDrawGizmosSelected()
