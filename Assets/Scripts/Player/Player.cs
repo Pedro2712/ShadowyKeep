@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -164,5 +165,11 @@ public class Player : MonoBehaviour
             animator.SetTrigger("isDead");
             entity.dead = true;
         }
+    }
+
+    private void respawnPlayer(){
+        Debug.LogFormat("Nada aqui");
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 }
