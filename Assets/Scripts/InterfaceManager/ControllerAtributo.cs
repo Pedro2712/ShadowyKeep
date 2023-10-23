@@ -19,7 +19,7 @@ public class ControllerAtributo : MonoBehaviour
         animator.SetBool("isOpen", true);
         strength.text = player.entity.strength.ToString();
         defense.text = player.entity.defense.ToString();
-        speed.text = player.entity.speed.ToString();
+        speed.text = player.entity.speed.ToString("F1");
         
     }
 

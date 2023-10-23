@@ -31,15 +31,18 @@ public class Door : MonoBehaviour
     }
 
     void Update()
+
     {
-        Debug.Log(playerDetected);
         if (playerDetected)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (GlobalVariables.instance.roomsVisited == GlobalVariables.instance.totalRooms){
+                if (GlobalVariables.instance.roomsVisited == GlobalVariables.instance.totalRooms)
+                {
                     Transform bossRoom = doorBoss;
                     playerGO.transform.position = bossRoom.position;
+
+                    managerSFX.backgroundSound(true);
                 }
                 else if (possibleDestinations.Count > 0)
                 {

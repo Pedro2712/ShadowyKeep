@@ -153,8 +153,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 802617267
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1644132716, guid: da93535385bbbf344bff3117171b6811, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -205,12 +205,15 @@ MonoBehaviour:
     level: 0
     experience: 0
     experienceToNextLevel: 100
+    maxLevel: 50
+    coins: 0
     currentHealth: 0
     maxHealth: 0
     currentMana: 0
     maxMana: 0
     currentStamina: 0
     maxStamina: 0
+    staminaCost: 5
     strength: 1
     resistence: 1
     inteligence: 1

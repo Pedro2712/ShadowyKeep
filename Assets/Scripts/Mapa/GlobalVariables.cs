@@ -8,7 +8,7 @@ public class GlobalVariables : MonoBehaviour
     public int lastVisitedIndex = -1;
     public int roomsVisited = 0;
     public int finalChoose = 0;
-    public int totalRooms = 6;
+    public int totalRooms = 1;
 
     void Awake()
     {
