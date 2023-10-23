@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private Vector3 lastPosition;
     public Animator animator;
+    public Boss BossFireball;
 
     void Start()
     {
@@ -133,15 +134,18 @@ public class Player : MonoBehaviour
         {
             Enemy enemy = collider.GetComponentInParent<Enemy>();
             Boss boss = collider.GetComponentInParent<Boss>();
-            //Debug.Log(boss);
+            FireballController fireball = collider.GetComponentInParent<FireballController>();
+
             if (enemy != null){
                 ApplyDamage(enemy.entity);
             }
             else if (boss != null) {
-                print("Entrou");
                 ApplyDamage(boss.entity);
             }
-   
+            else if (fireball != null){
+                ApplyDamage(BossFireball.entity);
+            }
+
             Vector3 direction = (transform.position - collider.transform.position);
             direction.Normalize();
             animator.SetTrigger("damage");

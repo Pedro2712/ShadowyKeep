@@ -10,7 +10,6 @@ public class FireballController : MonoBehaviour
     {
         transform.Translate(Vector3.down * speed * Time.deltaTime);
 
-        // Destrua a fireball quando ela estiver fora da tela
         if (transform.position.y < -10.0f)
         {
             Destroy(gameObject);
