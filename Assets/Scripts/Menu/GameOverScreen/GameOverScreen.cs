@@ -19,9 +19,9 @@ public class GameOverScreen : MonoBehaviour
         _source.Play();
     }
 
-    public void backToHome()
+    public void backToHome () 
     {
         Debug.LogFormat("Voltar para o home");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);   
     }
 }
