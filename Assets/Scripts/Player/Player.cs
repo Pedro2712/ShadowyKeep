@@ -179,14 +179,16 @@ public class Player : MonoBehaviour
             animator.SetTrigger("isDead");
             entity.dead = true;
             GlobalVariables.instance.roomsVisited = 0;
+            StartCoroutine(DelayedGameOver());
         }
     }
 
-    private void respawnPlayer(){
-        Debug.LogFormat("Nada aqui");
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene(currentSceneName);
+    private IEnumerator DelayedGameOver(){
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(3);
     }
+
+    
 
     void OnSimpleSwordAttack(){
         if (entity.currentStamina >= entity.staminaCost)

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -38,8 +39,9 @@ public class Boss : MonoBehaviour
 
     public GameObject[] FireballSpawnerList;
 
-    public float knockbackForce = 25f;
+    public float knockbackForce = 20f;
 
+    public int HealthMax;
 
     private void Start()
     {
@@ -47,7 +49,7 @@ public class Boss : MonoBehaviour
 
         boxCollider = GetComponent<BoxCollider2D>();
 
-        entity.maxHealth = 300;
+        entity.maxHealth = HealthMax;
 
         entity.currentHealth = entity.maxHealth;
     }
@@ -91,15 +93,24 @@ public class Boss : MonoBehaviour
 
         isInsideRange = targetOnRange != null;
         animator.SetBool("isInsideRange", isInsideRange);
-        if (entity.currentHealth <= 200 && isEnraged == false){
+        if (entity.currentHealth <= (int)0.8*HealthMax && entity.currentHealth > 0 && isEnraged == false){
             animator.SetTrigger("Enraged");
             isEnraged = true;
             boxCollider.size = new Vector2(5f, 7f);
             boxCollider.offset = new Vector2(0f, 3.5f);
             detectionRadius = 15f;
         }
+        else if (entity.currentHealth <= 0){
+            animator.SetTrigger("BossDeath");
+            StartCoroutine(DelayedWin());
+        }
    }
 
+    private IEnumerator DelayedWin(){
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(2);
+    }
+    
    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
