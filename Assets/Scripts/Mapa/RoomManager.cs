@@ -38,12 +38,11 @@ public class RoomManager : MonoBehaviour
         enemyOnRadios = enemyHit != null;
 
         rewardChest.SetActive(!enemyOnRadios);
-        doorToNextRoom.SetActive(!enemyOnRadios);
 
-        // if (!enemyOnRadios && chest is open)
-        // {
-        //     doorToNextRoom.SetActive(!enemyOnRadios);
-        // }
+        if (!enemyOnRadios && rewardChest.transform.Find("Decoration").GetComponent<BauController>().isOpen)
+        {
+            doorToNextRoom.SetActive(!enemyOnRadios);
+        }
     }
 
     private void OnDrawGizmosSelected()
