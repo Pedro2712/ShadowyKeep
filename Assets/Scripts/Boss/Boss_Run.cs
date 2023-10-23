@@ -11,6 +11,7 @@ public class Boss_Run : StateMachineBehaviour
     public float attackRange = 4f;
     private float cooldownTimer = 0f;
     public List<string> triggerNames;
+    public GameObject bossObject; 
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -46,6 +47,21 @@ public class Boss_Run : StateMachineBehaviour
                     // Attack 
                     int randomIndex = Random.Range(0, triggerNames.Count);
                     string triggerName = triggerNames[randomIndex];
+                    switch (triggerName)
+                    {
+                        case "Attack":
+                            boss.managerSFX.bossCleaveSound();
+                            break;
+                        case "SmashHit":
+                            boss.managerSFX.bossSmashSound();
+                            break;
+                        case "FireBreath":
+                            boss.managerSFX.bossFireBreathSound();
+                            break;
+                        case "CastSpell":
+                            boss.managerSFX.bossFireBallSound();
+                            break;
+                    }
                     animator.SetTrigger(triggerName);
                 }
             }

@@ -307,10 +307,8 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator DelayedExclamation()
     {
-        // Espera por 3 segundos
         yield return new WaitForSeconds(1f);
 
-        // Chama outra fun��o ap�s a espera
         exclamation.enabled = false;
     }
 

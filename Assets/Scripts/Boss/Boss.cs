@@ -16,16 +16,15 @@ public class Boss : MonoBehaviour
 
     public Vector3 attackOffset;
     public float attackRange = 4f;
-    public LayerMask attackMask;
     public Animator animator;
     public float detectionRadius = 5f;
     public LayerMask playerLayer;
     public bool isInsideRange = false;
     private Collider2D targetOnRange;
 
-    private int takenDamage = 0;
-    private int playerDefense = 0;
-    private int damageDealt = 0;
+    private int receivedDamage = 0;
+    private int enemyDefense = 0;
+    private int totalDamage = 0;
 
     public bool isEnraged = false;
 
@@ -43,9 +42,14 @@ public class Boss : MonoBehaviour
 
     public int HealthMax;
 
+     public ManagerSFX managerSFX;
+
     private void Start()
     {
         manager = FindObjectOfType<GameManagerBattle>();
+
+        GameObject temp2 = GameObject.FindGameObjectsWithTag("ManagerSFX")[0];
+        managerSFX = temp2.GetComponent<ManagerSFX>();
 
         boxCollider = GetComponent<BoxCollider2D>();
 
@@ -93,7 +97,7 @@ public class Boss : MonoBehaviour
 
         isInsideRange = targetOnRange != null;
         animator.SetBool("isInsideRange", isInsideRange);
-        if (entity.currentHealth <= (int)0.8*HealthMax && entity.currentHealth > 0 && isEnraged == false){
+        if (entity.currentHealth <= (int)(0.8*(float)HealthMax) && entity.currentHealth > 0 && isEnraged == false){
             animator.SetTrigger("Enraged");
             isEnraged = true;
             boxCollider.size = new Vector2(5f, 7f);
@@ -180,15 +184,19 @@ public class Boss : MonoBehaviour
 
     private void ApplyDamage(Entity enemyEntity)
     {
-        takenDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
-        playerDefense = manager.CalculateDefense(entity, entity.defense);
-        damageDealt = takenDamage - playerDefense;
-        if (damageDealt <= 0)
+        if (entity.dead)
         {
-            damageDealt = 0;
+            return;
+        }
+        receivedDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
+        enemyDefense = manager.CalculateDefense(entity, entity.defense);
+        totalDamage = receivedDamage - enemyDefense;
+        if (totalDamage <= 0)
+        {
+            totalDamage = 0;
         }
 
-        entity.currentHealth -= damageDealt;
+        entity.currentHealth -= totalDamage;
 
     }
 
