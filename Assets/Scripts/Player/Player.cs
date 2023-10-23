@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     private Vector3 lastPosition;
     public Animator animator;
     public Boss BossFireball;
+    public ManagerSFX managerSFX;
 
     void Start()
     {
@@ -74,11 +75,15 @@ public class Player : MonoBehaviour
         stamina.value = entity.currentStamina;
         
 
-        if (entity.experience >= entity.experienceToNextLevel)
+        if (entity.experience >= entity.experienceToNextLevel && entity.level < entity.maxLevel)
         {
             entity.level += 1;
             entity.experience = entity.experience - entity.experienceToNextLevel;
             entity.experienceToNextLevel += 100;
+        }
+        else if (entity.experience > entity.experienceToNextLevel && entity.level >= entity.maxLevel)
+        {
+            entity.experience = entity.experienceToNextLevel;
         }
     }
 
@@ -168,6 +173,7 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("isDead");
             entity.dead = true;
+            GlobalVariables.instance.roomsVisited = 0;
         }
     }
 
@@ -175,5 +181,14 @@ public class Player : MonoBehaviour
         Debug.LogFormat("Nada aqui");
         string currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
+    }
+
+    void OnSimpleSwordAttack(){
+        if (entity.currentStamina >= entity.staminaCost)
+        {
+            entity.currentStamina -= entity.staminaCost;
+            animator.SetTrigger("attack");
+            managerSFX.swordSound();
+        }
     }
 }

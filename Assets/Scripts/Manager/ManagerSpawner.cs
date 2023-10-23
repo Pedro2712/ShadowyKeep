@@ -95,4 +95,11 @@ public class ManagerSpawner : MonoBehaviour
           enemiesToSpawn = generatedEnemies;
                             
      }
+
+     public int CalculateEnemyDifficulty(int playerLevel, int maxLevel)
+     {
+          // Fórmula para calcular a dificuldade (level) do inimigo.
+          int difficulty = (int) maxLevel / ( (GlobalVariables.instance.totalRooms - GlobalVariables.instance.roomsVisited) + (int) ( (maxLevel / 2) / playerLevel ) ) ;
+          return difficulty;
+     }
 }
