@@ -8,11 +8,12 @@ public class ManagerSFX : MonoBehaviour
     public AudioSource srcMonster;
     public AudioSource srcBackground;
 
-    public AudioClip walk, sword, cocadaemon;
+    public AudioClip walk, sword, cocadaemon, levelUp;
     
     public List<AudioClip> backgroundMusics;
 
     public void walkSound(){
+        srcPlayer.loop = true;
         srcPlayer.clip = walk;
         srcPlayer.Play();
     }
@@ -23,7 +24,15 @@ public class ManagerSFX : MonoBehaviour
     }
 
     public void swordSound(){
+        srcPlayer.loop = false;
         srcPlayer.clip = sword;
+        srcPlayer.Play();
+    }
+
+    public void LevelUp()
+    {
+        srcPlayer.loop = false;
+        srcPlayer.clip = levelUp;
         srcPlayer.Play();
     }
 

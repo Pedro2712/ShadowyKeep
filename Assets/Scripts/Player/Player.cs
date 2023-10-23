@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
     public Boss BossFireball;
     public ManagerSFX managerSFX;
 
+    public GameObject LevelUp;
+
     void Start()
     {
         if (manager == null)
@@ -80,6 +82,9 @@ public class Player : MonoBehaviour
             entity.level += 1;
             entity.experience = entity.experience - entity.experienceToNextLevel;
             entity.experienceToNextLevel += 100;
+
+            managerSFX.LevelUp();
+            Instantiate(LevelUp, transform.position, Quaternion.identity, transform);
         }
         else if (entity.experience > entity.experienceToNextLevel && entity.level >= entity.maxLevel)
         {
