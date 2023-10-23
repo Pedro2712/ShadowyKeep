@@ -13,6 +13,8 @@ public class Door : MonoBehaviour
     public GameObject playerGO;
     private bool playerDetected;
 
+    public Transform doorBoss;
+
     void Start()
     {
         playerDetected = false;
@@ -30,11 +32,16 @@ public class Door : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(playerDetected);
         if (playerDetected)
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (possibleDestinations.Count > 0)
+                if (GlobalVariables.instance.roomsVisited == GlobalVariables.instance.totalRooms){
+                    Transform bossRoom = doorBoss;
+                    playerGO.transform.position = bossRoom.position;
+                }
+                else if (possibleDestinations.Count > 0)
                 {
                     int randomIndex = Random.Range(0, possibleDestinations.Count);
 
@@ -70,10 +77,17 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && playerDetected == false)
         {
             playerDetected = true;
             playerGO = collision.gameObject;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerDetected = false;
         }
     }
 }

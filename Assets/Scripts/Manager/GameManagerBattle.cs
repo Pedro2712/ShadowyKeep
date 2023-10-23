@@ -7,7 +7,7 @@ public class GameManagerBattle : MonoBehaviour
      // CalculateHealth 
      private int BASE_HEALTH_RESISTENCE = 10;
      private int BASE__HEALTH_LEVEL_RESISTENCE = 4;
-     private int CONST_HEALTH = 10;
+     private int CONST_HEALTH = 100;
 
      //CalculateStamina
      private int BASE_STAMINA_LEVEL = 5;
