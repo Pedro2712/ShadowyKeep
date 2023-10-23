@@ -27,6 +27,9 @@ public class BauController : MonoBehaviour
     private Animator animator;
     private bool onRadios;
     private string buff;
+    private float buffValue;
+
+    [SerializeField] private GameObject floatingTextPrefab;
 
     private int BASE_COINS_BUFF = 50;
     private int BASE_HEALTH_BUFF = 10;
@@ -105,24 +108,30 @@ public class BauController : MonoBehaviour
         switch (buff)
         {
             case "Coins":
-                player.entity.coins += CoinsBuff();
+                buffValue = CoinsBuff();
+                player.entity.coins += (int) buffValue;
                 break;
             case "Speed":
-                player.entity.speed += SpeedBuff();
+                buffValue = SpeedBuff();
+                player.entity.speed += buffValue;
                 break;
             case "Health":
-                player.entity.maxHealth += HealthBuff();
+                buffValue = HealthBuff();
+                player.entity.maxHealth += (int) buffValue;
                 break;
             case "Strength":
-                player.entity.strength += StrengthBuff();
+                buffValue = StrengthBuff();
+                player.entity.strength += (int) buffValue;
                 break;
             case "Defense":
-                player.entity.defense += DefenseBuff();
+                buffValue = DefenseBuff();
+                player.entity.defense += (int) buffValue;
                 break;
             // case "CooldownReduce":
             //     player.entity.cooldown -= 0.1f;
             //     break;
         }
+        showBuff(buff, buffValue.ToString());
 
         isOpen = true;
     }
@@ -156,6 +165,14 @@ public class BauController : MonoBehaviour
     {
         int defense = MAX_DEFENSE_BUFF / ( Random.Range(1, 5) + (int) ( ( MAX_DEFENSE_BUFF / 2 ) / ( player.entity.level * BASE_DEFENSE_BUFF ) ) );
         return defense;
+    }
+
+    private void showBuff(string buff, string value) {
+
+        if (floatingTextPrefab) {
+            GameObject prefab = Instantiate(floatingTextPrefab, transform.position, Quaternion.identity);
+            prefab.GetComponentInChildren<TextMesh>().text = "+ " + value + " " + buff;
+        }
     }
 
     private void OnDrawGizmosSelected()
