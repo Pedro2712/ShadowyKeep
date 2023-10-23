@@ -64,7 +64,6 @@ public class Switch : MonoBehaviour
 
     public void ChooseIcon()
     {
-        print(numberPick[position]);
         FinalChoose = numberPick[position];
         GlobalVariables.instance.finalChoose = numberPick[position];
     }

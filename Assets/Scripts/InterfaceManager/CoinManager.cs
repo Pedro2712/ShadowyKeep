@@ -11,6 +11,6 @@ public class CoinsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // coinsCount.text = player.entity.coins.ToString();
+        coinsCount.text = player.entity.coins.ToString();
     }
 }

@@ -11,6 +11,7 @@ public class Entity
     public int level = 1;
     public int experience = 0;
     public int experienceToNextLevel = 100;
+    public int coins = 0;
 
     [Header("Health")]
     public int currentHealth;
