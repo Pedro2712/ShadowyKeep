@@ -19,6 +19,14 @@ public class GameOverScreen : MonoBehaviour
         _source.Play();
     }
 
+    void Update(){
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // Ação a ser executada quando a tecla espaço é pressionada
+            SceneManager.LoadScene(1);
+        }   
+    }
+
     public void backToHome()
     {
         Debug.LogFormat("Voltar para o home");
