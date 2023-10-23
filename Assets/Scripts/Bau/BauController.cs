@@ -21,6 +21,7 @@ public class BauController : MonoBehaviour
     public float radius;
     public SpriteOption[] sprites;
     public Player player;
+    public bool isOpen = false;
 
     public Image icon;
     private Animator animator;
@@ -48,6 +49,10 @@ public class BauController : MonoBehaviour
 
     private void Update()
     {
+        if (isOpen)
+        {
+            return;
+        }
         Interact();
     }
 
@@ -118,6 +123,8 @@ public class BauController : MonoBehaviour
             //     player.entity.cooldown -= 0.1f;
             //     break;
         }
+
+        isOpen = true;
     }
 
     private int CoinsBuff()
