@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 5812827588539073910}
   - component: {fileID: 8551909646571701767}
   m_Layer: 0
-  m_Name: decor_1
+  m_Name: Decoration
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -195,6 +195,7 @@ MonoBehaviour:
     sprite: {fileID: 1851685166, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
   - name: Defense
     sprite: {fileID: -868750059, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  player: {fileID: 0}
   icon: {fileID: 6369521119457771331}
 --- !u!61 &8551909646571701767
 BoxCollider2D:
@@ -5238,7 +5239,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3879905231320642530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5355,7 +5356,7 @@ GameObject:
   - component: {fileID: 7952423163421268979}
   - component: {fileID: 3148178858118434850}
   m_Layer: 0
-  m_Name: windows1
+  m_Name: Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5411,8 +5412,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.7021501, y: 0.019749999, z: 0}
-    m_Extent: {x: 3.49955, y: 1.73655, z: 0}
+    m_Center: {x: 0.7004, y: 0.014649987, z: 0}
+    m_Extent: {x: 3.4973001, y: 1.73555, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
