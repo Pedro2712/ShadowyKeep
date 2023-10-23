@@ -45,7 +45,7 @@ public class BauController : MonoBehaviour
 
     private bool isAnimated = true;
 
-    void Start()
+    void OnEnable()
     {
         animator = GetComponent<Animator>();
     }
@@ -61,7 +61,6 @@ public class BauController : MonoBehaviour
 
     public void TurnOffCameraWithDelay()
     {
-        // Chama o m�todo TurnOffCamera ap�s um atraso de 3 segundos (tempo em segundos).
         Invoke("TurnOffCamera", 3.0f);
     }
 

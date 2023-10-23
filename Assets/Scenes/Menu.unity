@@ -5528,7 +5528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SHADOWN    KEEP
+  m_text: SHADOWY KEEP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4166cd2d85e74d64f892184eaad90168, type: 2}
   m_sharedMaterial: {fileID: 464890170786224281, guid: 4166cd2d85e74d64f892184eaad90168, type: 2}

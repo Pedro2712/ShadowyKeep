@@ -6,7 +6,7 @@ public class GameManagerBattle : MonoBehaviour
 {   
      // CalculateHealth 
      private int BASE_HEALTH_RESISTENCE = 10;
-     private int BASE__HEALTH_LEVEL_RESISTENCE = 4;
+     private int BASE_HEALTH_LEVEL_RESISTENCE = 6;
      private int CONST_HEALTH = 100;
 
      //CalculateStamina
@@ -14,21 +14,21 @@ public class GameManagerBattle : MonoBehaviour
      private int CONST_STAMINA = 5;
 
      //CalculateDamage
-     private int BASE_DAMAGE = 2;
+     private int BASE_DAMAGE = 4;
      private int BASE_DAMAGE_LEVEL = 3;
 
      //CalculateDefense
-     private int BASE_DEFENSE_RESISTENCE = 2;
-     private int BASE_DEFENSE_LEVEL = 3;
+     private int BASE_DEFENSE_RESISTENCE = 1;
+     private int BASE_DEFENSE_LEVEL = 2;
 
      //CalculateEnemyExperience
-     private int BASE_EXPERIENCE = 2;
+     private int BASE_EXPERIENCE = 5;
      private int CONST_EXPERIENCE = 10;
 
    public int CalculateHealth(Entity entity)
    {
-        // Formula Proposta : (RESISTENCIA * BASE_HEALTH_RESISTENCE) + (LEVEL + BASE__HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH
-        int result = (entity.resistence * BASE_HEALTH_RESISTENCE) + (entity.level * BASE__HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH;
+        // Formula Proposta : (RESISTENCIA * BASE_HEALTH_RESISTENCE) + (LEVEL + BASE_HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH
+        int result = (entity.resistence * BASE_HEALTH_RESISTENCE) + (entity.level * BASE_HEALTH_LEVEL_RESISTENCE) + CONST_HEALTH;
         return result;
    }
    
@@ -55,6 +55,20 @@ public class GameManagerBattle : MonoBehaviour
    public int CalculateEnemyExperience(Entity entity){
         // Formula Proposta :  (LEVEL * BASE_EXPERIENCE);
         int result = (entity.level * BASE_EXPERIENCE) + CONST_EXPERIENCE;
+        return result;
+   }
+
+   public int CalculateBossDamage(Entity entity){
+        // Formula Proposta :  (STRENGTH*BASE_DAMAGE) + (LEVEL*BASE_LEVEL_DAMAGE) + random(1-20);
+        System.Random rnd = new System.Random();
+        int result = (entity.strength * BASE_DAMAGE) + (entity.level * BASE_DAMAGE_LEVEL) + rnd.Next(1,20);
+        return result;
+   }
+
+   public int CalculateFireballDamage(Entity entity){
+        // Formula Proposta :  (STRENGTH*BASE_DAMAGE) + (weaponDamage*BASE_DAMAGE) + (LEVEL*BASE_LEVEL_DAMAGE) + random(1-20);
+        System.Random rnd = new System.Random();
+        int result = (entity.inteligence * BASE_DAMAGE) + (entity.level * BASE_DAMAGE_LEVEL) + rnd.Next(1,20);
         return result;
    }
 

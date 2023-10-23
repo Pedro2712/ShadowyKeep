@@ -8,7 +8,7 @@ public class ManagerSFX : MonoBehaviour
     public AudioSource srcMonster;
     public AudioSource srcBackground;
 
-    public AudioClip walk, sword, cocadaemon, shadon, rats, levelUp;
+    public AudioClip walk, sword, cocadaemon, shadon, rats, levelUp, bossCleave, bossSmash, bossFireBreath, bossFireBall;
     
     public List<AudioClip> backgroundMusics;
 
@@ -50,6 +50,30 @@ public class ManagerSFX : MonoBehaviour
     public void ratsSound()
     {
         srcMonster.clip = rats;
+        srcMonster.Play();
+    }
+
+    public void bossCleaveSound()
+    {
+        srcMonster.clip = bossCleave;
+        srcMonster.Play();
+    }
+
+    public void bossSmashSound()
+    {
+        srcMonster.clip = bossSmash;
+        srcMonster.Play();
+    }
+
+    public void bossFireBreathSound()
+    {
+        srcMonster.clip = bossFireBreath;
+        srcMonster.Play();
+    }
+
+    public void bossFireBallSound()
+    {
+        srcMonster.clip = bossFireBall;
         srcMonster.Play();
     }
 
