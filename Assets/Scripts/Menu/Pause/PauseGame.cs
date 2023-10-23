@@ -6,8 +6,22 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour
 {   
     public GameObject pauseMenu;
-    public void buttonPause(){
-        Pause();
+
+    private bool isPaused = false;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (!isPaused)
+            {
+                isPaused = true;
+                Pause();
+            }
+            else {
+                isPaused = false;
+                Resume();
+            }
+        }
     }
 
     public void Pause(){

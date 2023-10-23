@@ -43,11 +43,11 @@ public class BauController : MonoBehaviour
     private int MAX_STRENGTH_BUFF = 10;
     private int MAX_DEFENSE_BUFF = 10;
 
+    private bool isAnimated = true;
+
     void Start()
     {
         animator = GetComponent<Animator>();
-        icon.sprite = sprites[GlobalVariables.instance.finalChoose].sprite;
-        buff = sprites[GlobalVariables.instance.finalChoose].name;
     }
 
     private void Update()
@@ -93,10 +93,16 @@ public class BauController : MonoBehaviour
 
         onRadios = hit != null;
 
-        if (onRadios && Input.GetKeyDown(KeyCode.F))
+        if (onRadios && Input.GetKeyDown(KeyCode.F) && !isAnimated)
         {
+            icon.sprite = sprites[GlobalVariables.instance.finalChoose].sprite;
+            buff = sprites[GlobalVariables.instance.finalChoose].name;
             StartCoroutine(OpenChest());
         }
+    }
+
+    public void ChangeIsAnimated() {
+        isAnimated = false;
     }
 
     IEnumerator OpenChest()
@@ -131,7 +137,7 @@ public class BauController : MonoBehaviour
             //     player.entity.cooldown -= 0.1f;
             //     break;
         }
-        showBuff(buff, buffValue.ToString());
+        showBuff(buff, buffValue.ToString("F1"));
 
         isOpen = true;
     }

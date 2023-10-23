@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -52,6 +53,11 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private GameObject floatingTextPrefab;
 
+    private ManagerSFX managerSFX;
+    private string nameEnemy;
+
+    BoxCollider2D boxCollider;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -60,6 +66,15 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+
+        GameObject temp2 = GameObject.FindGameObjectsWithTag("ManagerSFX")[0];
+        managerSFX = temp2.GetComponent<ManagerSFX>();
+
+        nameEnemy = gameObject.name;
+
+        boxCollider = GetComponent<BoxCollider2D>();
+
+
         // Use FindObjectOfType para encontrar o GameManagerBattle
         manager = FindObjectOfType<GameManagerBattle>();
 
@@ -248,6 +263,23 @@ public class Enemy : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             animator.SetTrigger("Attack");
+
+            PlaySound();
+        }
+    }
+
+    private void PlaySound() {
+
+        if (nameEnemy.Contains("Cacodaemon"))
+        {
+            managerSFX.cocadaemonSound();
+        }
+        else if (nameEnemy.Contains("ShardsoulSlayer"))
+        {
+            managerSFX.shadonSound();
+        }
+        else { 
+            managerSFX.ratsSound();
         }
     }
 
@@ -266,6 +298,8 @@ public class Enemy : MonoBehaviour
         entity.dead = true;
         entity.inCombat = false;
         entity.target = null;
+
+        boxCollider.enabled = false;
 
         animator.SetBool("Dead", true);
         Destroy(enemy, 3f);

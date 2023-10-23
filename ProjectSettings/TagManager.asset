@@ -12,6 +12,7 @@ TagManager:
   - HomeMusic
   - weapon
   - DoorToNextRoom
+  - ManagerSFX
   layers:
   - Default
   - TransparentFX
