@@ -185,9 +185,16 @@ MonoBehaviour:
     m_Bits: 128
   radius: 2
   sprites:
-  - {fileID: 21300000, guid: 5be98f21cc364e2419d6b7d019c8fb37, type: 3}
-  - {fileID: 21300000, guid: f4f0c5f43560014499245fbc5d010351, type: 3}
-  - {fileID: 21300000, guid: 8119ba0a5e810944cb39d24a2c9e2f60, type: 3}
+  - name: Coins
+    sprite: {fileID: -142698081, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Health
+    sprite: {fileID: -314801685, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Speed
+    sprite: {fileID: -1754922841, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Strength
+    sprite: {fileID: 1851685166, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
+  - name: Defense
+    sprite: {fileID: -868750059, guid: f8dd5618dd5d0354ab9997f0d6c9b9ee, type: 3}
   icon: {fileID: 6369521119457771331}
 --- !u!61 &8551909646571701767
 BoxCollider2D:
@@ -5404,8 +5411,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.70634997, y: 0.020250022, z: 0}
-    m_Extent: {x: 3.5018501, y: 1.7465501, z: 0}
+    m_Center: {x: 0.7021501, y: 0.019749999, z: 0}
+    m_Extent: {x: 3.49955, y: 1.73655, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

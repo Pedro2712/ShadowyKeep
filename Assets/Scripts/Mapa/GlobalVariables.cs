@@ -6,6 +6,7 @@ public class GlobalVariables : MonoBehaviour
 {
     public static GlobalVariables instance;
     public int lastVisitedIndex = -1;
+    public int finalChoose = 0;
 
     void Awake()
     {

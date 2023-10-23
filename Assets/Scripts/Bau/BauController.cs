@@ -7,13 +7,19 @@ using UnityEngine.UI;
 
 public class BauController : MonoBehaviour
 {
+    [System.Serializable]
+    public class SpriteOption
+    {
+        public string name;
+        public Sprite sprite;
+    }
     public CinemachineVirtualCamera virtualCamera;
-    public Light2D luz; // Corrigi a declaração do Light
+    public Light2D luz; // Corrigi a declaraï¿½ï¿½o do Light
     public ParticleSystem particle;
 
     public LayerMask playerLayer;
     public float radius;
-    public List<Sprite> sprites;
+    public SpriteOption[] sprites;
 
     public Image icon;
 
@@ -24,7 +30,7 @@ public class BauController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        icon.sprite = sprites[Switch.FinalChoose];
+        icon.sprite = sprites[GlobalVariables.instance.finalChoose].sprite;
     }
 
     private void FixedUpdate()
@@ -34,7 +40,7 @@ public class BauController : MonoBehaviour
 
     public void TurnOffCameraWithDelay()
     {
-        // Chama o método TurnOffCamera após um atraso de 3 segundos (tempo em segundos).
+        // Chama o mï¿½todo TurnOffCamera apï¿½s um atraso de 3 segundos (tempo em segundos).
         Invoke("TurnOffCamera", 3.0f);
     }
 
