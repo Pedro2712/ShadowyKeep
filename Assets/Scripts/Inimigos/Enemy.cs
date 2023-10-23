@@ -166,7 +166,7 @@ public class Enemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("weapon"))
+        if (collider.CompareTag("weapon") && !entity.dead)
         {
             ApplyDamage(collider.GetComponentInParent<Player>().entity);
             Vector3 direction = (transform.position - collider.transform.position);
@@ -178,6 +178,10 @@ public class Enemy : MonoBehaviour
 
     private void ApplyDamage(Entity enemyEntity)
     {
+        if (entity.dead)
+        {
+            return;
+        }
         receivedDamage = manager.CalculateDamage(enemyEntity, enemyEntity.damage);
         enemyDefense = manager.CalculateDefense(entity, entity.defense);
         totalDamage = receivedDamage - enemyDefense;
@@ -185,6 +189,7 @@ public class Enemy : MonoBehaviour
         {
             totalDamage = 0;
         }
+
         entity.currentHealth -= totalDamage;
 
         showDamage(totalDamage.ToString());
