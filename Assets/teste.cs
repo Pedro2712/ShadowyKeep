@@ -13,7 +13,7 @@ public class teste : MonoBehaviour
             GlobalVariables.instance.lastVisitedIndex = -1;
             GlobalVariables.instance.roomsVisited = 0;
             GlobalVariables.instance.finalChoose = 0;
-            GlobalVariables.instance.totalRooms = 1;        
+            GlobalVariables.instance.totalRooms = 6;        
         }
 }
 }

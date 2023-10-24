@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Dialogue : MonoBehaviour
 {
     public Sprite profile;
-    public GameObject keyspace;
+    public Canvas KeyF;
     public string[] speechTxt;
     public string actorName;
 
@@ -40,9 +41,9 @@ public class Dialogue : MonoBehaviour
         onRadios = hit != null;
 
         // Ativa ou desativa o objeto keyspace com base na interação e no diálogo em andamento.
-        if (keyspace != null)
+        if (KeyF != null)
         {
-            keyspace.SetActive(onRadios && !dc.getisRunning());
+            KeyF.gameObject.SetActive(onRadios && !dc.getisRunning());
         }
     }
 

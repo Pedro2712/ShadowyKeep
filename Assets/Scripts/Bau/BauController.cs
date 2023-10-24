@@ -45,7 +45,9 @@ public class BauController : MonoBehaviour
 
     private bool isAnimated = true;
 
-    void OnEnable()
+    public Canvas KeyF;
+
+    void Start()
     {
         animator = GetComponent<Animator>();
     }
@@ -54,6 +56,7 @@ public class BauController : MonoBehaviour
     {
         if (isOpen)
         {
+            KeyF.gameObject.SetActive(false);
             return;
         }
         Interact();
@@ -92,8 +95,10 @@ public class BauController : MonoBehaviour
 
         onRadios = hit != null;
 
+        KeyF.gameObject.SetActive(onRadios && !isOpen);
         if (onRadios && Input.GetKeyDown(KeyCode.F) && !isAnimated)
         {
+            KeyF.gameObject.SetActive(false);
             icon.sprite = sprites[GlobalVariables.instance.finalChoose].sprite;
             buff = sprites[GlobalVariables.instance.finalChoose].name;
             StartCoroutine(OpenChest());

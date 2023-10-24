@@ -25,6 +25,8 @@ public class DialogueControl : MonoBehaviour
         index= 0;
         speechText.text = "";
         isRunning = false;
+
+        typingSpeed = 0.01f;
     }
 
     public void Speech(Sprite p, string[] txt, string actorName) {
