@@ -10,6 +10,7 @@ public class GlobalVariables : MonoBehaviour
     public int finalChoose = 0;
     public int totalRooms = 2;
     public int lastPlayerLevel = 1;
+    public int lastExperienceToNextLevel = 100;
 
     void Awake()
     {

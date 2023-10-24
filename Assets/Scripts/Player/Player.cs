@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
         stamina.value = stamina.maxValue;
 
         entity.level = GlobalVariables.instance.lastPlayerLevel;
+        entity.experienceToNextLevel = GlobalVariables.instance.lastExperienceToNextLevel;
 
         StartCoroutine(RegenHealth());
         StartCoroutine(RegenStamina());
@@ -85,6 +86,7 @@ public class Player : MonoBehaviour
             GlobalVariables.instance.lastPlayerLevel = entity.level;
             entity.experience = entity.experience - entity.experienceToNextLevel;
             entity.experienceToNextLevel += 100;
+            GlobalVariables.instance.lastExperienceToNextLevel = entity.experienceToNextLevel;
 
             managerSFX.LevelUp();
             Instantiate(LevelUp, transform.position, Quaternion.identity, transform);
