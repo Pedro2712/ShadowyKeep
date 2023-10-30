@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class teste : MonoBehaviour
+public class ResetVariables : MonoBehaviour
 {
     // Start is called before the first frame update
     private void Awake()
@@ -12,7 +12,6 @@ public class teste : MonoBehaviour
             GlobalVariables.instance.roomsVisited = 0;
             GlobalVariables.instance.lastVisitedIndex = -1;
             GlobalVariables.instance.roomsVisited = 0;
-            GlobalVariables.instance.finalChoose = 0;
             GlobalVariables.instance.totalRooms = 6;        
         }
 }

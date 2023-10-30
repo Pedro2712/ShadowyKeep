@@ -17,4 +17,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 1d2711dbf55046dcc8b911816d3a2a96
+  - enabled: 1
+    path: Assets/Scenes/Salas/Sala1.unity
+    guid: 6de2be1872740ee45b48513bc9bdc52e
+  - enabled: 1
+    path: Assets/Scenes/Salas/Sala2.unity
+    guid: 2ab6cbd5ff9700f4aad84e91403ba09e
+  - enabled: 1
+    path: Assets/Scenes/Salas/Sala3.unity
+    guid: e37eb898e9547684db3f9580666783ec
+  - enabled: 1
+    path: Assets/Scenes/Salas/Sala4.unity
+    guid: e3aacbfe900567d4999a36dd15895b07
+  - enabled: 1
+    path: Assets/Scenes/Salas/Sala5.unity
+    guid: 400392726838c3b40bf06cdc95d31c37
+  - enabled: 1
+    path: Assets/Scenes/Salas/SalaBoss.unity
+    guid: c7ed3b2600b7c6a41b32875855afa463
   m_configObjects: {}

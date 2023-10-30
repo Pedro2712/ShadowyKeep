@@ -10,8 +10,15 @@ public class ManagerSFX : MonoBehaviour
 
     public AudioClip walk, sword, cocadaemon, shadon, rats, levelUp, bossCleave, bossSmash, bossFireBreath, bossFireBall;
     
-    public List<AudioClip> backgroundMusics;
+    private List<AudioClip> backgroundMusics;
 
+
+    private void Start()
+    {
+        backgroundMusics = GlobalVariables.instance.backgroundMusics;
+
+        backgroundSound(false);
+    }
     public void walkSound(){
         srcPlayer.loop = true;
         srcPlayer.clip = walk;
@@ -90,6 +97,7 @@ public class ManagerSFX : MonoBehaviour
             sound_idx = 0;
         }
 
+        print(sound_idx);
         srcBackground.clip = backgroundMusics[sound_idx];
         srcBackground.Play();
     }

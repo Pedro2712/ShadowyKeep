@@ -1,96 +1,64 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
-{   
-    public ManagerSpawner managerSpawner;
+{
+    public Canvas canvas;
+    public Canvas KeyF;
+    public Switch switchScript;
 
-    private ManagerSFX managerSFX;
-    public MenuMusic menuMusic;
+    public LayerMask playerLayer;
+    public float radius;
+    private bool onRadios;
 
-    public List<Transform> possibleDestinations;
-    public GameObject playerGO;
-    private bool playerDetected;
-
-    public Transform doorBoss;
-
+    private int NumberOfRooms = 5;
+    
     void Start()
     {
-        playerDetected = false;
-        GameObject temp = GameObject.FindGameObjectsWithTag("WaveSpawner")[0];
-        managerSpawner = temp.GetComponent<ManagerSpawner>();
-
-        // Começa a tocar a musica no Home
-        GameObject temp2 = GameObject.FindGameObjectsWithTag("HomeMusic")[0];
-        menuMusic = temp2.GetComponent<MenuMusic>();
-        menuMusic.playHomeMusic();
-
-        //Pega o Objeto responsavel pelas musicas de batalha
-        managerSFX = FindObjectOfType<ManagerSFX>();
+        canvas.gameObject.SetActive(false);
     }
 
-    void Update()
+    void Update() {
 
-    {
-        if (playerDetected)
-        {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
+
+        onRadios = hit != null;
+
+        canvas.gameObject.SetActive(onRadios);
+        KeyF.gameObject.SetActive(onRadios);
+
+
+        if (onRadios) {
+
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (GlobalVariables.instance.roomsVisited == GlobalVariables.instance.totalRooms)
-                {
-                    Transform bossRoom = doorBoss;
-                    playerGO.transform.position = bossRoom.position;
+                if (GlobalVariables.instance.roomsVisited == GlobalVariables.instance.totalRooms) {
+                    SceneManager.LoadScene("SalaBoss");
 
-                    managerSFX.backgroundSound(true);
-                }
-                else if (possibleDestinations.Count > 0)
-                {
-                    int randomIndex = Random.Range(0, possibleDestinations.Count);
+                } else {
+                    
+                    int randomIndex = Random.Range(0, NumberOfRooms);
 
                     // Garante que a sala escolhida não seja a mesma que a última visitada
-                    while (randomIndex == GlobalVariables.instance.lastVisitedIndex)
-                    {
-                        randomIndex = Random.Range(0, possibleDestinations.Count);
-                    }
+                    while (randomIndex == GlobalVariables.instance.lastVisitedIndex) {
+                        randomIndex = Random.Range(0, NumberOfRooms);
 
-                    Transform randomDestination = possibleDestinations[randomIndex];
-                    playerGO.transform.position = randomDestination.position;
+                    }
 
                     GlobalVariables.instance.lastVisitedIndex = randomIndex;
                     GlobalVariables.instance.roomsVisited++;
+                    switchScript.ChooseIcon();
 
-                    // Spawna inimigos na sala:
-                    int qtd_enemies = 10;
-                    int playerLevel = playerGO.GetComponent<Player>().entity.level;
-                    int maxLevel = playerGO.GetComponent<Player>().entity.maxLevel;
-                    int difficulty  = managerSpawner.CalculateEnemyDifficulty(playerLevel, maxLevel);
-                    
-                    
-                    //Para musica do menu e começa uma musia Porrada!
-                    menuMusic.stopHomeMusic();
-                    managerSFX.backgroundSound(false); // False indica que não é a musica do boss.
-                    managerSpawner.GenerateWave(qtd_enemies , difficulty , randomIndex+1);
+                    SceneManager.LoadScene("Sala" + (randomIndex + 1));
                 }
-
-                playerDetected = false;
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnDrawGizmosSelected()
     {
-        if (collision.CompareTag("Player") && playerDetected == false)
-        {
-            playerDetected = true;
-            playerGO = collision.gameObject;
-        }
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            playerDetected = false;
-        }
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }

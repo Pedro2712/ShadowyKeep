@@ -13,11 +13,7 @@ public class ManagerSpawner : MonoBehaviour
 
      public List<Monsters> enemies = new List<Monsters>();
      
-     public List<Transform> spawnLocations1;
-     public List<Transform> spawnLocations2;
-     public List<Transform> spawnLocations3;
-     public List<Transform> spawnLocations4;
-     public List<Transform> spawnLocations5;
+     public GameObject spawnLocationsGameObject;
 
      private int NUM_SPAWNS = 16;
 
@@ -25,29 +21,30 @@ public class ManagerSpawner : MonoBehaviour
      public List<GameObject> enemiesToSpawn = new List<GameObject>();
 
      private GameObject spawnedEnemy;
-     
-     public void GenerateWave(int qtd_enemies , int difficulty  , int id_room)
+
+    public GameObject playerGO;
+
+    private void Start()
+    {
+
+        // Spawna inimigos na sala:
+        int qtd_enemies = 10;
+        int playerLevel = playerGO.GetComponent<Player>().entity.level;
+        int maxLevel = playerGO.GetComponent<Player>().entity.maxLevel;
+        int difficulty  = CalculateEnemyDifficulty(playerLevel, maxLevel);
+
+
+        GenerateWave(qtd_enemies , difficulty);
+    }
+
+    public void GenerateWave(int qtd_enemies , int difficulty )
      {
           GenerateEnemies(qtd_enemies);
-
+          Transform[] spawnLocations = spawnLocationsGameObject.GetComponentsInChildren<Transform>();
           int count_location = 0;
           int count_enemies = 0;
 
           List<int> locationSelectedId = new List<int>();
-          List<Transform> spawnLocations = new List<Transform>();
-          
-          // Seleciona spawn points a depender da sala:
-          if(id_room == 1){
-               spawnLocations = spawnLocations1;
-          }else if (id_room == 2){
-               spawnLocations = spawnLocations2;
-          }else if (id_room == 3){
-               spawnLocations = spawnLocations3;
-          }else if (id_room == 4){
-               spawnLocations = spawnLocations4;
-          }else if (id_room == 5){
-               spawnLocations = spawnLocations5;
-          }
 
           while(count_location < qtd_enemies){
                int randLocationId = Random.Range(0, NUM_SPAWNS);

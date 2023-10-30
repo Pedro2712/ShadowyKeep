@@ -4,22 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
+using static GlobalVariables;
 
 public class BauController : MonoBehaviour
 {
-    [System.Serializable]
-    public class SpriteOption
-    {
-        public string name;
-        public Sprite sprite;
-    }
     public CinemachineVirtualCamera virtualCamera;
     public Light2D luz; // Corrigi a declara��o do Light
     public ParticleSystem particle;
 
     public LayerMask playerLayer;
     public float radius;
-    public SpriteOption[] sprites;
     public Player player;
     public bool isOpen = false;
 
@@ -99,8 +93,8 @@ public class BauController : MonoBehaviour
         if (onRadios && Input.GetKeyDown(KeyCode.F) && !isAnimated)
         {
             KeyF.gameObject.SetActive(false);
-            icon.sprite = sprites[GlobalVariables.instance.finalChoose].sprite;
-            buff = sprites[GlobalVariables.instance.finalChoose].name;
+            icon.sprite = GlobalVariables.instance.sprites[GlobalVariables.instance.finalChoose];
+            buff = GlobalVariables.instance.finalChoose;
             StartCoroutine(OpenChest());
         }
     }
