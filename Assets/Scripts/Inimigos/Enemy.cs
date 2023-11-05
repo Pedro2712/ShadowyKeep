@@ -12,7 +12,7 @@ using UnityEngine.Windows;
 public class Enemy : MonoBehaviour
 {
     public Entity entity = new Entity();
-    public GameManagerBattle manager;
+    private GameManagerBattle manager;
 
     public LayerMask playerLayer;
     public GameObject attackHitBox;

@@ -93,7 +93,6 @@ public class ManagerSFX : MonoBehaviour
         
         int sound_idx = Random.Range(1, backgroundMusics.Count);
         if(bossBattle){
-            Debug.Log("MUSICA DO BOSS");
             sound_idx = 0;
         }
 
