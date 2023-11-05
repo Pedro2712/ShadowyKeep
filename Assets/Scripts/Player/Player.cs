@@ -190,13 +190,13 @@ public class Player : MonoBehaviour
     }
 
     
-
-    void OnSimpleSwordAttack(){
-        if (entity.currentStamina >= entity.staminaCost)
-        {
-            entity.currentStamina -= entity.staminaCost;
-            animator.SetTrigger("attack");
-            managerSFX.swordSound();
-        }
-    }
+    // Comentado para uso mobile : Função associada ao botão no arquivo MobileAttack
+    // void OnSimpleSwordAttack(){
+    //     if (entity.currentStamina >= entity.staminaCost)
+    //     {
+    //         entity.currentStamina -= entity.staminaCost;
+    //         animator.SetTrigger("attack");
+    //         managerSFX.swordSound();
+    //     }
+    // }
 }
