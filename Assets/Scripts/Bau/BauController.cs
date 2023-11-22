@@ -11,6 +11,7 @@ public class BauController : MonoBehaviour
     public CinemachineVirtualCamera virtualCamera;
     public Light2D luz; // Corrigi a declara��o do Light
     public ParticleSystem particle;
+    public Button button;
 
     public LayerMask playerLayer;
     public float radius;
@@ -40,10 +41,16 @@ public class BauController : MonoBehaviour
     private bool isAnimated = true;
 
     public Canvas KeyF;
+    private bool isClicked = false;
+
 
     void Start()
     {
         animator = GetComponent<Animator>();
+    }
+
+    public void ButtonClicado () {
+        isClicked = true;
     }
 
     private void Update()
@@ -90,12 +97,15 @@ public class BauController : MonoBehaviour
         onRadios = hit != null;
 
         KeyF.gameObject.SetActive(onRadios && !isOpen);
-        if (onRadios && Input.GetKeyDown(KeyCode.F) && !isAnimated)
+        if (onRadios && isClicked && !isAnimated)
         {
             KeyF.gameObject.SetActive(false);
             icon.sprite = GlobalVariables.instance.sprites[GlobalVariables.instance.finalChoose];
             buff = GlobalVariables.instance.finalChoose;
             StartCoroutine(OpenChest());
+        }
+        else {
+            isClicked = false;
         }
     }
 
