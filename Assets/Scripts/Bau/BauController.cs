@@ -114,6 +114,7 @@ public class BauController : MonoBehaviour
             case "Coins":
                 buffValue = CoinsBuff();
                 player.entity.coins += (int) buffValue;
+                GlobalVariables.instance.coins = player.entity.coins;
                 break;
             case "Speed":
                 buffValue = SpeedBuff();

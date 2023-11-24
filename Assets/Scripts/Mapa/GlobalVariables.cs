@@ -23,7 +23,7 @@ public class GlobalVariables : MonoBehaviour
 
     [Header("Choose award")]
     public string finalChoose = "Coins";
-
+    
     public List<SerializableDictionary> serializedSprites = new List<SerializableDictionary>();
 
     public Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
@@ -31,6 +31,7 @@ public class GlobalVariables : MonoBehaviour
     [Header("Player")]
     public int lastPlayerLevel = 1;
     public int lastExperienceToNextLevel = 100;
+    public int coins = 0;
 
     [Header("BackGround Musics")]
     public List<AudioClip> backgroundMusics;
