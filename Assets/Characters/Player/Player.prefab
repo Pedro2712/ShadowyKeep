@@ -184,7 +184,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: 478150
+  m_InstanceId: 79242
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -332,7 +332,8 @@ GameObject:
   - component: {fileID: 1900977146344497928}
   - component: {fileID: 8696761172782753652}
   - component: {fileID: 268996778964145023}
-  - component: {fileID: 7513540710895350271}
+  - component: {fileID: 1990928899021636963}
+  - component: {fileID: 4109670348041143416}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -417,7 +418,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446345026694164591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb4d49a12c612794b90b43851f468305, type: 3}
   m_Name: 
@@ -453,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: b8875d59e2b86b64eb6344ad3e85d992, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 939f961e17eba82e58c47b5752b1d418, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -465,7 +466,11 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 71cac9e5-f42f-4116-9d85-8fb1b8cb660b
+    m_ActionName: Player/Move
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -485,7 +490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entity:
     name: Lancelot Du Lac
-    level: 1
+    level: 10
     experience: 0
     experienceToNextLevel: 100
     maxLevel: 50
@@ -496,13 +501,13 @@ MonoBehaviour:
     maxMana: 0
     currentStamina: 0
     maxStamina: 0
-    staminaCost: 1
-    strength: 1
+    staminaCost: 2
+    strength: 3
     resistence: 1
     inteligence: 1
-    damage: 3
-    defense: 1
-    speed: 5
+    damage: 2
+    defense: 2
+    speed: 4
     inCombat: 0
     cooldown: 1
     target: {fileID: 0}
@@ -676,7 +681,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.74932265, y: 1.072727}
   m_EdgeRadius: 0
---- !u!114 &7513540710895350271
+--- !u!114 &1990928899021636963
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -685,9 +690,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 1446345026694164591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 456a750c885bd4fa395d7d87401a5c0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 29ca4c7a85d5da373af72db84c71ce44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 6506933152625089933}
+  managerSFX: {fileID: 0}
+  collisionOffset: 0.05
+  rb: {fileID: 1900977146344497928}
+  animator: {fileID: 5870936099426227733}
+  movementFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+--- !u!114 &4109670348041143416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446345026694164591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f843f0070035ae73e9e9464bda2a5d1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6506933152625089933}
   animator: {fileID: 5870936099426227733}
   managerSFX: {fileID: 0}
 --- !u!1 &2298897556027752635

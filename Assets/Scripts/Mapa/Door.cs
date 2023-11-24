@@ -2,26 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Door : MonoBehaviour
 {
     public Canvas canvas;
     public Canvas KeyF;
     public Switch switchScript;
+    public Button button;
 
     public LayerMask playerLayer;
     public float radius;
     private bool onRadios;
 
     private int NumberOfRooms = 5;
+    private bool isClicked = false;
     
     void Start()
     {
         canvas.gameObject.SetActive(false);
     }
 
-    void Update() {
+    public void ButtonClicado () {
+        isClicked = true;
+    }
 
+    public void Update () {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
 
         onRadios = hit != null;
@@ -29,11 +35,9 @@ public class Door : MonoBehaviour
         canvas.gameObject.SetActive(onRadios);
         KeyF.gameObject.SetActive(onRadios);
 
-
         if (onRadios) {
+            if(isClicked){
 
-            if (Input.GetKeyDown(KeyCode.F))
-            {
                 if (GlobalVariables.instance.roomsVisited == GlobalVariables.instance.totalRooms) {
                     SceneManager.LoadScene("SalaBoss");
 
@@ -52,8 +56,11 @@ public class Door : MonoBehaviour
                     switchScript.ChooseIcon();
 
                     SceneManager.LoadScene("Sala" + (randomIndex + 1));
-                }
+                
             }
+            }
+        }else{
+            isClicked = false;
         }
     }
 
