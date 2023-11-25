@@ -4,59 +4,48 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 using static GlobalVariables;
 
 public class ShopManager : MonoBehaviour
 {
 
-    public List<int> itensListIDs;
-    public List<int> itensPriceIDs;
-    public List<int> itensValue;
+    // --- IDs ---
+    // 0 a 6  - atributos (Price em moedas)
+    // 7 a 10 - ataques   (Price em level)
+
+    List<int> itensListIDs = new List<int>(new int[] {0,1,2,3,4,5,6,7,8,9,10});
+    List<int> itensPriceIDs = new List<int>(new int[] {100,150,150,80,450,400,350,15,30,50,70});
+    public List<double> itensValue;
+
+    private int limiar = 6;
+    private bool buyMode = "coin";
+    private int valueOwned;
 
     public TextMeshProUGUI CoinsText;
-    public int initCoins = 1000;
     
     void Start()
-    {   
-        CoinsText.text = "Coins : " + initCoins.ToString(); //GlobalVariables.instance.coins.ToString();
+    {      
+        
+        CoinsText.text = "Coins : " + GlobalVariables.instance.coins.ToString();
 
-        // IDs
-        itensListIDs.Add(1); // ID dos itens
-        itensListIDs.Add(2);
-        itensListIDs.Add(3);
-        itensListIDs.Add(4);
-        // shopItems[1,1] = 1;
-        // shopItems[1,2] = 2;
-        // shopItems[1,3] = 3;
-        // shopItems[1,4] = 4;
+        // Atributos
+        itensValue.Add( GlobalVariables.instance.speed)     // Velocidade
+        itensValue.Add( GlobalVariables.instance.strength)  // Força
+        itensValue.Add( GlobalVariables.instance.defense)   // Defesa
+        itensValue.Add( GlobalVariables.instance.lucky)     // Sorte
 
-        // Price
-        itensPriceIDs.Add(10);    // Preco do item 1
-        itensPriceIDs.Add(20);    // Preco do item 2
-        itensPriceIDs.Add(30);  
-        itensPriceIDs.Add(40);  
+        itensValue.Add( GlobalVariables.instance.stamina)   //Stamina
+        itensValue.Add( GlobalVariables.instance.mana)      //Mana
+        itensValue.Add( GlobalVariables.instance.life)      // Vida
 
-        // Quantidade de itens 
-        itensValue.Add(0);    // Valor do item 1
-        itensValue.Add(0);    // Valor do item 2
-        itensValue.Add(0);  
-        itensValue.Add(0); 
-
-        // shopItems[3,1] = 0;         
-        // shopItems[3,2] = 0;      
-        // shopItems[3,3] = 0;       
-        // shopItems[3,4] = 0;
-
-        // Actual Value / Quantity:
-        // shopItems[3,1] = player.entity.speed;         // Velocidade
-        // shopItems[3,2] = player.entity.strength;      // Força
-        // shopItems[3,3] = player.entity.defense;       // Defesa e Resistencia
-        // shopItems[3,4] = player.entity.currentHealth; // Vida 
-        //                                               // Mana 
-        //                                               // MinDamage
-        //                                               // Sorte
-        //                                               // Inteligencia
+        // Ataques
+        itensValue.Add( GlobalVariables.instance.poison)           // poison
+        itensValue.Add( GlobalVariables.instance.explosaoArcana)   // explosao arcana
+        itensValue.Add( GlobalVariables.instance.lifeOrDeath)      // Life or death
+        itensValue.Add( GlobalVariables.instance.invocacaoProfana) // Invocação profana
+        
     }
 
     
@@ -69,16 +58,27 @@ public class ShopManager : MonoBehaviour
         int itemId = ButtonRef.GetComponent<ShopButtonInfo>().ItemID;
         int itemPrice = itensPriceIDs[itemId];
 
-        //if(GlobalVariables.instance.coins >= itemPrice){
-        if(initCoins >= itemPrice){    
-            //GlobalVariables.instance.coins -= itemPrice;
-            initCoins -= itemPrice;
+        // Se o item é comprado com moeda ou com level
+        if(itemId > limiar){
+            // Ataques
+            buyMode = "attack";
+            valueOwned = GlobalVariables.instance.lastPlayerLevel;
+        }else{
+            //Moedas
+            buyMode = "attribute";
+            valueOwned = initCoins;
+        }
 
-            // TODO : Update actualValue
-            itensValue[itemId]++;
+        if(valueOwned >= itemPrice){    
+            GlobalVariables.instance.coins -= itemPrice;
+            
+            if(buyMode == "attribute"){
+                initCoins -= itemPrice;
+                itensValue[itemId]++;
+            }
 
             // Atualiza moedas
-            CoinsText.text = "Coins : " +  initCoins.ToString();//GlobalVariables.instance.coins.ToString();
+            CoinsText.text = "Coins : " +  GlobalVariables.instance.coins.ToString();
 
             // TODO : Atualiza o actualValue no texto do Botão
             ButtonRef.GetComponent<ShopButtonInfo>().ActualValue.text = itensValue[itemId].ToString();
@@ -86,5 +86,11 @@ public class ShopManager : MonoBehaviour
 
         // TODO: Talvez adicionar um else com uma animação indicando que a compra nao pode ocorrer ?
 
+    }
+
+    public void PressBackToHome()
+    {   
+        // Vai para a sala de espera
+        SceneManager.LoadScene(1); 
     }
 }
