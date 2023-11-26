@@ -11,11 +11,16 @@ public class ShopButtonInfo : MonoBehaviour
     public TextMeshProUGUI PriceText;
     public TextMeshProUGUI ActualValue;
 
-    public GameObject ShopManager;
+    private ShopManager manager;
 
     void Start()
-    {
-        PriceText.text = "Price : $" + ShopManager.GetComponent<ShopManager>().itensPriceIDs[ItemID].ToString();
-        ActualValue.text = ShopManager.GetComponent<ShopManager>().itensValue[ItemID].ToString();
+    {   
+        manager = FindObjectOfType<ShopManager>();
+
+        int itemPrice = manager.getPrice(ItemID);
+        double itemActualValue = manager.getActualValue(ItemID);
+
+        PriceText.text = "Price : " + itemPrice.ToString();
+        ActualValue.text = itemActualValue.ToString();
     }
 }
