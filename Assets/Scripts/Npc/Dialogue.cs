@@ -15,15 +15,24 @@ public class Dialogue : MonoBehaviour
 
     private DialogueControl dc;
     private bool onRadios;
+    private bool isClicked = false;
 
     private void Start()
     {
         dc = FindObjectOfType<DialogueControl>();
     }
 
+    public void TriggerConversation () {
+        if(onRadios){
+            isClicked = true;
+        } else {
+            isClicked = false;
+        }
+    }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && onRadios && !dc.getisRunning())
+        if (isClicked && onRadios && !dc.getisRunning())
         {
             dc.Speech(profile, speechTxt, actorName);
         }
@@ -40,7 +49,7 @@ public class Dialogue : MonoBehaviour
 
         onRadios = hit != null;
 
-        // Ativa ou desativa o objeto keyspace com base na interação e no diálogo em andamento.
+        // Ativa ou desativa o objeto keyspace com base na interaï¿½ï¿½o e no diï¿½logo em andamento.
         if (KeyF != null)
         {
             KeyF.gameObject.SetActive(onRadios && !dc.getisRunning());

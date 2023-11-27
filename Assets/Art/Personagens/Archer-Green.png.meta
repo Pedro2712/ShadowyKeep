@@ -1,0 +1,4377 @@
+fileFormatVersion: 2
+guid: 5e66f19e293df3310b51f09fc46b31c5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Archer-Green_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 233
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373a1ad9c1aac2987ab963a0b069bf77
+      internalID: -597081661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb911d7e013314b0cbe7015bb9de0fe1
+      internalID: -1614643317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 232
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b0381739f68537a9819854589bc8cd
+      internalID: 967635340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 232
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f127e35bcd7baa50bb23ae80232e311b
+      internalID: 357644138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580dbf7f1fd8fb7a7980d9ef44761b0d
+      internalID: 393627135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2af7e9f7e03c62ad8f41a4ba55917fe
+      internalID: -2129367873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 232
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c318926cad9aae9bf38c45ffba0773
+      internalID: -675828103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 233
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf83137163faae3b58d7cc6a0b511541
+      internalID: 165542907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 232
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19393a8074ac4c69aedba9a972abc53
+      internalID: -1548695278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 232
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c99767c89df1f709810b8859bb000e
+      internalID: 1706573306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 232
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa132a57db717bd1bc8d03d65954363
+      internalID: 1835105554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1380847891ef7422a988ab986d82cf0
+      internalID: -291412378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe77a2f73ba2284a89248bb7ac92a006
+      internalID: -335047326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_13
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fb3bc4cb3d1d9fc96e0c047b3d5b17
+      internalID: 1210099416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 229
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d407e20a7cb1517dfb7f2a097f6a55f4
+      internalID: -1369235934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b1a2c9920ee93eaa8e204630892868
+      internalID: -1616340744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_16
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32eba461d153e528fe70d212827dfb
+      internalID: -96164467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 233
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cbcc40a1cc7e2fbb25a80eba8fa16e
+      internalID: 1214242502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25b65780ce3d1b4292a0b9ffa2ce58c
+      internalID: 696278633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 234
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51f39af1fb3ad85a86a2042fd3577a1
+      internalID: 1569142501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 233
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d05b0f7679e786fa913687ce9b6fc76
+      internalID: 1012317555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a421762492f826b8eb17a9d780675116
+      internalID: -1042769899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_22
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 233
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dca9b1fb21e14838497aa296208c0e
+      internalID: 2071113267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 233
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8036fd246459095a84d81f4a0c436fe
+      internalID: 233990711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 201
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b6d83704bb430688d8309ee3f85fc1
+      internalID: 319340595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb39340e9e6211c9b0dc8439a520b48
+      internalID: -398759840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 200
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8fb9945c90fab119d12f94b24ea6c4
+      internalID: 772087485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 200
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819f0aad8a22229b88cb7e0634747bb7
+      internalID: -725226821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4191206ae185d9e09b4a1c35d9c7d829
+      internalID: 1620984050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d11f4294ce840c59e70fe920090676
+      internalID: 705803471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_30
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 201
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9396dbcd040b7c418dd0615f27b3e23
+      internalID: -69965563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 201
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8b6dd41768919d684c2ce8e3047b1a
+      internalID: 122305091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fac595e10836c40af9914dd6384bfc
+      internalID: 1552366961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e234e23752e5d1329b727eb334463205
+      internalID: -67824043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_34
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 200
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a65115b2af0389bbcd8ea9912b2a1d
+      internalID: -420966177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_35
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55f1b272311e4348a1638e1af40cc2
+      internalID: 295141099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_36
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c0adf17a84e1c3b84c599e71afc7b
+      internalID: 1285292389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_37
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfa2ac472310f9aabfc292d7004c981
+      internalID: -1190148598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_38
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 201
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b703911445a79586ab184fc2bd06296d
+      internalID: 1706764170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98008e54c258adfa91edd572c3cc003
+      internalID: -125676426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_40
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189d69e65e89711dca6685b469eac1d1
+      internalID: -1840558206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_41
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 201
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5662e95c38e5328ada224c02df05458d
+      internalID: -1670093482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98edcce0c468ae52b2fe7f589297d52
+      internalID: -485585490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 202
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b71dd6a9c9ee4bb0b379031b5063da8
+      internalID: -843372124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_44
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 201
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016bdf4c7ef013802ab6ff05e180f314
+      internalID: -1005359541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_45
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b7b5864cf0598ef89ce934ad6485af
+      internalID: -566873266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_46
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 201
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0958694bc493c90d80f2acb5df14f48
+      internalID: -1624533538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_47
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 201
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9f5f8b962f2a9b8f86a13d1438851
+      internalID: 1293669378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 169
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcb75662555fa58bbe467084baaa04d
+      internalID: 1153944976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_49
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94516f07e59b90f9981ca2c2f552734
+      internalID: -620943252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_50
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 168
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc22b6482dbaaa64bc0468cf8d08691
+      internalID: -388096121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_51
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 168
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95586ec282f411f8b14df91d7330a04
+      internalID: 935947253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a78eccb810e3a95b36d39647e87482
+      internalID: 716147328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_53
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca73f7ace50badc7a5fb0f4cd6eb2b5
+      internalID: -1039628925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 169
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302b2376c6f5322f28c2392ea0b2a86e
+      internalID: 859020643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_55
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 169
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f3ad41abadaecf99e06678407b3003
+      internalID: 1272618129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 169
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df37e5f5d4127f54abc7d8edeaf145c
+      internalID: 1664870857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_57
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 169
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c049900356f86ceaa15509b1c090a5
+      internalID: -1625095998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_58
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 169
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564a753fad9fc4e479c12f6760fa9846
+      internalID: 2004946446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_59
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 169
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b53ba2bd5f8130b834ce5ef21343cc
+      internalID: 1998907461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_60
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7becec771f7e98b4978def3f847d325
+      internalID: 1001807104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_61
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2c1994d5a6cb209b89a315d970a18e
+      internalID: -1172787842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_62
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 169
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14a95f2f2dc65ecc8f782b4b9fb6337
+      internalID: -1362313961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_63
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94bda1953c2ae9eb9af631e14b4a372
+      internalID: -503333535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_64
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8522fcbd0963cf3669af8453dffddd0c
+      internalID: -1730293445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_65
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 169
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58f2a26e2a0860efb6c08295a1cc8cb
+      internalID: 779510212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_66
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ea999c714f00966b6752dfed10e772
+      internalID: -1943488585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_67
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 169
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61c09326492e5d4d927c1b9150ebbc4
+      internalID: -1269709987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_68
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 169
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bc589ef7bdd255d97c9dd2fd313feb
+      internalID: -33249735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_69
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5299e97b3844224d8c8421ad1e1f678
+      internalID: -1968767835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_70
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 166
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e73122b704d422daae65e75dbd0588a
+      internalID: 695246504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_71
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 168
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231f0a31dab90d7e3892c3b9cf7345b1
+      internalID: 861325156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_72
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 137
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc796f0673870c648dcf061ee3fe5ca
+      internalID: 1184798253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_73
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd3598e3af09d8b19296d0d62acc4b8
+      internalID: 742308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_74
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 136
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c377accd693aab38fd38edfc323733
+      internalID: 966657082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_75
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 136
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fb6904334d526e3b2789624b04f5c8
+      internalID: 1680211975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_76
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cd0c9741b1c81bcb8e66454e85a422
+      internalID: 1819212123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_77
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba371d57bed29c8190e6dfe7780b2f9
+      internalID: -1082185305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_78
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 137
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c33d0b727d307165af8ef93dd0515ef
+      internalID: 1647261204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_79
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 137
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fff0dce3b4dbac04a5f1e1cdf28245b
+      internalID: 2093058452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_80
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 137
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4f60ed3ddaa5c89a528d245e21c23e
+      internalID: 874118439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_81
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 137
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb346a025b390357bdab70d7a633435
+      internalID: 1414778198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_82
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 137
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc73d87f2b0a126e82070f6747fbb52
+      internalID: -1223354174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_83
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 137
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02add66c1b2fc947e999cd32da35729d
+      internalID: 1618261962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_84
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e23317e9359a2ecb0387525c5b126c
+      internalID: 2007207472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_85
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb598e2828c4168687ff026fd9eb49a
+      internalID: 1609245309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_86
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 137
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940d87dc6441d0de6af71a0fc3572560
+      internalID: 485946497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72713ad01fd9988898d9c23758df246e
+      internalID: 368973066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_88
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544dd43f8c9bfe739acae302ef3d161d
+      internalID: 1883636626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_89
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 137
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ad31c48db08760a94b6f3d9f377dc0
+      internalID: 758408932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_90
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8035ced146c5281bb5f71e7bf908e9c
+      internalID: 542142807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_91
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 136
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c213e5e386fef7801bf7209cb301c204
+      internalID: -1746737462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_92
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 137
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e943f826427c87cb726e2a3165b628
+      internalID: -1777071542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_93
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b960689adf3c328e282cb6b7238d863a
+      internalID: -1579654294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_94
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 131
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10a34a3480b98cc58403d9e508ff9c0
+      internalID: -241356774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_95
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 132
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfacbfb2792577aa0ba97fbdb1e0b582
+      internalID: 1644666488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_96
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 105
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd820ddb1f91fdcf8eb4baa4965f6a5
+      internalID: -834124526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_97
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8ac39780d282de9849cdd5ce723df
+      internalID: -449853538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_98
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 104
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d525a5a397bb89efc8596896faa0c270
+      internalID: 182573043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_99
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 104
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da87c0fe6455474d1b497098cce891ee
+      internalID: -1242449530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_100
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba4c526addf4f419a547e1a770daa38
+      internalID: 2067966994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_101
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63132309f42a80bc83fddb28e7b12ef
+      internalID: -1001070369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_102
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 105
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5035285e0ae0ec406acdb40c03da6233
+      internalID: 45375999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_103
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 105
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2acbc4cd176400b797303e2c0059782
+      internalID: 1886339544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_104
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b55972be60f6d12c85f7fe8eed2cec6
+      internalID: 1377696507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_105
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 105
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0930441b6ee38282a43de3bc6cf36eb
+      internalID: 1857461748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_106
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 105
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf23efbae5163963a8b010cea7a002d4
+      internalID: -2011998950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_107
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8b3171dd2b72ab887aa9e5bb504a31
+      internalID: -1605317066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_108
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70beaf99fb31cce198353e593951956a
+      internalID: 101637354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_109
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8075b8eec7da969f87ac691c7cd7f77
+      internalID: 2027235613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_110
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 105
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13f58437e671e47ba1fbc802b8d611c
+      internalID: -915912772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_111
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ed01ad66dd935a3842a22fc31ae858
+      internalID: 166776252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_112
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3e639db17cf82b5b3e2211ca72551e
+      internalID: -1393534104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_113
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 105
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363401f858afb63469480554713a07d0
+      internalID: -661129973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_114
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182f67008df95dc10aad66dd082b6855
+      internalID: 431208509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_115
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40a3d2e698c84255afa419b5381669d
+      internalID: 505475221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_116
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 105
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa28c6ad9a40d2b5a6b1aea434bfe74
+      internalID: -1562616790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_117
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b5590a43961209b87f093399ba4e90
+      internalID: 1104169511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_118
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 98
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2473a306a5d05898874acc2ba99e500
+      internalID: -757881122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_119
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 100
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387944818cc87a6039f7d287cb22a4c8
+      internalID: -1702638644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_120
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 73
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9344e80bc2f557a869a75b99e14f7344
+      internalID: -700181799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_121
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fda5685fc76f6a7b5c3a499344fcf6
+      internalID: 901841350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_122
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d5c3f3c9f983a21996c30a3af17c5b
+      internalID: -762418472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_123
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 72
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc25cc86634e6e68a9161d5c40446684
+      internalID: 1861982108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_124
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5263242deb043f198c7ddbbcdfbe7c
+      internalID: -405995006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_125
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55961043927f142c0b835d1c46088495
+      internalID: -146580116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_126
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 73
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d10c36688a490ba1a3f573cbc0032ed
+      internalID: -2079445469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_127
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 73
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10e7985f8cbb29b0beb9a5d619da431
+      internalID: 521493690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_128
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 73
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8745a34f4b1411018b521d88ddfd61dc
+      internalID: -1542266391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_129
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 73
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bc9abe3bb2f217b8c32d07b3de14b0
+      internalID: -718530488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_130
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 73
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a411ea15e9b66a3badeb74acfc2934
+      internalID: -1119934605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_131
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 73
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f053f76043d09d938dee4c2f5b9779f
+      internalID: 29669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_132
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0186ef40c11bfef179566944933ae710
+      internalID: 943973878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_133
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5f736f56dd23499a8af736498ace79
+      internalID: 1823824498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_134
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 73
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207ad3ed55096ecd08152424459f810b
+      internalID: 610937075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_135
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed5e238ae112ab6f838c3b352f099c4
+      internalID: 1447600374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_136
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a89adb701fff6cca436091e40f26d9
+      internalID: -1863907408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_137
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 73
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b85a6c6afbe42556a019ad7d1f73c7f
+      internalID: 1566614188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_138
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce5259c7270b5bba8a144e8847a3926
+      internalID: -294300551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_139
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 72
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e13c693ddb6d6a509eb754f5fee10b0
+      internalID: -312257416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_140
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 73
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d7ab35527c8b26c94505b2541622f2
+      internalID: -370667296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_141
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb20ffa48055db06911882ab846c9e9
+      internalID: 568307521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_142
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 65
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3417f10b4b64fe11eb3eb03f8297ece8
+      internalID: -2119390243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_143
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 66
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd49015cb20b1aea292a912004c93eff
+      internalID: 1044076158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 41
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29741eba26a79d18be9152de2913b13
+      internalID: -1062839797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_145
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213e37c2046b57c88ad5f82de345c5b7
+      internalID: -762136132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_146
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 40
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4334488c2db2269eb8d4ca1446c18c8d
+      internalID: 773506069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_147
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 40
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa97fb23498fb7ac5863a99ee6c39217
+      internalID: -321965039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_148
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c96298b619983daaa8ba259d2c28dda
+      internalID: 1013681969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_149
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ccf268d8506bfe9bf199f23a7ec434
+      internalID: 480691112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_150
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7d8fbb6573d34efbc9ab304121fe72
+      internalID: 1759949900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_151
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 41
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfc4da5434ce575481f2d0883c22ffd
+      internalID: -795536533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_152
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49a7a32a66b97280b9203592044debd
+      internalID: -1072441426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_153
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 41
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb6e15c7cf5b9a8d8c94fe95c6188f2
+      internalID: -1481598541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_154
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 41
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f97ff918687ac948a396e37f6d97bc1
+      internalID: 468761484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_155
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 41
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf656ef3514674e6a7f843a50a54b30
+      internalID: 83060283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_156
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba65a76dee9e0508589c3446a33d685c
+      internalID: 1765109010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_157
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a0d41c1749556cf90622cb22b6ecf4
+      internalID: -1491941165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_158
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 41
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c0b76e42af7ec8fb55e632b8db5cf1
+      internalID: 238077874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_159
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd94e12b057162959903f3c54dd8e1f
+      internalID: 622524498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_160
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c17e4fed6e7bd6c93f55636e200e18
+      internalID: 178957216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_161
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 41
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a282d4fe4bb7f9f8d7b260e98bd578
+      internalID: 1975140984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceed2b8b8fe3b9c7b439249467fadef
+      internalID: 1851774221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_163
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 41
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5356a148e4cfc40a349a19627e1e8b
+      internalID: -1008583706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_164
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 41
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fa81b82d85e35269ba15efdabbe394
+      internalID: -2032869026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 41
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7a2170e579d30d49b9343a2cfbc1f1
+      internalID: -1334762410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_166
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 37
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01401ad8d95fa11b195483e0bf90024f
+      internalID: 920931427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_167
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 39
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be214217f47b4f71daa6a2bd26fc1bf2
+      internalID: -1880737973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_168
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 9
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533335e7f7dbfacc58ddc5443f0c735e
+      internalID: -1421844572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_169
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd8a12028c8fe3bf8ddff11b57b49a4
+      internalID: -828623419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_170
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 8
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae973c9f3a93735bb42d8cbe927c435
+      internalID: 1422516509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_171
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 8
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc1ea37ed2d3ccb1859ab96aa2c2595
+      internalID: -91967225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_172
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc281a55605fe8f4a4c44544f91cca8
+      internalID: -1645993193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_173
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a892113bc97c39b8d03c0fe19aa2a1
+      internalID: 1161765189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_174
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 9
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2050a07445b2788ea9ac6c00501fbef4
+      internalID: 2131506553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_175
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 9
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefced85b2292d9819d007fb360a30fa
+      internalID: 2088115142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_176
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 9
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3ac010b1a225c1586b77320fa05c19
+      internalID: 1708082957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_177
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86173b5f73f9c387babc766ed5fcc4f5
+      internalID: -1913596635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_178
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 8
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedca113ed9234dae8793a570c88cac4
+      internalID: -392664991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_179
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 8
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d115e3bad70978f14af65f672f3073e5
+      internalID: -1369260766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_180
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09708d70e6b7ff42a9ebca9fe8a126f1
+      internalID: -1637908478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_181
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a7148d81e4ab70b9a7c7b90d5b5c49
+      internalID: 168154150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_182
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 8
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7e487498bab9293a5bd4aef86ff935
+      internalID: 13716610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_183
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88d4433e8afccc799cbfabfde608275
+      internalID: -1712044230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_184
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c343db24f6eaeb955ba937fd8d0fb78c
+      internalID: 147163986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_185
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 9
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f312cc36ff63dafcd8bb84c8ce762ab9
+      internalID: -1410851727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_186
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 9
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e786569936fa9df368fe486fdfb619e7
+      internalID: 936049126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_187
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 10
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cad50ccd96d55e3e84fe7fefd4a54a1
+      internalID: 236360721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_188
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 9
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6e478f16625086ba371c0703245974
+      internalID: -1641529158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_189
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e888816d59ff959a9e8d220cba1bfc
+      internalID: 55961091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_190
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 9
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070811391e6e5e635b2d393dcec8e319
+      internalID: -253048604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_191
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 9
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc833e8271a8f7928dc1bad4536d8fb
+      internalID: -2132659461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Archer-Green_0: -597081661
+      Archer-Green_1: -1614643317
+      Archer-Green_10: 1835105554
+      Archer-Green_100: 2067966994
+      Archer-Green_101: -1001070369
+      Archer-Green_102: 45375999
+      Archer-Green_103: 1886339544
+      Archer-Green_104: 1377696507
+      Archer-Green_105: 1857461748
+      Archer-Green_106: -2011998950
+      Archer-Green_107: -1605317066
+      Archer-Green_108: 101637354
+      Archer-Green_109: 2027235613
+      Archer-Green_11: -291412378
+      Archer-Green_110: -915912772
+      Archer-Green_111: 166776252
+      Archer-Green_112: -1393534104
+      Archer-Green_113: -661129973
+      Archer-Green_114: 431208509
+      Archer-Green_115: 505475221
+      Archer-Green_116: -1562616790
+      Archer-Green_117: 1104169511
+      Archer-Green_118: -757881122
+      Archer-Green_119: -1702638644
+      Archer-Green_12: -335047326
+      Archer-Green_120: -700181799
+      Archer-Green_121: 901841350
+      Archer-Green_122: -762418472
+      Archer-Green_123: 1861982108
+      Archer-Green_124: -405995006
+      Archer-Green_125: -146580116
+      Archer-Green_126: -2079445469
+      Archer-Green_127: 521493690
+      Archer-Green_128: -1542266391
+      Archer-Green_129: -718530488
+      Archer-Green_13: 1210099416
+      Archer-Green_130: -1119934605
+      Archer-Green_131: 29669
+      Archer-Green_132: 943973878
+      Archer-Green_133: 1823824498
+      Archer-Green_134: 610937075
+      Archer-Green_135: 1447600374
+      Archer-Green_136: -1863907408
+      Archer-Green_137: 1566614188
+      Archer-Green_138: -294300551
+      Archer-Green_139: -312257416
+      Archer-Green_14: -1369235934
+      Archer-Green_140: -370667296
+      Archer-Green_141: 568307521
+      Archer-Green_142: -2119390243
+      Archer-Green_143: 1044076158
+      Archer-Green_144: -1062839797
+      Archer-Green_145: -762136132
+      Archer-Green_146: 773506069
+      Archer-Green_147: -321965039
+      Archer-Green_148: 1013681969
+      Archer-Green_149: 480691112
+      Archer-Green_15: -1616340744
+      Archer-Green_150: 1759949900
+      Archer-Green_151: -795536533
+      Archer-Green_152: -1072441426
+      Archer-Green_153: -1481598541
+      Archer-Green_154: 468761484
+      Archer-Green_155: 83060283
+      Archer-Green_156: 1765109010
+      Archer-Green_157: -1491941165
+      Archer-Green_158: 238077874
+      Archer-Green_159: 622524498
+      Archer-Green_16: -96164467
+      Archer-Green_160: 178957216
+      Archer-Green_161: 1975140984
+      Archer-Green_162: 1851774221
+      Archer-Green_163: -1008583706
+      Archer-Green_164: -2032869026
+      Archer-Green_165: -1334762410
+      Archer-Green_166: 920931427
+      Archer-Green_167: -1880737973
+      Archer-Green_168: -1421844572
+      Archer-Green_169: -828623419
+      Archer-Green_17: 1214242502
+      Archer-Green_170: 1422516509
+      Archer-Green_171: -91967225
+      Archer-Green_172: -1645993193
+      Archer-Green_173: 1161765189
+      Archer-Green_174: 2131506553
+      Archer-Green_175: 2088115142
+      Archer-Green_176: 1708082957
+      Archer-Green_177: -1913596635
+      Archer-Green_178: -392664991
+      Archer-Green_179: -1369260766
+      Archer-Green_18: 696278633
+      Archer-Green_180: -1637908478
+      Archer-Green_181: 168154150
+      Archer-Green_182: 13716610
+      Archer-Green_183: -1712044230
+      Archer-Green_184: 147163986
+      Archer-Green_185: -1410851727
+      Archer-Green_186: 936049126
+      Archer-Green_187: 236360721
+      Archer-Green_188: -1641529158
+      Archer-Green_189: 55961091
+      Archer-Green_19: 1569142501
+      Archer-Green_190: -253048604
+      Archer-Green_191: -2132659461
+      Archer-Green_2: 967635340
+      Archer-Green_20: 1012317555
+      Archer-Green_21: -1042769899
+      Archer-Green_22: 2071113267
+      Archer-Green_23: 233990711
+      Archer-Green_24: 319340595
+      Archer-Green_25: -398759840
+      Archer-Green_26: 772087485
+      Archer-Green_27: -725226821
+      Archer-Green_28: 1620984050
+      Archer-Green_29: 705803471
+      Archer-Green_3: 357644138
+      Archer-Green_30: -69965563
+      Archer-Green_31: 122305091
+      Archer-Green_32: 1552366961
+      Archer-Green_33: -67824043
+      Archer-Green_34: -420966177
+      Archer-Green_35: 295141099
+      Archer-Green_36: 1285292389
+      Archer-Green_37: -1190148598
+      Archer-Green_38: 1706764170
+      Archer-Green_39: -125676426
+      Archer-Green_4: 393627135
+      Archer-Green_40: -1840558206
+      Archer-Green_41: -1670093482
+      Archer-Green_42: -485585490
+      Archer-Green_43: -843372124
+      Archer-Green_44: -1005359541
+      Archer-Green_45: -566873266
+      Archer-Green_46: -1624533538
+      Archer-Green_47: 1293669378
+      Archer-Green_48: 1153944976
+      Archer-Green_49: -620943252
+      Archer-Green_5: -2129367873
+      Archer-Green_50: -388096121
+      Archer-Green_51: 935947253
+      Archer-Green_52: 716147328
+      Archer-Green_53: -1039628925
+      Archer-Green_54: 859020643
+      Archer-Green_55: 1272618129
+      Archer-Green_56: 1664870857
+      Archer-Green_57: -1625095998
+      Archer-Green_58: 2004946446
+      Archer-Green_59: 1998907461
+      Archer-Green_6: -675828103
+      Archer-Green_60: 1001807104
+      Archer-Green_61: -1172787842
+      Archer-Green_62: -1362313961
+      Archer-Green_63: -503333535
+      Archer-Green_64: -1730293445
+      Archer-Green_65: 779510212
+      Archer-Green_66: -1943488585
+      Archer-Green_67: -1269709987
+      Archer-Green_68: -33249735
+      Archer-Green_69: -1968767835
+      Archer-Green_7: 165542907
+      Archer-Green_70: 695246504
+      Archer-Green_71: 861325156
+      Archer-Green_72: 1184798253
+      Archer-Green_73: 742308
+      Archer-Green_74: 966657082
+      Archer-Green_75: 1680211975
+      Archer-Green_76: 1819212123
+      Archer-Green_77: -1082185305
+      Archer-Green_78: 1647261204
+      Archer-Green_79: 2093058452
+      Archer-Green_8: -1548695278
+      Archer-Green_80: 874118439
+      Archer-Green_81: 1414778198
+      Archer-Green_82: -1223354174
+      Archer-Green_83: 1618261962
+      Archer-Green_84: 2007207472
+      Archer-Green_85: 1609245309
+      Archer-Green_86: 485946497
+      Archer-Green_87: 368973066
+      Archer-Green_88: 1883636626
+      Archer-Green_89: 758408932
+      Archer-Green_9: 1706573306
+      Archer-Green_90: 542142807
+      Archer-Green_91: -1746737462
+      Archer-Green_92: -1777071542
+      Archer-Green_93: -1579654294
+      Archer-Green_94: -241356774
+      Archer-Green_95: 1644666488
+      Archer-Green_96: -834124526
+      Archer-Green_97: -449853538
+      Archer-Green_98: 182573043
+      Archer-Green_99: -1242449530
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
