@@ -30,9 +30,11 @@ public class ShopButtonInfo : MonoBehaviour
             if(itemActualValue == 1){
                 // Item desbloqueado
                 ActualValue.text = " DISPONÍVEL ";
+                ActualValue.color = Color.green;
             }else{
                 // Item indisponível
                 ActualValue.text = " INDISPONÍVEL ";
+                ActualValue.color = Color.red;
             }
         }
     }
@@ -48,9 +50,7 @@ public class ShopButtonInfo : MonoBehaviour
             if(itemActualValue == 1){
                 // Item desbloqueado
                 ActualValue.text = " DISPONÍVEL ";
-            }else{
-                // Item indisponível
-                ActualValue.text = " INDISPONÍVEL ";
+                ActualValue.color = Color.green;
             }
         }
     }

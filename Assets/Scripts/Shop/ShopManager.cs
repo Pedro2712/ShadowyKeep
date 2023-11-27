@@ -31,26 +31,27 @@ public class ShopManager : MonoBehaviour
         new string[] {"PoisonAttack", "ExplosaoArcana", "LifeOrDeath", "InvocacaoProfana"}
     );
 
+    public List<string> allNameItens = new List<string>(
+        new string[] {"Speed", "Strength", "Defense", "Lucky", "Stamina", "Mana", "Life",
+                      "PoisonAttack", "ExplosaoArcana", "LifeOrDeath", "InvocacaoProfana"}
+    );
     public List<int> itensPrice = new List<int>(
         new int[] {35, 40, 40, 30, 450, 400, 500, 15, 40, 50, 60}
     );
     
     [Header("Text Infos")]
     public TextMeshProUGUI CoinsText;
+    public TextMeshProUGUI LevelInfoText;
     
-    [Header("Update Button Info")]
-    private ShopButtonInfo buttonInfo;
-
     void Start()
     {
-        // Qualuquer objeto Button Info:
-        buttonInfo = FindObjectOfType<ShopButtonInfo>();
         CoinsText.text = "Coins : " + GlobalVariables.instance.coins.ToString();
+        LevelInfoText.text = "Level : " + GlobalVariables.instance.lastPlayerLevel.ToString();
     }
 
     public void createItem(int id)
     {   
-        Item newItem = new Item{name = attributesNames[id], 
+        Item newItem = new Item{name = allNameItens[id], 
                               price = itensPrice[id], 
                               actualValue = GlobalVariables.instance.speed, 
                               id = id
@@ -170,15 +171,15 @@ public class ShopManager : MonoBehaviour
         Debug.LogError(" > Novo Ataque : " + itemName + " =====");
 
         if(GlobalVariables.instance.lastPlayerLevel >= itemPrice){ 
-            Debug.LogError(" [TODO] Desbloquear novo ataque  " + itemName);
+           Debug.LogError(" [TODO] Desbloquear novo ataque  " + itemName);
 
             // Em Global variables o número 1 significa que o ataque foi desbloqueado 
             // e o numero 0 significa que não foi desbloqueado
             storeItem.actualValue = 1.0;
             updateGlobalVariablevalue(itemName, storeItem.actualValue);
         }else{
-            // TODO : Animação de "compra bloqueada"  
-            Debug.LogError(" [TODO] Não é possível adquirir o ataque : " + itemName);
+            //TODO : Animação de "compra bloqueada"  
+           Debug.LogError(" [TODO] Não é possível adquirir o ataque : " + itemName);
         }
 
     }
