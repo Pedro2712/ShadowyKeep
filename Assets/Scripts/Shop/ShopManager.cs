@@ -31,89 +31,29 @@ public class ShopManager : MonoBehaviour
     public List<string> attackNames = new List<string>(
         new string[] {"PoisonAttack", "ExplosaoArcana", "LifeOrDeath", "InvocacaoProfana"}
     );
+
+    public List<int> itensPrice = new List<int>(
+        new int[] {35, 40, 40, 30, 450, 400, 500, 15, 40, 50, 60}
+    );
     
     [Header("Text Infos")]
     public TextMeshProUGUI CoinsText;
     
-    
     void Start()
-    {      
+    {
         CoinsText.text = "Coins : " + GlobalVariables.instance.coins.ToString();
-
-        // Create Attributes Itens:
-        Item speed = new Item{name = attributesNames[0], 
-                              price = 35, 
-                              actualValue = GlobalVariables.instance.speed, 
-                              id = 0
-                              };
-        Item strength = new Item{name = attributesNames[1], 
-                                 price = 40, 
-                                 actualValue = GlobalVariables.instance.strength,  
-                                 id = 1
-                                 };
-        Item defense = new Item{name = attributesNames[2], 
-                                price = 40, 
-                                actualValue = GlobalVariables.instance.defense, 
-                                id = 2};
-        Item lucky = new Item{name = attributesNames[3], 
-                              price = 30, 
-                              actualValue = GlobalVariables.instance.lucky,  
-                              id = 3
-                              };
-
-        Item stamina = new Item{name = attributesNames[4], 
-                                price = 450, 
-                                actualValue = GlobalVariables.instance.stamina, 
-                                id = 4
-                                };
-        Item mana = new Item{name = attributesNames[5], 
-                             price = 400, 
-                             actualValue = GlobalVariables.instance.mana, 
-                             id = 5
-                             };
-        Item life = new Item{name = attributesNames[6], 
-                             price = 500, 
-                             actualValue = GlobalVariables.instance.life, 
-                             id = 6
-                            };
-
-        // Create Attack Itens:
-        Item poisonAttack = new Item{name = attackNames[0], 
-                                     price = 15, 
-                                     actualValue = GlobalVariables.instance.poisonAttack,  
-                                     id = 7
-                                     };
-        Item explosaoArcana = new Item{name = attackNames[1], 
-                                       price = 40, 
-                                       actualValue = GlobalVariables.instance.explosaoArcana,  
-                                       id = 8
-                                       };
-        Item lifeOrDeath = new Item{name = attackNames[2], 
-                                    price = 50, 
-                                    actualValue = GlobalVariables.instance.lifeOrDeath, 
-                                    id = 9
-                                    };
-        Item invocacao = new Item{name = attackNames[3], 
-                                  price = 60, 
-                                  actualValue = GlobalVariables.instance.invocacaoProfana, 
-                                  id = 10
-                                  };
-
-        // Adicionando itens na loja
-        storeItens.Add(speed.id, speed);
-        storeItens.Add(strength.id, strength);
-        storeItens.Add(defense.id, defense);
-        storeItens.Add(lucky.id, lucky);
-        storeItens.Add(stamina.id, stamina);
-        storeItens.Add(mana.id, mana);
-        storeItens.Add(life.id, life);
-        storeItens.Add(poisonAttack.id, poisonAttack);
-        storeItens.Add(explosaoArcana.id, explosaoArcana);
-        storeItens.Add(lifeOrDeath.id, lifeOrDeath);
-        storeItens.Add(invocacao.id, invocacao);
-        
     }
 
+    public void createItem(int id)
+    {   
+        Item newItem = new Item{name = attributesNames[id], 
+                              price = itensPrice[id], 
+                              actualValue = GlobalVariables.instance.speed, 
+                              id = id
+                              };
+        storeItens.Add(newItem.id, newItem);
+    }
+   
     public string getName(int itemId)
     {
         Item foundItem = storeItens[itemId];
@@ -132,10 +72,9 @@ public class ShopManager : MonoBehaviour
         return foundItem.actualValue;
     }
 
-    public void Buy(SelectedItem item)
+    public void Buy()
     {
-        
-        int id = item.id;
+        int id = GlobalVariables.instance.selectedItemId;
 
         Item storeItem = storeItens[id];
         int itemPrice = storeItem.price;

@@ -17,16 +17,14 @@ public class ShopDialogueTrigger : MonoBehaviour
     {   
         dialogueManager.enableDialogue();
         dialogueManager.StartDialogue(item);
+
+        // Varivel que controla qual item foi selecionado
+        GlobalVariables.instance.selectedItemId = item.id;
     }
 
-    public void Cancel()
+    public void EndDialogue()
     {   
         dialogueManager.disableDialogue();
     }
 
-    public void buyItem()
-    {   
-        manager.Buy(item);
-        dialogueManager.disableDialogue();
-    }
 }

@@ -32,10 +32,13 @@ public class ShopDialogueManager : MonoBehaviour
         string itemName = manager.getName(item.id); 
         int itemPrice = manager.getPrice(item.id);
 
-        Debug.LogWarning("Item Name : " + itemName);
-        Debug.LogWarning("Item Price : " + itemPrice);
-
         dialogueText.text = "Você gostaria de adquirir +" + itemName +  " por " + itemPrice + " modeas ?";
+    }
+
+    public void BuyItem()
+    {
+        manager.Buy();
+        disableDialogue();
     }
     
 }

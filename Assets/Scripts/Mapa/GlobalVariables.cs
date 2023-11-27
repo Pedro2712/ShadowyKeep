@@ -33,11 +33,13 @@ public class GlobalVariables : MonoBehaviour
     public int lastExperienceToNextLevel = 100;
     
     // ---- Store ---
+    public int selectedItemId;
+
     public int coins = 1000;   // valor inicial para teste da loja
     public double speed = 5.0;
     public double strength = 2.0;
     public double defense = 3.0;
-    public double lucky = 0.0;
+    public double lucky = 1.0;
 
     public int life = 100;
     public int mana = 150;

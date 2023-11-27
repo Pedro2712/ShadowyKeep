@@ -13,9 +13,10 @@ public class ShopButtonInfo : MonoBehaviour
 
     private ShopManager manager;
 
-    void Start()
+    public void Start()
     {   
         manager = FindObjectOfType<ShopManager>();
+        manager.createItem(ItemID);
 
         int itemPrice = manager.getPrice(ItemID);
         double itemActualValue = manager.getActualValue(ItemID);
@@ -23,4 +24,5 @@ public class ShopButtonInfo : MonoBehaviour
         PriceText.text = "Price : " + itemPrice.ToString();
         ActualValue.text = itemActualValue.ToString();
     }
+
 }
