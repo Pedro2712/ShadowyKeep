@@ -17,9 +17,8 @@ public class Item
 }
 
 public class ShopManager : MonoBehaviour
-{
-
-    private string buyMode = "coin";
+{   
+    private string buyMode;
     private int valueOwned;
 
     [Header("Store")]
@@ -39,8 +38,13 @@ public class ShopManager : MonoBehaviour
     [Header("Text Infos")]
     public TextMeshProUGUI CoinsText;
     
+    [Header("Update Button Info")]
+    private ShopButtonInfo buttonInfo;
+
     void Start()
     {
+        // Qualuquer objeto Button Info:
+        buttonInfo = FindObjectOfType<ShopButtonInfo>();
         CoinsText.text = "Coins : " + GlobalVariables.instance.coins.ToString();
     }
 
@@ -72,34 +76,109 @@ public class ShopManager : MonoBehaviour
         return foundItem.actualValue;
     }
 
-    public void Buy()
+    public string getTypeOfItem(int itemId)
     {
-        int id = GlobalVariables.instance.selectedItemId;
+        Item foundItem = storeItens[itemId];
+        string itemName = foundItem.name;
 
+        if (attributesNames.Contains(itemName)){
+            return "attribute";
+        }else{
+            return "attack";
+        }
+    }
+
+    public double calculateGain(int itemId)
+    {
+        Item foundItem = storeItens[itemId];
+        string itemName = foundItem.name;
+
+        if(itemName == "Stamina" || itemName == "Mana" || itemName == "Life"){
+            return 10.0;
+        }else{
+            return 0.5;
+        }
+    }
+
+    private void updateGlobalVariablevalue(string name, double newValue)
+    {   
+        if(name == "Speed"){
+            GlobalVariables.instance.speed = newValue;
+            Debug.LogError(" Update speed  : " + GlobalVariables.instance.speed);
+        }else if(name == "Strength"){
+            GlobalVariables.instance.strength = newValue;
+            Debug.LogError(" Update strength  : " + GlobalVariables.instance.strength);
+        }else if(name == "Defense"){
+            GlobalVariables.instance.defense = newValue;
+            Debug.LogError(" Update defense  : " + GlobalVariables.instance.defense);
+        }else if(name == "Lucky"){
+            GlobalVariables.instance.lucky = newValue;
+            Debug.LogError(" Update lucky  : " + GlobalVariables.instance.lucky);
+        }else if(name == "Stamina"){
+            GlobalVariables.instance.stamina = newValue;
+            Debug.LogError(" Update stamina  : " + GlobalVariables.instance.stamina);
+        }else if(name == "Mana"){
+            GlobalVariables.instance.mana = newValue;
+            Debug.LogError(" Update mana  : " + GlobalVariables.instance.mana);
+        }else if(name == "Life"){
+            GlobalVariables.instance.life = newValue;
+            Debug.LogError(" Update life  : " + GlobalVariables.instance.life);
+        }else if(name == "PoisonAttack"){
+            GlobalVariables.instance.poisonAttack = newValue;
+            Debug.LogError(" Update poisonAttack  : " + GlobalVariables.instance.poisonAttack);
+        }else if(name == "ExplosaoArcana"){
+            GlobalVariables.instance.explosaoArcana = newValue;
+            Debug.LogError(" Update explosaoArcana  : " + GlobalVariables.instance.explosaoArcana);
+        }else if(name == "LifeOrDeath"){
+            GlobalVariables.instance.lifeOrDeath = newValue;
+            Debug.LogError(" Update lifeOrDeath  : " + GlobalVariables.instance.lifeOrDeath);
+        }else if(name == "InvocacaoProfana"){
+            GlobalVariables.instance.invocacaoProfana = newValue;
+            Debug.LogError(" Update invocacaoProfana  : " + GlobalVariables.instance.invocacaoProfana);
+        }
+    }
+
+    public void buyAttribute(int id)
+    {
         Item storeItem = storeItens[id];
         int itemPrice = storeItem.price;
         string itemName  = storeItem.name;
 
-        if (attributesNames.Contains(itemName))
-        {        
-            buyMode = "coins";
-            valueOwned = GlobalVariables.instance.coins;
-        }else if (attackNames.Contains(itemName)){
-            buyMode = "level";
-            valueOwned = GlobalVariables.instance.lastPlayerLevel;
-        }
-       
-        if(valueOwned >= itemPrice){    
+        Debug.LogError(" > Item : " + itemName + " =====");
+
+        if(GlobalVariables.instance.coins >= itemPrice){ 
             
-            if(buyMode == "coins"){
-                valueOwned -= itemPrice;
-                storeItem.actualValue = storeItem.actualValue + 1;
-                GlobalVariables.instance.coins -= itemPrice;
-            }
-
+            // Sempre aumentamos de 1 em 1 unidade?
+            storeItem.actualValue = storeItem.actualValue + calculateGain(id); 
+            updateGlobalVariablevalue(itemName, storeItem.actualValue);
+            
             // Atualiza moedas
+            GlobalVariables.instance.coins -= itemPrice;
             CoinsText.text = "Coins : " +  GlobalVariables.instance.coins.ToString();
+        }else{
+            // TODO : Animação de "compra bloqueada"  
+            Debug.LogError(" [TODO] Não é possível adquirir o item : " + itemName);
+        }
+    }
 
+    public void buyNewATtack(int id)
+    {
+        Item storeItem = storeItens[id];
+        int itemPrice = storeItem.price;
+        string itemName  = storeItem.name;
+
+        Debug.LogError(" > Novo Ataque : " + itemName + " =====");
+
+        if(GlobalVariables.instance.lastPlayerLevel >= itemPrice){ 
+            Debug.LogError(" [TODO] Desbloquear novo ataque  " + itemName);
+
+            // Em Global variables o número 1 significa que o ataque foi desbloqueado 
+            // e o numero 0 significa que não foi desbloqueado
+            storeItem.actualValue = 1.0;
+            updateGlobalVariablevalue(itemName, storeItem.actualValue);
+        }else{
+            // TODO : Animação de "compra bloqueada"  
+            Debug.LogError(" [TODO] Não é possível adquirir o ataque : " + itemName);
         }
 
     }

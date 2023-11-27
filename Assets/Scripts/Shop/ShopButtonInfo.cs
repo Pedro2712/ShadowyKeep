@@ -20,9 +20,39 @@ public class ShopButtonInfo : MonoBehaviour
 
         int itemPrice = manager.getPrice(ItemID);
         double itemActualValue = manager.getActualValue(ItemID);
+        string typeOfItem = manager.getTypeOfItem(ItemID);
 
-        PriceText.text = "Price : " + itemPrice.ToString();
-        ActualValue.text = itemActualValue.ToString();
+        if(typeOfItem == "attribute"){
+            PriceText.text = "Price : " + itemPrice.ToString();
+            ActualValue.text = itemActualValue.ToString();
+        }else{
+            PriceText.text = "Min Level : " + itemPrice.ToString();
+            if(itemActualValue == 1){
+                // Item desbloqueado
+                ActualValue.text = " DISPONÍVEL ";
+            }else{
+                // Item indisponível
+                ActualValue.text = " INDISPONÍVEL ";
+            }
+        }
+    }
+
+    // Ajeitar essa funçao para atualizar o valor do texto do valor atual
+    void FixedUpdate() {        
+        double itemActualValue = manager.getActualValue(ItemID);
+        string typeOfItem = manager.getTypeOfItem(ItemID);
+        
+        if(typeOfItem == "attribute"){
+            ActualValue.text = itemActualValue.ToString();
+        }else{
+            if(itemActualValue == 1){
+                // Item desbloqueado
+                ActualValue.text = " DISPONÍVEL ";
+            }else{
+                // Item indisponível
+                ActualValue.text = " INDISPONÍVEL ";
+            }
+        }
     }
 
 }

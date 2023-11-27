@@ -6,8 +6,11 @@ using UnityEngine.UI;
 
 public class ShopDialogueManager : MonoBehaviour
 {   
-    public TextMeshProUGUI dialogueText;
-    public GameObject dialogueBox;
+    [Header(" Attribute Dialogue ")]
+    public TextMeshProUGUI attributeDialogueText;
+    public GameObject attributeDialogueBox;
+
+    [Header("Shop Manager")]
     private ShopManager manager;
 
     void Start()
@@ -17,27 +20,41 @@ public class ShopDialogueManager : MonoBehaviour
 
     public void enableDialogue()
     {
-        dialogueBox.SetActive(true);
+        attributeDialogueBox.SetActive(true);
     }
 
     public void disableDialogue()
     {
-        dialogueBox.SetActive(false);
+        attributeDialogueBox.SetActive(false);
     }
 
     public void StartDialogue(SelectedItem item)
     {
-        Debug.LogWarning("Start conversation");
+        Debug.LogWarning("--- Start conversation ---");
 
         string itemName = manager.getName(item.id); 
+        string typeOfItem = manager.getTypeOfItem(item.id);
         int itemPrice = manager.getPrice(item.id);
+        double gain = manager.calculateGain(item.id);
 
-        dialogueText.text = "Você gostaria de adquirir +" + itemName +  " por " + itemPrice + " modeas ?";
+        if(typeOfItem == "attribute"){
+            attributeDialogueText.text = "Você gostaria de adquirir +" + gain + " "+  itemName +  " por " + itemPrice + " modeas ?";
+        }else{
+            attributeDialogueText.text = "Desbloquear novo ataque " + itemName + " ?";
+        }
     }
 
     public void BuyItem()
-    {
-        manager.Buy();
+    {   
+        int itemSelected = GlobalVariables.instance.selectedItemId;
+        string typeOfItem = manager.getTypeOfItem(itemSelected);
+
+        if(typeOfItem == "attribute"){
+            manager.buyAttribute(itemSelected);
+        }else{
+            manager.buyNewATtack(itemSelected);
+        }
+
         disableDialogue();
     }
     

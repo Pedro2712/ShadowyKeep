@@ -3985,6 +3985,7 @@ GameObject:
   - component: {fileID: 691070836}
   - component: {fileID: 691070835}
   - component: {fileID: 691070834}
+  - component: {fileID: 691070838}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4072,9 +4073,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 691070838}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4122,6 +4123,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691070832}
   m_CullTransparentMesh: 1
+--- !u!114 &691070838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691070832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 5
 --- !u!1 &693818755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,6 +4283,7 @@ GameObject:
   - component: {fileID: 704990390}
   - component: {fileID: 704990389}
   - component: {fileID: 704990388}
+  - component: {fileID: 704990392}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4310,7 +4326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 9
   PriceText: {fileID: 1072765778}
-  ActualValue: {fileID: 0}
+  ActualValue: {fileID: 1873575033}
 --- !u!114 &704990389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,9 +4371,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 704990392}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4405,6 +4421,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704990386}
   m_CullTransparentMesh: 1
+--- !u!114 &704990392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704990386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 9
 --- !u!1 &709006955
 GameObject:
   m_ObjectHideFlags: 0
@@ -7037,7 +7067,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1150912675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1150912677}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1150912675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7612,6 +7654,7 @@ GameObject:
   - component: {fileID: 1226149775}
   - component: {fileID: 1226149774}
   - component: {fileID: 1226149773}
+  - component: {fileID: 1226149777}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -7654,7 +7697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 10
   PriceText: {fileID: 2018769284}
-  ActualValue: {fileID: 0}
+  ActualValue: {fileID: 1793423629}
 --- !u!114 &1226149774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7699,9 +7742,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 1226149777}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7749,6 +7792,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226149771}
   m_CullTransparentMesh: 1
+--- !u!114 &1226149777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226149771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 10
 --- !u!1 &1232099993
 GameObject:
   m_ObjectHideFlags: 0
@@ -8232,7 +8289,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1313040773}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1313040775}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1313040773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8693,6 +8762,7 @@ GameObject:
   - component: {fileID: 1381240436}
   - component: {fileID: 1381240435}
   - component: {fileID: 1381240434}
+  - component: {fileID: 1381240438}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -8780,9 +8850,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 1381240438}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8830,6 +8900,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381240432}
   m_CullTransparentMesh: 1
+--- !u!114 &1381240438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381240432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 4
 --- !u!1 &1395693106
 GameObject:
   m_ObjectHideFlags: 0
@@ -9141,6 +9225,7 @@ GameObject:
   - component: {fileID: 1443220643}
   - component: {fileID: 1443220642}
   - component: {fileID: 1443220641}
+  - component: {fileID: 1443220645}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -9183,7 +9268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 8
   PriceText: {fileID: 1641313529}
-  ActualValue: {fileID: 0}
+  ActualValue: {fileID: 915440729}
 --- !u!114 &1443220642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9228,9 +9313,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 1443220645}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9278,6 +9363,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443220639}
   m_CullTransparentMesh: 1
+--- !u!114 &1443220645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443220639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 8
 --- !u!1 &1462184309
 GameObject:
   m_ObjectHideFlags: 0
@@ -10143,7 +10242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1645653169}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: AttributeDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11707,6 +11806,7 @@ GameObject:
   - component: {fileID: 1887986317}
   - component: {fileID: 1887986316}
   - component: {fileID: 1887986315}
+  - component: {fileID: 1887986319}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -11794,9 +11894,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 1887986319}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11844,6 +11944,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887986313}
   m_CullTransparentMesh: 1
+--- !u!114 &1887986319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887986313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 6
 --- !u!1 &1929234280
 GameObject:
   m_ObjectHideFlags: 0
@@ -12810,7 +12924,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2030334163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2030334165}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2030334163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12951,6 +13077,7 @@ GameObject:
   - component: {fileID: 2052467739}
   - component: {fileID: 2052467738}
   - component: {fileID: 2052467737}
+  - component: {fileID: 2052467741}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -12993,7 +13120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemID: 7
   PriceText: {fileID: 483626818}
-  ActualValue: {fileID: 0}
+  ActualValue: {fileID: 152654316}
 --- !u!114 &2052467738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13038,9 +13165,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1266086754}
-        m_TargetAssemblyTypeName: ShopManager, Assembly-CSharp
-        m_MethodName: Buy
+      - m_Target: {fileID: 2052467741}
+        m_TargetAssemblyTypeName: ShopDialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13088,6 +13215,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2052467735}
   m_CullTransparentMesh: 1
+--- !u!114 &2052467741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052467735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa457fa4fe9f97b096b4be9a6f5cda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+    id: 7
 --- !u!1 &2053076045
 GameObject:
   m_ObjectHideFlags: 0
@@ -13251,8 +13392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50223a3ebd0252edf9d1d858a5cba871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueText: {fileID: 1202139268}
-  dialogueBox: {fileID: 1645653168}
+  attributeDialogueText: {fileID: 1202139268}
+  attributeDialogueBox: {fileID: 1645653168}
 --- !u!4 &2055836103
 Transform:
   m_ObjectHideFlags: 0
