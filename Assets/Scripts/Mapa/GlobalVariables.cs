@@ -23,7 +23,7 @@ public class GlobalVariables : MonoBehaviour
 
     [Header("Choose award")]
     public string finalChoose = "Coins";
-
+    
     public List<SerializableDictionary> serializedSprites = new List<SerializableDictionary>();
 
     public Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
@@ -31,6 +31,26 @@ public class GlobalVariables : MonoBehaviour
     [Header("Player")]
     public int lastPlayerLevel = 1;
     public int lastExperienceToNextLevel = 100;
+    
+    // ---- Store ---
+    public int selectedItemId;
+
+    public int coins = 1000;   // valor inicial para teste da loja
+    public double speed = 5.0;
+    public double strength = 2.0;
+    public double defense = 3.0;
+    public double lucky = 1.0;
+
+    public double life = 100.0;
+    public double mana = 150.0;
+    public double stamina = 100.0;
+    
+    public double simpleAttack = 1;
+    public double poisonAttack = 0;
+    public double explosaoArcana = 0;
+    public double lifeOrDeath = 0;
+    public double invocacaoProfana = 0;
+    
 
     [Header("BackGround Musics")]
     public List<AudioClip> backgroundMusics;

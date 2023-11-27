@@ -29,7 +29,6 @@ public class Enemy : MonoBehaviour
     private bool facingRight = true;
     private float cooldownTimer = 0f;
 
-
     public float attackRange = 0.7f;
 
 
