@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class Switch : MonoBehaviour
 {
     private Dictionary<string, Sprite> sortSprites = new Dictionary<string, Sprite>();
+    public List<string> serializedSprites = new List<string>();
+
+    public List<Sprite> sprites = new List<Sprite>();
 
     public Image icon;
     public Animator animator;
@@ -65,14 +68,14 @@ public class Switch : MonoBehaviour
     {
         for (int i = 0; i < iconNumber; i++)
         {
-            var keysList = new List<string>(GlobalVariables.instance.sprites.Keys);
+            var keysList = new List<string>(serializedSprites);
             int randomIndex;
             do
             {
-                randomIndex = Random.Range(0, keysList.Count);
-            } while (keys.Contains(keysList[randomIndex]));
+                randomIndex = Random.Range(0, serializedSprites.Count);
+            } while (keys.Contains(serializedSprites[randomIndex]));
             keys.Add(keysList[randomIndex]);
-            sortSprites.Add(keysList[randomIndex], GlobalVariables.instance.sprites[keysList[randomIndex]]);
+            sortSprites.Add(keysList[randomIndex], sprites[randomIndex]);
         }
     }
 }

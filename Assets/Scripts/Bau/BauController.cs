@@ -8,8 +8,11 @@ using static GlobalVariables;
 
 public class BauController : MonoBehaviour
 {
+    public List<string> nameSprites = new List<string>();
+    public List<Sprite> sprites = new List<Sprite>();
+
     public CinemachineVirtualCamera virtualCamera;
-    public Light2D luz; // Corrigi a declara��o do Light
+    public Light2D luz; // Corrigi a declara  o do Light
     public ParticleSystem particle;
     public Button button;
 
@@ -39,14 +42,20 @@ public class BauController : MonoBehaviour
     private int MAX_DEFENSE_BUFF = 10;
 
     private bool isAnimated = true;
-
     public Canvas KeyF;
     private bool isClicked = false;
-
+    private Dictionary<string, Sprite> sortSprites = new Dictionary<string, Sprite>();
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        MontaDict();
+    }
+
+    public void MontaDict() {
+        for (int i = 0; i < 5; i++){
+            sortSprites.Add(nameSprites[i], sprites[i]);
+        }
     }
 
     public void ButtonClicado () {
@@ -100,7 +109,7 @@ public class BauController : MonoBehaviour
         if (onRadios && isClicked && !isAnimated)
         {
             KeyF.gameObject.SetActive(false);
-            icon.sprite = GlobalVariables.instance.sprites[GlobalVariables.instance.finalChoose];
+            icon.sprite = sortSprites[GlobalVariables.instance.finalChoose];
             buff = GlobalVariables.instance.finalChoose;
             StartCoroutine(OpenChest());
         }

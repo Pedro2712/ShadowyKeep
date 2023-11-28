@@ -49,6 +49,7 @@ MonoBehaviour:
   canvas: {fileID: 6166555980910280108}
   KeyF: {fileID: 4474274290045363804}
   switchScript: {fileID: 6166304295974094011}
+  button: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -65,6 +66,50 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 9138703428409738178}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: sprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -859973333, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -490427613, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 212529247, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -302321857, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: -1386878860, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: serializedSprites.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: serializedSprites.Array.data[0]
+      value: Coins
+      objectReference: {fileID: 0}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: serializedSprites.Array.data[1]
+      value: Speed
+      objectReference: {fileID: 0}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: serializedSprites.Array.data[2]
+      value: Health
+      objectReference: {fileID: 0}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: serializedSprites.Array.data[3]
+      value: Strength
+      objectReference: {fileID: 0}
+    - target: {fileID: 529985823951722665, guid: 9a767f57527b0244c94d60677c722152, type: 3}
+      propertyPath: serializedSprites.Array.data[4]
+      value: Defense
+      objectReference: {fileID: 0}
     - target: {fileID: 6805049448518198959, guid: 9a767f57527b0244c94d60677c722152, type: 3}
       propertyPath: m_Name
       value: Switch
