@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -126,10 +139,10 @@ TextureImporter:
       name: Mage-Red_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
-        width: 32
-        height: 32
+        x: 9
+        y: 233
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +160,10 @@ TextureImporter:
       name: Mage-Red_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
-        width: 32
-        height: 32
+        x: 41
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +181,10 @@ TextureImporter:
       name: Mage-Red_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
-        width: 32
-        height: 32
+        x: 73
+        y: 232
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +202,10 @@ TextureImporter:
       name: Mage-Red_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
-        width: 32
-        height: 32
+        x: 105
+        y: 232
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +223,10 @@ TextureImporter:
       name: Mage-Red_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 224
-        width: 32
-        height: 32
+        x: 136
+        y: 233
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +244,10 @@ TextureImporter:
       name: Mage-Red_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
-        width: 32
-        height: 32
+        x: 168
+        y: 233
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,10 +265,10 @@ TextureImporter:
       name: Mage-Red_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
-        width: 32
-        height: 32
+        x: 201
+        y: 232
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +286,10 @@ TextureImporter:
       name: Mage-Red_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 224
-        width: 32
-        height: 32
+        x: 233
+        y: 233
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +307,10 @@ TextureImporter:
       name: Mage-Red_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 224
-        width: 32
-        height: 32
+        x: 265
+        y: 232
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,10 +328,10 @@ TextureImporter:
       name: Mage-Red_9
       rect:
         serializedVersion: 2
-        x: 288
-        y: 224
-        width: 32
-        height: 32
+        x: 297
+        y: 232
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,10 +349,10 @@ TextureImporter:
       name: Mage-Red_10
       rect:
         serializedVersion: 2
-        x: 320
-        y: 224
-        width: 32
-        height: 32
+        x: 329
+        y: 232
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +370,10 @@ TextureImporter:
       name: Mage-Red_11
       rect:
         serializedVersion: 2
-        x: 352
-        y: 224
-        width: 32
-        height: 32
+        x: 361
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +391,10 @@ TextureImporter:
       name: Mage-Red_12
       rect:
         serializedVersion: 2
-        x: 384
-        y: 224
-        width: 32
-        height: 32
+        x: 392
+        y: 233
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -399,10 +412,10 @@ TextureImporter:
       name: Mage-Red_13
       rect:
         serializedVersion: 2
-        x: 416
-        y: 224
-        width: 32
-        height: 32
+        x: 424
+        y: 233
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +433,10 @@ TextureImporter:
       name: Mage-Red_14
       rect:
         serializedVersion: 2
-        x: 448
-        y: 224
-        width: 32
-        height: 32
+        x: 457
+        y: 229
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,10 +454,10 @@ TextureImporter:
       name: Mage-Red_15
       rect:
         serializedVersion: 2
-        x: 480
-        y: 224
-        width: 32
-        height: 32
+        x: 489
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,10 +475,10 @@ TextureImporter:
       name: Mage-Red_16
       rect:
         serializedVersion: 2
-        x: 512
-        y: 224
-        width: 32
-        height: 32
+        x: 521
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +496,10 @@ TextureImporter:
       name: Mage-Red_17
       rect:
         serializedVersion: 2
-        x: 544
-        y: 224
-        width: 32
-        height: 32
+        x: 553
+        y: 233
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,10 +517,10 @@ TextureImporter:
       name: Mage-Red_18
       rect:
         serializedVersion: 2
-        x: 576
-        y: 224
-        width: 32
-        height: 32
+        x: 585
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +538,10 @@ TextureImporter:
       name: Mage-Red_19
       rect:
         serializedVersion: 2
-        x: 608
-        y: 224
-        width: 32
-        height: 32
+        x: 616
+        y: 234
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,10 +559,10 @@ TextureImporter:
       name: Mage-Red_20
       rect:
         serializedVersion: 2
-        x: 640
-        y: 224
-        width: 32
-        height: 32
+        x: 648
+        y: 233
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,10 +580,10 @@ TextureImporter:
       name: Mage-Red_21
       rect:
         serializedVersion: 2
-        x: 672
-        y: 224
-        width: 32
-        height: 32
+        x: 681
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,10 +601,10 @@ TextureImporter:
       name: Mage-Red_22
       rect:
         serializedVersion: 2
-        x: 704
-        y: 224
-        width: 32
-        height: 32
+        x: 713
+        y: 233
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,10 +622,10 @@ TextureImporter:
       name: Mage-Red_23
       rect:
         serializedVersion: 2
-        x: 736
-        y: 224
-        width: 32
-        height: 32
+        x: 745
+        y: 233
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -630,10 +643,10 @@ TextureImporter:
       name: Mage-Red_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 32
-        height: 32
+        x: 9
+        y: 201
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -651,10 +664,10 @@ TextureImporter:
       name: Mage-Red_25
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
+        x: 41
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -672,10 +685,10 @@ TextureImporter:
       name: Mage-Red_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 32
+        x: 73
+        y: 200
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -693,10 +706,10 @@ TextureImporter:
       name: Mage-Red_27
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
+        x: 105
+        y: 200
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -714,10 +727,10 @@ TextureImporter:
       name: Mage-Red_28
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
+        x: 136
+        y: 201
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -735,10 +748,10 @@ TextureImporter:
       name: Mage-Red_29
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
+        x: 168
+        y: 201
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,10 +769,10 @@ TextureImporter:
       name: Mage-Red_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 32
-        height: 32
+        x: 201
+        y: 201
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -777,10 +790,10 @@ TextureImporter:
       name: Mage-Red_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
+        x: 233
+        y: 201
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -798,10 +811,10 @@ TextureImporter:
       name: Mage-Red_32
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 32
-        height: 32
+        x: 265
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -819,10 +832,10 @@ TextureImporter:
       name: Mage-Red_33
       rect:
         serializedVersion: 2
-        x: 288
-        y: 192
-        width: 32
-        height: 32
+        x: 297
+        y: 200
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -840,10 +853,10 @@ TextureImporter:
       name: Mage-Red_34
       rect:
         serializedVersion: 2
-        x: 320
-        y: 192
-        width: 32
-        height: 32
+        x: 329
+        y: 200
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -861,10 +874,10 @@ TextureImporter:
       name: Mage-Red_35
       rect:
         serializedVersion: 2
-        x: 352
-        y: 192
-        width: 32
-        height: 32
+        x: 361
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -882,10 +895,10 @@ TextureImporter:
       name: Mage-Red_36
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
-        width: 32
-        height: 32
+        x: 392
+        y: 201
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -903,10 +916,10 @@ TextureImporter:
       name: Mage-Red_37
       rect:
         serializedVersion: 2
-        x: 416
-        y: 192
-        width: 32
-        height: 32
+        x: 424
+        y: 201
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -924,10 +937,10 @@ TextureImporter:
       name: Mage-Red_38
       rect:
         serializedVersion: 2
-        x: 448
-        y: 192
-        width: 32
-        height: 32
+        x: 457
+        y: 201
+        width: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -945,10 +958,10 @@ TextureImporter:
       name: Mage-Red_39
       rect:
         serializedVersion: 2
-        x: 480
-        y: 192
-        width: 32
-        height: 32
+        x: 489
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -966,10 +979,10 @@ TextureImporter:
       name: Mage-Red_40
       rect:
         serializedVersion: 2
-        x: 512
-        y: 192
-        width: 32
-        height: 32
+        x: 521
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -987,10 +1000,10 @@ TextureImporter:
       name: Mage-Red_41
       rect:
         serializedVersion: 2
-        x: 544
-        y: 192
-        width: 32
-        height: 32
+        x: 553
+        y: 201
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1008,10 +1021,10 @@ TextureImporter:
       name: Mage-Red_42
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
-        width: 32
-        height: 32
+        x: 585
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1029,10 +1042,10 @@ TextureImporter:
       name: Mage-Red_43
       rect:
         serializedVersion: 2
-        x: 608
-        y: 192
-        width: 32
-        height: 32
+        x: 615
+        y: 202
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1050,10 +1063,10 @@ TextureImporter:
       name: Mage-Red_44
       rect:
         serializedVersion: 2
-        x: 640
-        y: 192
-        width: 32
-        height: 32
+        x: 649
+        y: 201
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1071,10 +1084,10 @@ TextureImporter:
       name: Mage-Red_45
       rect:
         serializedVersion: 2
-        x: 672
-        y: 192
-        width: 32
-        height: 32
+        x: 681
+        y: 201
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1092,10 +1105,10 @@ TextureImporter:
       name: Mage-Red_46
       rect:
         serializedVersion: 2
-        x: 704
-        y: 192
-        width: 32
-        height: 32
+        x: 711
+        y: 201
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1113,10 +1126,10 @@ TextureImporter:
       name: Mage-Red_47
       rect:
         serializedVersion: 2
-        x: 736
-        y: 192
-        width: 32
-        height: 32
+        x: 743
+        y: 201
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1134,10 +1147,10 @@ TextureImporter:
       name: Mage-Red_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 32
-        height: 32
+        x: 9
+        y: 169
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1155,10 +1168,10 @@ TextureImporter:
       name: Mage-Red_49
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 41
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1176,10 +1189,10 @@ TextureImporter:
       name: Mage-Red_50
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
+        x: 73
+        y: 168
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1197,10 +1210,10 @@ TextureImporter:
       name: Mage-Red_51
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
-        width: 32
-        height: 32
+        x: 105
+        y: 168
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1218,10 +1231,10 @@ TextureImporter:
       name: Mage-Red_52
       rect:
         serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
+        x: 137
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1239,10 +1252,10 @@ TextureImporter:
       name: Mage-Red_53
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
+        x: 169
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1260,10 +1273,10 @@ TextureImporter:
       name: Mage-Red_54
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
+        x: 201
+        y: 169
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1281,10 +1294,10 @@ TextureImporter:
       name: Mage-Red_55
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
+        x: 233
+        y: 169
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1302,10 +1315,10 @@ TextureImporter:
       name: Mage-Red_56
       rect:
         serializedVersion: 2
-        x: 256
-        y: 160
-        width: 32
-        height: 32
+        x: 265
+        y: 169
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1323,10 +1336,10 @@ TextureImporter:
       name: Mage-Red_57
       rect:
         serializedVersion: 2
-        x: 288
-        y: 160
-        width: 32
-        height: 32
+        x: 297
+        y: 169
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1344,10 +1357,10 @@ TextureImporter:
       name: Mage-Red_58
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
-        width: 32
-        height: 32
+        x: 329
+        y: 169
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1365,10 +1378,10 @@ TextureImporter:
       name: Mage-Red_59
       rect:
         serializedVersion: 2
-        x: 352
-        y: 160
-        width: 32
-        height: 32
+        x: 361
+        y: 169
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1386,10 +1399,10 @@ TextureImporter:
       name: Mage-Red_60
       rect:
         serializedVersion: 2
-        x: 384
-        y: 160
-        width: 32
-        height: 32
+        x: 393
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1407,10 +1420,10 @@ TextureImporter:
       name: Mage-Red_61
       rect:
         serializedVersion: 2
-        x: 416
-        y: 160
-        width: 32
-        height: 32
+        x: 425
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1428,10 +1441,10 @@ TextureImporter:
       name: Mage-Red_62
       rect:
         serializedVersion: 2
-        x: 448
-        y: 160
-        width: 32
-        height: 32
+        x: 457
+        y: 169
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1449,10 +1462,10 @@ TextureImporter:
       name: Mage-Red_63
       rect:
         serializedVersion: 2
-        x: 480
-        y: 160
-        width: 32
-        height: 32
+        x: 489
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1470,10 +1483,10 @@ TextureImporter:
       name: Mage-Red_64
       rect:
         serializedVersion: 2
-        x: 512
-        y: 160
-        width: 32
-        height: 32
+        x: 521
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1491,10 +1504,10 @@ TextureImporter:
       name: Mage-Red_65
       rect:
         serializedVersion: 2
-        x: 544
-        y: 160
-        width: 32
-        height: 32
+        x: 553
+        y: 169
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1512,10 +1525,10 @@ TextureImporter:
       name: Mage-Red_66
       rect:
         serializedVersion: 2
-        x: 576
-        y: 160
-        width: 32
-        height: 32
+        x: 585
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1533,10 +1546,10 @@ TextureImporter:
       name: Mage-Red_67
       rect:
         serializedVersion: 2
-        x: 608
-        y: 160
-        width: 32
-        height: 32
+        x: 615
+        y: 169
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1554,10 +1567,10 @@ TextureImporter:
       name: Mage-Red_68
       rect:
         serializedVersion: 2
-        x: 640
-        y: 160
-        width: 32
-        height: 32
+        x: 649
+        y: 169
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1575,10 +1588,10 @@ TextureImporter:
       name: Mage-Red_69
       rect:
         serializedVersion: 2
-        x: 672
-        y: 160
-        width: 32
-        height: 32
+        x: 681
+        y: 169
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1596,10 +1609,10 @@ TextureImporter:
       name: Mage-Red_70
       rect:
         serializedVersion: 2
-        x: 704
-        y: 160
-        width: 32
-        height: 32
+        x: 707
+        y: 167
+        width: 21
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1617,10 +1630,10 @@ TextureImporter:
       name: Mage-Red_71
       rect:
         serializedVersion: 2
-        x: 736
-        y: 160
-        width: 32
-        height: 32
+        x: 739
+        y: 168
+        width: 21
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1638,10 +1651,10 @@ TextureImporter:
       name: Mage-Red_72
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
+        x: 9
+        y: 137
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1659,10 +1672,10 @@ TextureImporter:
       name: Mage-Red_73
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 41
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1680,10 +1693,10 @@ TextureImporter:
       name: Mage-Red_74
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
+        x: 73
+        y: 136
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1701,10 +1714,10 @@ TextureImporter:
       name: Mage-Red_75
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
+        x: 105
+        y: 136
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1722,10 +1735,10 @@ TextureImporter:
       name: Mage-Red_76
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 137
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1743,10 +1756,10 @@ TextureImporter:
       name: Mage-Red_77
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
+        x: 169
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1764,10 +1777,10 @@ TextureImporter:
       name: Mage-Red_78
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
-        width: 32
-        height: 32
+        x: 201
+        y: 137
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1785,10 +1798,10 @@ TextureImporter:
       name: Mage-Red_79
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
-        width: 32
-        height: 32
+        x: 233
+        y: 137
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1806,10 +1819,10 @@ TextureImporter:
       name: Mage-Red_80
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
-        width: 32
-        height: 32
+        x: 265
+        y: 137
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1827,10 +1840,10 @@ TextureImporter:
       name: Mage-Red_81
       rect:
         serializedVersion: 2
-        x: 288
-        y: 128
-        width: 32
-        height: 32
+        x: 297
+        y: 137
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1848,10 +1861,10 @@ TextureImporter:
       name: Mage-Red_82
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
-        width: 32
-        height: 32
+        x: 329
+        y: 137
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1869,10 +1882,10 @@ TextureImporter:
       name: Mage-Red_83
       rect:
         serializedVersion: 2
-        x: 352
-        y: 128
-        width: 32
-        height: 32
+        x: 361
+        y: 137
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1890,10 +1903,10 @@ TextureImporter:
       name: Mage-Red_84
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
-        width: 32
-        height: 32
+        x: 393
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1911,10 +1924,10 @@ TextureImporter:
       name: Mage-Red_85
       rect:
         serializedVersion: 2
-        x: 416
-        y: 128
-        width: 32
-        height: 32
+        x: 425
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1932,10 +1945,10 @@ TextureImporter:
       name: Mage-Red_86
       rect:
         serializedVersion: 2
-        x: 448
-        y: 128
-        width: 32
-        height: 32
+        x: 457
+        y: 137
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1953,10 +1966,10 @@ TextureImporter:
       name: Mage-Red_87
       rect:
         serializedVersion: 2
-        x: 480
-        y: 128
-        width: 32
-        height: 32
+        x: 489
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1974,10 +1987,10 @@ TextureImporter:
       name: Mage-Red_88
       rect:
         serializedVersion: 2
-        x: 512
-        y: 128
-        width: 32
-        height: 32
+        x: 521
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1995,10 +2008,10 @@ TextureImporter:
       name: Mage-Red_89
       rect:
         serializedVersion: 2
-        x: 544
-        y: 128
-        width: 32
-        height: 32
+        x: 553
+        y: 137
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2016,10 +2029,10 @@ TextureImporter:
       name: Mage-Red_90
       rect:
         serializedVersion: 2
-        x: 576
-        y: 128
-        width: 32
-        height: 32
+        x: 585
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2037,10 +2050,10 @@ TextureImporter:
       name: Mage-Red_91
       rect:
         serializedVersion: 2
-        x: 608
-        y: 128
-        width: 32
-        height: 32
+        x: 616
+        y: 136
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2058,10 +2071,10 @@ TextureImporter:
       name: Mage-Red_92
       rect:
         serializedVersion: 2
-        x: 640
-        y: 128
-        width: 32
-        height: 32
+        x: 649
+        y: 137
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2079,10 +2092,10 @@ TextureImporter:
       name: Mage-Red_93
       rect:
         serializedVersion: 2
-        x: 672
-        y: 128
-        width: 32
-        height: 32
+        x: 681
+        y: 137
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2100,10 +2113,10 @@ TextureImporter:
       name: Mage-Red_94
       rect:
         serializedVersion: 2
-        x: 704
-        y: 128
-        width: 32
-        height: 32
+        x: 711
+        y: 132
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2121,10 +2134,10 @@ TextureImporter:
       name: Mage-Red_95
       rect:
         serializedVersion: 2
-        x: 736
-        y: 128
-        width: 32
-        height: 32
+        x: 743
+        y: 133
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2142,10 +2155,10 @@ TextureImporter:
       name: Mage-Red_96
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 9
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2163,10 +2176,10 @@ TextureImporter:
       name: Mage-Red_97
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 41
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2184,10 +2197,10 @@ TextureImporter:
       name: Mage-Red_98
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 73
+        y: 104
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2205,10 +2218,10 @@ TextureImporter:
       name: Mage-Red_99
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
+        x: 105
+        y: 104
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2226,10 +2239,10 @@ TextureImporter:
       name: Mage-Red_100
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
+        x: 137
+        y: 105
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2247,10 +2260,10 @@ TextureImporter:
       name: Mage-Red_101
       rect:
         serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
+        x: 169
+        y: 105
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2268,10 +2281,10 @@ TextureImporter:
       name: Mage-Red_102
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
-        width: 32
-        height: 32
+        x: 201
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2289,10 +2302,10 @@ TextureImporter:
       name: Mage-Red_103
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
+        x: 233
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2310,10 +2323,10 @@ TextureImporter:
       name: Mage-Red_104
       rect:
         serializedVersion: 2
-        x: 256
-        y: 96
-        width: 32
-        height: 32
+        x: 265
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2331,10 +2344,10 @@ TextureImporter:
       name: Mage-Red_105
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
-        width: 32
-        height: 32
+        x: 297
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2352,10 +2365,10 @@ TextureImporter:
       name: Mage-Red_106
       rect:
         serializedVersion: 2
-        x: 320
-        y: 96
-        width: 32
-        height: 32
+        x: 329
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2373,10 +2386,10 @@ TextureImporter:
       name: Mage-Red_107
       rect:
         serializedVersion: 2
-        x: 352
-        y: 96
-        width: 32
-        height: 32
+        x: 361
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2394,10 +2407,10 @@ TextureImporter:
       name: Mage-Red_108
       rect:
         serializedVersion: 2
-        x: 384
-        y: 96
-        width: 32
-        height: 32
+        x: 393
+        y: 105
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2415,10 +2428,10 @@ TextureImporter:
       name: Mage-Red_109
       rect:
         serializedVersion: 2
-        x: 416
-        y: 96
-        width: 32
-        height: 32
+        x: 425
+        y: 105
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2436,10 +2449,10 @@ TextureImporter:
       name: Mage-Red_110
       rect:
         serializedVersion: 2
-        x: 448
-        y: 96
-        width: 32
-        height: 32
+        x: 457
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2457,10 +2470,10 @@ TextureImporter:
       name: Mage-Red_111
       rect:
         serializedVersion: 2
-        x: 480
-        y: 96
-        width: 32
-        height: 32
+        x: 489
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2478,10 +2491,10 @@ TextureImporter:
       name: Mage-Red_112
       rect:
         serializedVersion: 2
-        x: 512
-        y: 96
-        width: 32
-        height: 32
+        x: 521
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2499,10 +2512,10 @@ TextureImporter:
       name: Mage-Red_113
       rect:
         serializedVersion: 2
-        x: 544
-        y: 96
-        width: 32
-        height: 32
+        x: 553
+        y: 105
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2520,10 +2533,10 @@ TextureImporter:
       name: Mage-Red_114
       rect:
         serializedVersion: 2
-        x: 576
-        y: 96
-        width: 32
-        height: 32
+        x: 585
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2541,10 +2554,10 @@ TextureImporter:
       name: Mage-Red_115
       rect:
         serializedVersion: 2
-        x: 608
-        y: 96
-        width: 32
-        height: 32
+        x: 616
+        y: 104
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2562,10 +2575,10 @@ TextureImporter:
       name: Mage-Red_116
       rect:
         serializedVersion: 2
-        x: 640
-        y: 96
-        width: 32
-        height: 32
+        x: 648
+        y: 105
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2583,10 +2596,10 @@ TextureImporter:
       name: Mage-Red_117
       rect:
         serializedVersion: 2
-        x: 672
-        y: 96
-        width: 32
-        height: 32
+        x: 681
+        y: 105
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2604,10 +2617,10 @@ TextureImporter:
       name: Mage-Red_118
       rect:
         serializedVersion: 2
-        x: 704
-        y: 96
-        width: 32
-        height: 32
+        x: 713
+        y: 99
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2625,10 +2638,10 @@ TextureImporter:
       name: Mage-Red_119
       rect:
         serializedVersion: 2
-        x: 736
-        y: 96
-        width: 32
-        height: 32
+        x: 745
+        y: 100
+        width: 14
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2646,10 +2659,10 @@ TextureImporter:
       name: Mage-Red_120
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 9
+        y: 73
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2667,10 +2680,10 @@ TextureImporter:
       name: Mage-Red_121
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 41
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2688,10 +2701,10 @@ TextureImporter:
       name: Mage-Red_122
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 73
+        y: 72
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2709,10 +2722,10 @@ TextureImporter:
       name: Mage-Red_123
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 105
+        y: 72
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2730,10 +2743,10 @@ TextureImporter:
       name: Mage-Red_124
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
+        x: 137
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2751,10 +2764,10 @@ TextureImporter:
       name: Mage-Red_125
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
+        x: 169
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2772,10 +2785,10 @@ TextureImporter:
       name: Mage-Red_126
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 32
+        x: 200
+        y: 73
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2793,10 +2806,10 @@ TextureImporter:
       name: Mage-Red_127
       rect:
         serializedVersion: 2
-        x: 224
-        y: 64
-        width: 32
-        height: 32
+        x: 233
+        y: 73
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2814,10 +2827,10 @@ TextureImporter:
       name: Mage-Red_128
       rect:
         serializedVersion: 2
-        x: 256
-        y: 64
-        width: 32
-        height: 32
+        x: 264
+        y: 73
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2835,10 +2848,10 @@ TextureImporter:
       name: Mage-Red_129
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
-        width: 32
-        height: 32
+        x: 296
+        y: 73
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2856,10 +2869,10 @@ TextureImporter:
       name: Mage-Red_130
       rect:
         serializedVersion: 2
-        x: 320
-        y: 64
-        width: 32
-        height: 32
+        x: 328
+        y: 73
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2877,10 +2890,10 @@ TextureImporter:
       name: Mage-Red_131
       rect:
         serializedVersion: 2
-        x: 352
-        y: 64
-        width: 32
-        height: 32
+        x: 360
+        y: 73
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2898,10 +2911,10 @@ TextureImporter:
       name: Mage-Red_132
       rect:
         serializedVersion: 2
-        x: 384
-        y: 64
-        width: 32
-        height: 32
+        x: 393
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2919,10 +2932,10 @@ TextureImporter:
       name: Mage-Red_133
       rect:
         serializedVersion: 2
-        x: 416
-        y: 64
-        width: 32
-        height: 32
+        x: 425
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2940,10 +2953,10 @@ TextureImporter:
       name: Mage-Red_134
       rect:
         serializedVersion: 2
-        x: 448
-        y: 64
-        width: 32
-        height: 32
+        x: 454
+        y: 73
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2961,10 +2974,10 @@ TextureImporter:
       name: Mage-Red_135
       rect:
         serializedVersion: 2
-        x: 480
-        y: 64
-        width: 32
-        height: 32
+        x: 489
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2982,10 +2995,10 @@ TextureImporter:
       name: Mage-Red_136
       rect:
         serializedVersion: 2
-        x: 512
-        y: 64
-        width: 32
-        height: 32
+        x: 521
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3003,10 +3016,10 @@ TextureImporter:
       name: Mage-Red_137
       rect:
         serializedVersion: 2
-        x: 544
-        y: 64
-        width: 32
-        height: 32
+        x: 553
+        y: 73
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3024,10 +3037,10 @@ TextureImporter:
       name: Mage-Red_138
       rect:
         serializedVersion: 2
-        x: 576
-        y: 64
-        width: 32
-        height: 32
+        x: 585
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3045,10 +3058,10 @@ TextureImporter:
       name: Mage-Red_139
       rect:
         serializedVersion: 2
-        x: 608
-        y: 64
-        width: 32
-        height: 32
+        x: 618
+        y: 72
+        width: 14
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3066,10 +3079,10 @@ TextureImporter:
       name: Mage-Red_140
       rect:
         serializedVersion: 2
-        x: 640
-        y: 64
-        width: 32
-        height: 32
+        x: 649
+        y: 73
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3087,10 +3100,10 @@ TextureImporter:
       name: Mage-Red_141
       rect:
         serializedVersion: 2
-        x: 672
-        y: 64
-        width: 32
-        height: 32
+        x: 681
+        y: 73
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3108,10 +3121,10 @@ TextureImporter:
       name: Mage-Red_142
       rect:
         serializedVersion: 2
-        x: 704
-        y: 64
-        width: 32
-        height: 32
+        x: 714
+        y: 66
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3129,10 +3142,10 @@ TextureImporter:
       name: Mage-Red_143
       rect:
         serializedVersion: 2
-        x: 736
-        y: 64
-        width: 32
-        height: 32
+        x: 746
+        y: 67
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3150,10 +3163,10 @@ TextureImporter:
       name: Mage-Red_144
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 9
+        y: 41
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3171,10 +3184,10 @@ TextureImporter:
       name: Mage-Red_145
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 41
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3192,10 +3205,10 @@ TextureImporter:
       name: Mage-Red_146
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 73
+        y: 40
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3213,10 +3226,10 @@ TextureImporter:
       name: Mage-Red_147
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 105
+        y: 40
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3234,10 +3247,10 @@ TextureImporter:
       name: Mage-Red_148
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
+        x: 137
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3255,10 +3268,10 @@ TextureImporter:
       name: Mage-Red_149
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
+        x: 169
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3276,10 +3289,10 @@ TextureImporter:
       name: Mage-Red_150
       rect:
         serializedVersion: 2
-        x: 192
-        y: 32
-        width: 32
-        height: 32
+        x: 200
+        y: 41
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3297,10 +3310,10 @@ TextureImporter:
       name: Mage-Red_151
       rect:
         serializedVersion: 2
-        x: 224
-        y: 32
-        width: 32
-        height: 32
+        x: 232
+        y: 41
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3318,10 +3331,10 @@ TextureImporter:
       name: Mage-Red_152
       rect:
         serializedVersion: 2
-        x: 256
-        y: 32
-        width: 32
-        height: 32
+        x: 263
+        y: 41
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3339,10 +3352,10 @@ TextureImporter:
       name: Mage-Red_153
       rect:
         serializedVersion: 2
-        x: 288
-        y: 32
-        width: 32
-        height: 32
+        x: 297
+        y: 41
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3360,10 +3373,10 @@ TextureImporter:
       name: Mage-Red_154
       rect:
         serializedVersion: 2
-        x: 320
-        y: 32
-        width: 32
-        height: 32
+        x: 328
+        y: 41
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3381,10 +3394,10 @@ TextureImporter:
       name: Mage-Red_155
       rect:
         serializedVersion: 2
-        x: 352
-        y: 32
-        width: 32
-        height: 32
+        x: 360
+        y: 41
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3402,10 +3415,10 @@ TextureImporter:
       name: Mage-Red_156
       rect:
         serializedVersion: 2
-        x: 384
-        y: 32
-        width: 32
-        height: 32
+        x: 393
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3423,10 +3436,10 @@ TextureImporter:
       name: Mage-Red_157
       rect:
         serializedVersion: 2
-        x: 416
-        y: 32
-        width: 32
-        height: 32
+        x: 425
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3444,10 +3457,10 @@ TextureImporter:
       name: Mage-Red_158
       rect:
         serializedVersion: 2
-        x: 448
-        y: 32
-        width: 32
-        height: 32
+        x: 454
+        y: 41
+        width: 17
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3465,10 +3478,10 @@ TextureImporter:
       name: Mage-Red_159
       rect:
         serializedVersion: 2
-        x: 480
-        y: 32
-        width: 32
-        height: 32
+        x: 489
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3486,10 +3499,10 @@ TextureImporter:
       name: Mage-Red_160
       rect:
         serializedVersion: 2
-        x: 512
-        y: 32
-        width: 32
-        height: 32
+        x: 521
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3507,10 +3520,10 @@ TextureImporter:
       name: Mage-Red_161
       rect:
         serializedVersion: 2
-        x: 544
-        y: 32
-        width: 32
-        height: 32
+        x: 553
+        y: 41
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3528,10 +3541,10 @@ TextureImporter:
       name: Mage-Red_162
       rect:
         serializedVersion: 2
-        x: 576
-        y: 32
-        width: 32
-        height: 32
+        x: 585
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3549,10 +3562,10 @@ TextureImporter:
       name: Mage-Red_163
       rect:
         serializedVersion: 2
-        x: 608
-        y: 32
-        width: 32
-        height: 32
+        x: 619
+        y: 41
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3570,10 +3583,10 @@ TextureImporter:
       name: Mage-Red_164
       rect:
         serializedVersion: 2
-        x: 640
-        y: 32
-        width: 32
-        height: 32
+        x: 649
+        y: 41
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3591,10 +3604,10 @@ TextureImporter:
       name: Mage-Red_165
       rect:
         serializedVersion: 2
-        x: 672
-        y: 32
-        width: 32
-        height: 32
+        x: 681
+        y: 41
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3612,10 +3625,10 @@ TextureImporter:
       name: Mage-Red_166
       rect:
         serializedVersion: 2
-        x: 704
-        y: 32
-        width: 32
-        height: 32
+        x: 712
+        y: 39
+        width: 21
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3633,10 +3646,10 @@ TextureImporter:
       name: Mage-Red_167
       rect:
         serializedVersion: 2
-        x: 736
-        y: 32
-        width: 32
-        height: 32
+        x: 744
+        y: 40
+        width: 21
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3654,10 +3667,10 @@ TextureImporter:
       name: Mage-Red_168
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 9
+        y: 9
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3675,10 +3688,10 @@ TextureImporter:
       name: Mage-Red_169
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 41
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3696,10 +3709,10 @@ TextureImporter:
       name: Mage-Red_170
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 73
+        y: 8
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3717,10 +3730,10 @@ TextureImporter:
       name: Mage-Red_171
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 105
+        y: 8
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3738,10 +3751,10 @@ TextureImporter:
       name: Mage-Red_172
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
+        x: 137
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3759,10 +3772,10 @@ TextureImporter:
       name: Mage-Red_173
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
+        x: 169
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3780,10 +3793,10 @@ TextureImporter:
       name: Mage-Red_174
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
+        x: 200
+        y: 9
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3801,10 +3814,10 @@ TextureImporter:
       name: Mage-Red_175
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
+        x: 233
+        y: 9
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3822,10 +3835,10 @@ TextureImporter:
       name: Mage-Red_176
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
+        x: 265
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3843,10 +3856,10 @@ TextureImporter:
       name: Mage-Red_177
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
+        x: 296
+        y: 8
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3864,10 +3877,10 @@ TextureImporter:
       name: Mage-Red_178
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
+        x: 328
+        y: 8
+        width: 15
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3885,10 +3898,10 @@ TextureImporter:
       name: Mage-Red_179
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
+        x: 360
+        y: 8
+        width: 15
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3906,10 +3919,10 @@ TextureImporter:
       name: Mage-Red_180
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 32
-        height: 32
+        x: 393
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3927,10 +3940,10 @@ TextureImporter:
       name: Mage-Red_181
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
-        width: 32
-        height: 32
+        x: 425
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3948,10 +3961,10 @@ TextureImporter:
       name: Mage-Red_182
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 32
-        height: 32
+        x: 455
+        y: 8
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3969,10 +3982,10 @@ TextureImporter:
       name: Mage-Red_183
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 32
-        height: 32
+        x: 489
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3990,10 +4003,10 @@ TextureImporter:
       name: Mage-Red_184
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 32
-        height: 32
+        x: 521
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4011,10 +4024,10 @@ TextureImporter:
       name: Mage-Red_185
       rect:
         serializedVersion: 2
-        x: 544
-        y: 0
-        width: 32
-        height: 32
+        x: 553
+        y: 9
+        width: 14
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4032,10 +4045,10 @@ TextureImporter:
       name: Mage-Red_186
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
-        width: 32
-        height: 32
+        x: 585
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4053,10 +4066,10 @@ TextureImporter:
       name: Mage-Red_187
       rect:
         serializedVersion: 2
-        x: 608
-        y: 0
-        width: 32
-        height: 32
+        x: 619
+        y: 10
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4074,10 +4087,10 @@ TextureImporter:
       name: Mage-Red_188
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 32
-        height: 32
+        x: 649
+        y: 9
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4095,10 +4108,10 @@ TextureImporter:
       name: Mage-Red_189
       rect:
         serializedVersion: 2
-        x: 672
-        y: 0
-        width: 32
-        height: 32
+        x: 681
+        y: 9
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4116,10 +4129,10 @@ TextureImporter:
       name: Mage-Red_190
       rect:
         serializedVersion: 2
-        x: 704
-        y: 0
-        width: 32
-        height: 32
+        x: 714
+        y: 9
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4137,10 +4150,10 @@ TextureImporter:
       name: Mage-Red_191
       rect:
         serializedVersion: 2
-        x: 736
-        y: 0
-        width: 32
-        height: 32
+        x: 746
+        y: 9
+        width: 15
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
