@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9f7c39b2404c1b14a90d6b9ffbbe5fb1
+guid: 5e66f19e293df3310b51f09fc46b31c5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -120,11 +120,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mage-Red_0
+      name: Archer-Green_0
       rect:
         serializedVersion: 2
         x: 9
         y: 233
         width: 14
-        height: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c95002de93307a74086c4906a9e5cf99
-      internalID: 270569351
+      spriteID: 373a1ad9c1aac2987ab963a0b069bf77
+      internalID: -597081661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_1
+      name: Archer-Green_1
       rect:
         serializedVersion: 2
         x: 41
         y: 233
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39432fc13d64fb84ab2da28565b2e716
-      internalID: -1666636864
+      spriteID: cb911d7e013314b0cbe7015bb9de0fe1
+      internalID: -1614643317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_2
+      name: Archer-Green_2
       rect:
         serializedVersion: 2
         x: 73
         y: 232
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b15b13c2953f942abd89d9c3893011
-      internalID: 47478661
+      spriteID: 00b0381739f68537a9819854589bc8cd
+      internalID: 967635340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_3
+      name: Archer-Green_3
       rect:
         serializedVersion: 2
         x: 105
         y: 232
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98d655a409662fe4b94b348b3985c04d
-      internalID: -252139807
+      spriteID: f127e35bcd7baa50bb23ae80232e311b
+      internalID: 357644138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_4
+      name: Archer-Green_4
       rect:
         serializedVersion: 2
         x: 136
         y: 233
-        width: 15
-        height: 18
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 094d23df0a498aa4e8d1923c0c2802fd
-      internalID: 841540198
+      spriteID: 580dbf7f1fd8fb7a7980d9ef44761b0d
+      internalID: 393627135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_5
+      name: Archer-Green_5
       rect:
         serializedVersion: 2
         x: 168
         y: 233
-        width: 15
-        height: 18
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef41ef46818511a4d85ea4149eb4f124
-      internalID: 2062619398
+      spriteID: f2af7e9f7e03c62ad8f41a4ba55917fe
+      internalID: -2129367873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_6
+      name: Archer-Green_6
       rect:
         serializedVersion: 2
         x: 201
         y: 232
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7fd613e34b14b41a6ac64cbab0d22d
-      internalID: 1962849030
+      spriteID: 91c318926cad9aae9bf38c45ffba0773
+      internalID: -675828103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_7
+      name: Archer-Green_7
       rect:
         serializedVersion: 2
         x: 233
         y: 233
         width: 14
-        height: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,1258 +297,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae0f4d585c308294bb379d5bd1c7d44a
-      internalID: -2128474147
+      spriteID: cf83137163faae3b58d7cc6a0b511541
+      internalID: 165542907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_8
+      name: Archer-Green_8
       rect:
         serializedVersion: 2
         x: 265
         y: 232
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e18183003d1a03c4da903c5d023c4020
-      internalID: -925259668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_9
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 232
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e537516d6230f454fa8e620f70689997
-      internalID: 1048673540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_10
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 232
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cb245d26f8231f24896139b170e60e60
-      internalID: -1223864140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_11
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 233
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a3c8c42be012234e91ac5d26153c981
-      internalID: 474468832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_12
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 233
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1469c37da22f5944bcc4a93c704d746
-      internalID: -557863449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_13
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 233
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 543d3b9f64ebd5948b026512d5262112
-      internalID: 178965658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_14
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 229
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c72831d6a579cdb41bf3071eb373750d
-      internalID: -1044675496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_15
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 233
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db763f1d25daa2e4fae237d2de22395a
-      internalID: -1250815859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_16
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 233
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d2da718bac764f4b91129933c9f7d6f
-      internalID: -618688803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_17
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 233
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d38fc6b40317f344aa107ee0251c1e32
-      internalID: -1556231839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_18
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 233
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15b388a6359a6ee44b88811aadeb47b0
-      internalID: 1093032448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_19
-      rect:
-        serializedVersion: 2
-        x: 616
-        y: 234
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d7cae0db3b97c449877e8928dfde285
-      internalID: 150141795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_20
-      rect:
-        serializedVersion: 2
-        x: 648
-        y: 233
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c2ed7ab2cb499843bb91efd758bc686
-      internalID: 277386771
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_21
-      rect:
-        serializedVersion: 2
-        x: 681
-        y: 233
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05e270cad50411443aea43bf1cb0d2c1
-      internalID: -79054973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_22
-      rect:
-        serializedVersion: 2
-        x: 713
-        y: 233
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ffcae94436117246b25028439c45cbf
-      internalID: 230771444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_23
-      rect:
-        serializedVersion: 2
-        x: 745
-        y: 233
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e54c48c5395fdad4ab50868b155c1ad1
-      internalID: 1027778238
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_24
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 201
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 888f13dbe7dcf8c4982033f4909ac81a
-      internalID: 1152956834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_25
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab12e450be16c1d4e841c34a6183c5dd
-      internalID: -61936679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_26
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 200
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa130d5b77e41bf48b5c979d27c6e4fc
-      internalID: 483247102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_27
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 200
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78fe26c9d9c5b5b4697489a7ac42e74e
-      internalID: -803466382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_28
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 201
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 706acfe8cb7f7644aa8e26447ee88be7
-      internalID: 1256755898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_29
-      rect:
-        serializedVersion: 2
-        x: 168
-        y: 201
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77087db4ed5eb1e4aa4a7cb103170b54
-      internalID: -97843313
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_30
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 201
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35bdf1f0d21d6c142b693682fb80e183
-      internalID: -1129064865
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_31
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 201
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 922278bae35c6894fb24d141c0595b5e
-      internalID: -2117574820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_32
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99815647f6266ee4cb916c5eafffb136
-      internalID: 264178172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_33
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 200
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 951146fd4232f834087dc3c6d9760aaf
-      internalID: 1002593236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_34
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 200
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91396c04893afd143ac02fd92f2d2856
-      internalID: 167129632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_35
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51d0166610d817d4e9bc24081b19c15e
-      internalID: 1945953991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_36
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 201
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a60b9b72e9823ba499170a17936c8f1d
-      internalID: -1466905368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_37
-      rect:
-        serializedVersion: 2
-        x: 424
-        y: 201
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 95fb5dd59762ab6478eab38624e04d9c
-      internalID: -833701491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_38
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 201
-        width: 16
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d540752e9bbaa72448cf0d0c6d378d68
-      internalID: 811066594
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_39
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cec5a86b66795740b84d6dd99f81084
-      internalID: 1336937907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_40
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec045dd208e7c804981ee35e390ccb3a
-      internalID: -881381736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_41
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 201
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fb24eb1e2f9e844fb6ad4006eded776
-      internalID: -606725431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_42
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d780285cb6bdd434bb5bf5bf2e2a1646
-      internalID: -1085332577
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_43
-      rect:
-        serializedVersion: 2
-        x: 615
-        y: 202
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f97e89d023abd24298c177319aeeb71
-      internalID: -163549791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_44
-      rect:
-        serializedVersion: 2
-        x: 649
-        y: 201
-        width: 14
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fc2027bb707390459017c39df22f32d
-      internalID: 266536175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_45
-      rect:
-        serializedVersion: 2
-        x: 681
-        y: 201
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4df4d18ee8b869a428883f3d5755459c
-      internalID: 1759772725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_46
-      rect:
-        serializedVersion: 2
-        x: 711
-        y: 201
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74a85e45f0b18ff4a868ff7a585dd4a3
-      internalID: 12325299
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_47
-      rect:
-        serializedVersion: 2
-        x: 743
-        y: 201
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc95e67d4527ba748a17b8f4f92348e8
-      internalID: -822831902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_48
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 169
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 739917e565b528c45a221f8e493487d4
-      internalID: 882896440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_49
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b56e3b9de7d2024b8a307c78e39e18d
-      internalID: -1232481330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_50
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 168
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f9ad15dbd174454cb9edd24df07f122
-      internalID: -402612022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_51
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 168
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fda5c95a4d3c76e4fb6c305d5fe12142
-      internalID: -396279327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_52
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0f8577bf2964674c8c13a66fef35e0f
-      internalID: 1584402911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_53
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 992c2178fce81ff439082f5567381d26
-      internalID: 89386155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_54
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 169
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a34899c5d306744db97d90bcfcb8b6c
-      internalID: -462490843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_55
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 169
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a060932de662b44487cc884eee57085
-      internalID: 1217186774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_56
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 169
-        width: 16
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 356e7842d43d3e9438bc0e6ed3f3136c
-      internalID: -1868379712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_57
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 169
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46d9df07a2a981446845183de20f96ab
-      internalID: -1056955890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_58
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 169
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f75d229e8d46b3c4e9e65cd069320c41
-      internalID: -2111141013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_59
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 169
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7c2aa23a6cd24945b04f8840b6ed7bf
-      internalID: 1292679599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_60
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8a7d367c40fd584cb8f59039c193c20
-      internalID: 1309761653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_61
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7526abb2b25bd6344be6f126e1cf6147
-      internalID: 2142809082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_62
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 169
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d92b3d59d4f219146bacd729c6fe8cec
-      internalID: -928750458
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_63
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57e2d867ce272e44991081a0296cbbc9
-      internalID: -551131406
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_64
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1715081900b1fec49a510b75c17458b3
-      internalID: 1599582572
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_65
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 169
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4557cb38425d3864ab5ebdd0a44bbc8e
-      internalID: -1210191144
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_66
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 169
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25324c36a228ec24d805d12e3aa80282
-      internalID: 1673012234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_67
-      rect:
-        serializedVersion: 2
-        x: 615
-        y: 169
-        width: 14
+        width: 13
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1557,18 +318,81 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f326e6b4d1304b8438c45c44e053d624
-      internalID: 1297288671
+      spriteID: e19393a8074ac4c69aedba9a972abc53
+      internalID: -1548695278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_68
+      name: Archer-Green_9
       rect:
         serializedVersion: 2
-        x: 649
-        y: 169
+        x: 297
+        y: 232
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c99767c89df1f709810b8859bb000e
+      internalID: 1706573306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 232
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa132a57db717bd1bc8d03d65954363
+      internalID: 1835105554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1380847891ef7422a988ab986d82cf0
+      internalID: -291412378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_12
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 233
         width: 14
         height: 19
       alignment: 0
@@ -1578,18 +402,102 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee81f03403747a429bb485989ab68b0
-      internalID: -2083986775
+      spriteID: fe77a2f73ba2284a89248bb7ac92a006
+      internalID: -335047326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_69
+      name: Archer-Green_13
       rect:
         serializedVersion: 2
-        x: 681
-        y: 169
+        x: 424
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fb3bc4cb3d1d9fc96e0c047b3d5b17
+      internalID: 1210099416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 229
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d407e20a7cb1517dfb7f2a097f6a55f4
+      internalID: -1369235934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b1a2c9920ee93eaa8e204630892868
+      internalID: -1616340744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_16
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 233
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c32eba461d153e528fe70d212827dfb
+      internalID: -96164467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 233
         width: 14
         height: 18
       alignment: 0
@@ -1599,20 +507,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e91b78edf44fefc44a3772c5a9a93f48
-      internalID: -1482545593
+      spriteID: 83cbcc40a1cc7e2fbb25a80eba8fa16e
+      internalID: 1214242502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_70
+      name: Archer-Green_18
       rect:
         serializedVersion: 2
-        x: 707
-        y: 167
-        width: 21
-        height: 14
+        x: 585
+        y: 233
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1620,14 +528,1106 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77b84aa167f722c46a121e21f276d682
-      internalID: 1147420508
+      spriteID: c25b65780ce3d1b4292a0b9ffa2ce58c
+      internalID: 696278633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_71
+      name: Archer-Green_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 234
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51f39af1fb3ad85a86a2042fd3577a1
+      internalID: 1569142501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_20
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 233
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d05b0f7679e786fa913687ce9b6fc76
+      internalID: 1012317555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_21
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 233
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a421762492f826b8eb17a9d780675116
+      internalID: -1042769899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_22
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 233
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dca9b1fb21e14838497aa296208c0e
+      internalID: 2071113267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 233
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8036fd246459095a84d81f4a0c436fe
+      internalID: 233990711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 201
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b6d83704bb430688d8309ee3f85fc1
+      internalID: 319340595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb39340e9e6211c9b0dc8439a520b48
+      internalID: -398759840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 200
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8fb9945c90fab119d12f94b24ea6c4
+      internalID: 772087485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 200
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819f0aad8a22229b88cb7e0634747bb7
+      internalID: -725226821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_28
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4191206ae185d9e09b4a1c35d9c7d829
+      internalID: 1620984050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_29
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d11f4294ce840c59e70fe920090676
+      internalID: 705803471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_30
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 201
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9396dbcd040b7c418dd0615f27b3e23
+      internalID: -69965563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 201
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8b6dd41768919d684c2ce8e3047b1a
+      internalID: 122305091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_32
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fac595e10836c40af9914dd6384bfc
+      internalID: 1552366961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_33
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 200
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e234e23752e5d1329b727eb334463205
+      internalID: -67824043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_34
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 200
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a65115b2af0389bbcd8ea9912b2a1d
+      internalID: -420966177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_35
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55f1b272311e4348a1638e1af40cc2
+      internalID: 295141099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_36
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6c0adf17a84e1c3b84c599e71afc7b
+      internalID: 1285292389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_37
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 201
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfa2ac472310f9aabfc292d7004c981
+      internalID: -1190148598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_38
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 201
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b703911445a79586ab184fc2bd06296d
+      internalID: 1706764170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98008e54c258adfa91edd572c3cc003
+      internalID: -125676426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_40
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 201
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189d69e65e89711dca6685b469eac1d1
+      internalID: -1840558206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_41
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 201
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5662e95c38e5328ada224c02df05458d
+      internalID: -1670093482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_42
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98edcce0c468ae52b2fe7f589297d52
+      internalID: -485585490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_43
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 202
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b71dd6a9c9ee4bb0b379031b5063da8
+      internalID: -843372124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_44
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 201
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016bdf4c7ef013802ab6ff05e180f314
+      internalID: -1005359541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_45
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 201
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b7b5864cf0598ef89ce934ad6485af
+      internalID: -566873266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_46
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 201
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0958694bc493c90d80f2acb5df14f48
+      internalID: -1624533538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_47
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 201
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9f5f8b962f2a9b8f86a13d1438851
+      internalID: 1293669378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 169
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcb75662555fa58bbe467084baaa04d
+      internalID: 1153944976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_49
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94516f07e59b90f9981ca2c2f552734
+      internalID: -620943252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_50
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 168
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc22b6482dbaaa64bc0468cf8d08691
+      internalID: -388096121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_51
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 168
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95586ec282f411f8b14df91d7330a04
+      internalID: 935947253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_52
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a78eccb810e3a95b36d39647e87482
+      internalID: 716147328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_53
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca73f7ace50badc7a5fb0f4cd6eb2b5
+      internalID: -1039628925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 169
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302b2376c6f5322f28c2392ea0b2a86e
+      internalID: 859020643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_55
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 169
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f3ad41abadaecf99e06678407b3003
+      internalID: 1272618129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_56
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 169
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df37e5f5d4127f54abc7d8edeaf145c
+      internalID: 1664870857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_57
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 169
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c049900356f86ceaa15509b1c090a5
+      internalID: -1625095998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_58
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 169
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564a753fad9fc4e479c12f6760fa9846
+      internalID: 2004946446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_59
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 169
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b53ba2bd5f8130b834ce5ef21343cc
+      internalID: 1998907461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_60
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7becec771f7e98b4978def3f847d325
+      internalID: 1001807104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_61
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2c1994d5a6cb209b89a315d970a18e
+      internalID: -1172787842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_62
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 169
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14a95f2f2dc65ecc8f782b4b9fb6337
+      internalID: -1362313961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_63
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94bda1953c2ae9eb9af631e14b4a372
+      internalID: -503333535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_64
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8522fcbd0963cf3669af8453dffddd0c
+      internalID: -1730293445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_65
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 169
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58f2a26e2a0860efb6c08295a1cc8cb
+      internalID: 779510212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_66
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ea999c714f00966b6752dfed10e772
+      internalID: -1943488585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_67
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 169
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61c09326492e5d4d927c1b9150ebbc4
+      internalID: -1269709987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_68
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 169
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01bc589ef7bdd255d97c9dd2fd313feb
+      internalID: -33249735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_69
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 169
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5299e97b3844224d8c8421ad1e1f678
+      internalID: -1968767835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_70
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 166
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e73122b704d422daae65e75dbd0588a
+      internalID: 695246504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_71
       rect:
         serializedVersion: 2
         x: 739
@@ -1641,40 +1641,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270ef90774c33154997f542486f1b6da
-      internalID: -943052776
+      spriteID: 231f0a31dab90d7e3892c3b9cf7345b1
+      internalID: 861325156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_72
+      name: Archer-Green_72
       rect:
         serializedVersion: 2
-        x: 9
+        x: 10
         y: 137
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c68f9c6a7ca779d41851945fe770de84
-      internalID: 1502284056
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_73
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 137
-        width: 14
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1683,20 +1662,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4c6e567a7a2f8499654b3374f40153
-      internalID: -958087027
+      spriteID: 5cc796f0673870c648dcf061ee3fe5ca
+      internalID: 1184798253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_74
+      name: Archer-Green_73
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd3598e3af09d8b19296d0d62acc4b8
+      internalID: 742308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_74
       rect:
         serializedVersion: 2
         x: 73
         y: 136
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,20 +1704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2cad3c8375cda64b9ca98c108e59cf4
-      internalID: -942445237
+      spriteID: 62c377accd693aab38fd38edfc323733
+      internalID: 966657082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_75
+      name: Archer-Green_75
       rect:
         serializedVersion: 2
-        x: 105
+        x: 106
         y: 136
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1725,17 +1725,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a6f1b9d5675c384b91f48cf40ecd556
-      internalID: 1807163005
+      spriteID: b8fb6904334d526e3b2789624b04f5c8
+      internalID: 1680211975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_76
+      name: Archer-Green_76
       rect:
         serializedVersion: 2
-        x: 137
+        x: 138
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35cd0c9741b1c81bcb8e66454e85a422
+      internalID: 1819212123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_77
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba371d57bed29c8190e6dfe7780b2f9
+      internalID: -1082185305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_78
+      rect:
+        serializedVersion: 2
+        x: 202
         y: 137
         width: 14
         height: 18
@@ -1746,19 +1788,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a5391b8fa93441449edba7c767aed95
-      internalID: -1085970492
+      spriteID: 2c33d0b727d307165af8ef93dd0515ef
+      internalID: 1647261204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_77
+      name: Archer-Green_79
       rect:
         serializedVersion: 2
-        x: 169
+        x: 234
         y: 137
-        width: 14
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1767,311 +1809,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d807a3e5eebf7944b2310e9b19dfda5
-      internalID: -619341951
+      spriteID: 6fff0dce3b4dbac04a5f1e1cdf28245b
+      internalID: 2093058452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_78
+      name: Archer-Green_80
       rect:
         serializedVersion: 2
-        x: 201
-        y: 137
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca243c72d27088e4d820bf77cf0eaa6c
-      internalID: -595657236
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_79
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 137
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53285b05355f50748b8525ca0c4730aa
-      internalID: -793907558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_80
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 137
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 520cafb950141d84481519d3fb03dd90
-      internalID: 963586543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_81
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 137
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ed6e626134215847a4be9214fc934cd
-      internalID: 864883249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_82
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 137
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 055a632ae9b958d4083a1c614b7e5bf3
-      internalID: 1014802570
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_83
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 137
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65c99bba8e6251048991a476fbcaae91
-      internalID: -337722927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_84
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 137
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 938f166306c7d52468228e60e746156e
-      internalID: 1132437349
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_85
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 137
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9f45dd397dee4a43b2c6c879ca6c1c3
-      internalID: 1376015909
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_86
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 137
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa1dbcd888c15794c8f91dc014855979
-      internalID: -22339770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_87
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 137
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5c552407cd95c04789cd64fbba0ef5f
-      internalID: -1487504141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_88
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 137
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9130d2f49ddc62b4580cb12e54a491ab
-      internalID: 1212715536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_89
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 137
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae32fae6e7ae9ee4e8f639a0475052ab
-      internalID: -588869746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_90
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 137
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9a78e5fbc4864543b8dc7977e1fce34
-      internalID: -1780936190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_91
-      rect:
-        serializedVersion: 2
-        x: 616
-        y: 136
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6d65fd988958ed4bb497dcda2b2c35a
-      internalID: 1985613098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_92
-      rect:
-        serializedVersion: 2
-        x: 649
+        x: 266
         y: 137
         width: 14
         height: 19
@@ -2082,17 +1830,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf0ce429b6dccef41ab60883ef076190
-      internalID: 655917279
+      spriteID: ce4f60ed3ddaa5c89a528d245e21c23e
+      internalID: 874118439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_93
+      name: Archer-Green_81
       rect:
         serializedVersion: 2
-        x: 681
+        x: 298
         y: 137
         width: 14
         height: 18
@@ -2103,19 +1851,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a23f78e87b4f404787f32df0b97ae60
-      internalID: 1638513812
+      spriteID: 8fb346a025b390357bdab70d7a633435
+      internalID: 1414778198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_94
+      name: Archer-Green_82
       rect:
         serializedVersion: 2
-        x: 711
-        y: 132
-        width: 15
+        x: 330
+        y: 137
+        width: 14
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2124,20 +1872,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f690c2c281e495f4b8563055627f9422
-      internalID: 1838820930
+      spriteID: ccc73d87f2b0a126e82070f6747fbb52
+      internalID: -1223354174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_95
+      name: Archer-Green_83
       rect:
         serializedVersion: 2
-        x: 743
-        y: 133
-        width: 15
-        height: 17
+        x: 362
+        y: 137
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2145,20 +1893,272 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ab3b651e1df0de478ed86e6a62ae7ca
-      internalID: -1513918687
+      spriteID: 02add66c1b2fc947e999cd32da35729d
+      internalID: 1618261962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_96
+      name: Archer-Green_84
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e23317e9359a2ecb0387525c5b126c
+      internalID: 2007207472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_85
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb598e2828c4168687ff026fd9eb49a
+      internalID: 1609245309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_86
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 137
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940d87dc6441d0de6af71a0fc3572560
+      internalID: 485946497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_87
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72713ad01fd9988898d9c23758df246e
+      internalID: 368973066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_88
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544dd43f8c9bfe739acae302ef3d161d
+      internalID: 1883636626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_89
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 137
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ad31c48db08760a94b6f3d9f377dc0
+      internalID: 758408932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_90
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8035ced146c5281bb5f71e7bf908e9c
+      internalID: 542142807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_91
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 136
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c213e5e386fef7801bf7209cb301c204
+      internalID: -1746737462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_92
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 137
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e943f826427c87cb726e2a3165b628
+      internalID: -1777071542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_93
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 137
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b960689adf3c328e282cb6b7238d863a
+      internalID: -1579654294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_94
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 131
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10a34a3480b98cc58403d9e508ff9c0
+      internalID: -241356774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_95
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 132
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfacbfb2792577aa0ba97fbdb1e0b582
+      internalID: 1644666488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_96
       rect:
         serializedVersion: 2
         x: 9
         y: 105
         width: 14
-        height: 17
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2166,20 +2166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f4805e62cff9874ab7566168e4a8bcb
-      internalID: -2014526496
+      spriteID: 6cd820ddb1f91fdcf8eb4baa4965f6a5
+      internalID: -834124526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_97
+      name: Archer-Green_97
       rect:
         serializedVersion: 2
         x: 41
         y: 105
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2187,20 +2187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7d989e9a42fb0943b85fe934ca72306
-      internalID: 1568812295
+      spriteID: 2ac8ac39780d282de9849cdd5ce723df
+      internalID: -449853538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_98
+      name: Archer-Green_98
       rect:
         serializedVersion: 2
-        x: 73
+        x: 74
         y: 104
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2208,20 +2208,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f99b969476a04e4f95c0176d35a8cf1
-      internalID: -22014018
+      spriteID: d525a5a397bb89efc8596896faa0c270
+      internalID: 182573043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_99
+      name: Archer-Green_99
       rect:
         serializedVersion: 2
-        x: 105
+        x: 106
         y: 104
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da87c0fe6455474d1b497098cce891ee
+      internalID: -1242449530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_100
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 105
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2229,20 +2250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed2696b8f1e693a47b496ff6ebe94272
-      internalID: 1905176756
+      spriteID: 2ba4c526addf4f419a547e1a770daa38
+      internalID: 2067966994
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_100
+      name: Archer-Green_101
       rect:
         serializedVersion: 2
-        x: 137
+        x: 170
         y: 105
-        width: 15
-        height: 18
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2250,82 +2271,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cef633a5cbac154da77af074da9df1d
-      internalID: -2126105554
+      spriteID: a63132309f42a80bc83fddb28e7b12ef
+      internalID: -1001070369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_101
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 105
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57f20136ec0638144bda6496b973e9e3
-      internalID: 2074406336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_102
+      name: Archer-Green_102
       rect:
         serializedVersion: 2
         x: 201
         y: 105
         width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9713bfe9dbd0a8b4c9c39030892d50dd
-      internalID: -2078133556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_103
-      rect:
-        serializedVersion: 2
-        x: 233
-        y: 105
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ca89e31bf4e7824596fb4c652c9a410
-      internalID: 2048175409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_104
-      rect:
-        serializedVersion: 2
-        x: 265
-        y: 105
-        width: 14
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2334,61 +2292,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e20066b735fe6547bef52117709a268
-      internalID: 1152972318
+      spriteID: 5035285e0ae0ec406acdb40c03da6233
+      internalID: 45375999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_105
+      name: Archer-Green_103
       rect:
         serializedVersion: 2
-        x: 297
+        x: 234
         y: 105
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39430490a4c9b134dbc955f4ab41c69a
-      internalID: -999775506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_106
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 105
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c70ef6cbcd3c6c94fb3a66fdde9176d6
-      internalID: 349465166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_107
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 105
-        width: 14
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2397,19 +2313,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891e78587ce075049829da3437833509
-      internalID: -1409936063
+      spriteID: a2acbc4cd176400b797303e2c0059782
+      internalID: 1886339544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_108
+      name: Archer-Green_104
       rect:
         serializedVersion: 2
-        x: 393
+        x: 266
         y: 105
-        width: 15
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b55972be60f6d12c85f7fe8eed2cec6
+      internalID: 1377696507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_105
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 105
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2418,19 +2355,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1344adf9cda64af4c8c2d16a05d083ef
-      internalID: -566391555
+      spriteID: d0930441b6ee38282a43de3bc6cf36eb
+      internalID: 1857461748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_109
+      name: Archer-Green_106
       rect:
         serializedVersion: 2
-        x: 425
+        x: 330
         y: 105
-        width: 15
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2439,20 +2376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cafca1b8078c8344a956cfd3c1ad111
-      internalID: 1571897050
+      spriteID: cf23efbae5163963a8b010cea7a002d4
+      internalID: -2011998950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_110
+      name: Archer-Green_107
       rect:
         serializedVersion: 2
-        x: 457
+        x: 362
         y: 105
-        width: 14
-        height: 17
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2460,19 +2397,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d8243884b454b04c93e45e05947cd87
-      internalID: 888209779
+      spriteID: 0f8b3171dd2b72ab887aa9e5bb504a31
+      internalID: -1605317066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_111
+      name: Archer-Green_108
       rect:
         serializedVersion: 2
-        x: 489
+        x: 394
         y: 105
         width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70beaf99fb31cce198353e593951956a
+      internalID: 101637354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_109
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 105
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8075b8eec7da969f87ac691c7cd7f77
+      internalID: 2027235613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_110
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 105
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2481,19 +2460,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98338a5741db79044bf7e7763ff6803c
-      internalID: 987738230
+      spriteID: e13f58437e671e47ba1fbc802b8d611c
+      internalID: -915912772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_112
+      name: Archer-Green_111
       rect:
         serializedVersion: 2
-        x: 521
+        x: 490
         y: 105
-        width: 14
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ed01ad66dd935a3842a22fc31ae858
+      internalID: 166776252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_112
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 105
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3e639db17cf82b5b3e2211ca72551e
+      internalID: -1393534104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_113
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 105
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2502,41 +2523,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a62f60eaddf7e44aa8ccc9d312a0e75
-      internalID: -1857146075
+      spriteID: 363401f858afb63469480554713a07d0
+      internalID: -661129973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_113
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 105
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9061e1df5f3729442befb0aae1b6ad3a
-      internalID: 1020758292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_114
+      name: Archer-Green_114
       rect:
         serializedVersion: 2
         x: 585
         y: 105
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2544,18 +2544,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d06bf435e783e45b9224f0a87e65a3
-      internalID: 830483808
+      spriteID: 182f67008df95dc10aad66dd082b6855
+      internalID: 431208509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_115
+      name: Archer-Green_115
       rect:
         serializedVersion: 2
         x: 616
         y: 104
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40a3d2e698c84255afa419b5381669d
+      internalID: 505475221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_116
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 105
         width: 16
         height: 20
       alignment: 0
@@ -2565,19 +2586,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38e68ba4003bc4d4aaa04f0d09f9b1c3
-      internalID: 1583406989
+      spriteID: aaa28c6ad9a40d2b5a6b1aea434bfe74
+      internalID: -1562616790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_116
+      name: Archer-Green_117
       rect:
         serializedVersion: 2
-        x: 648
+        x: 681
         y: 105
-        width: 16
+        width: 14
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2586,18 +2607,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8974f0048c392fc41a00e289eac6bd38
-      internalID: 767601907
+      spriteID: 91b5590a43961209b87f093399ba4e90
+      internalID: 1104169511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_117
+      name: Archer-Green_118
       rect:
         serializedVersion: 2
-        x: 681
-        y: 105
+        x: 713
+        y: 98
         width: 14
         height: 18
       alignment: 0
@@ -2607,35 +2628,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5594f1a6bb49a4ea6b434e2efdaa50
-      internalID: 372896069
+      spriteID: f2473a306a5d05898874acc2ba99e500
+      internalID: -757881122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_118
-      rect:
-        serializedVersion: 2
-        x: 713
-        y: 99
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22cfd6ef3458c47449b055acdbce0e99
-      internalID: 149804736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_119
+      name: Archer-Green_119
       rect:
         serializedVersion: 2
         x: 745
@@ -2649,40 +2649,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c331412fa9f6f6e49b927c9d8f2327fe
-      internalID: 2019590275
+      spriteID: 387944818cc87a6039f7d287cb22a4c8
+      internalID: -1702638644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_120
+      name: Archer-Green_120
       rect:
         serializedVersion: 2
         x: 9
         y: 73
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 589daa3ff4ea3b742bf3e710a67bee21
-      internalID: 22352990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_121
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 73
-        width: 14
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -2691,20 +2670,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e6ef88d36d5cf44894efeb3a9a75869
-      internalID: -410001344
+      spriteID: 9344e80bc2f557a869a75b99e14f7344
+      internalID: -700181799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_122
+      name: Archer-Green_121
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fda5685fc76f6a7b5c3a499344fcf6
+      internalID: 901841350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_122
       rect:
         serializedVersion: 2
         x: 73
         y: 72
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2712,20 +2712,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 378e16415eadf1a4d9453f98e92bd71b
-      internalID: -843024203
+      spriteID: a5d5c3f3c9f983a21996c30a3af17c5b
+      internalID: -762418472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_123
+      name: Archer-Green_123
       rect:
         serializedVersion: 2
         x: 105
         y: 72
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2733,20 +2733,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858fb557cb5606d4cab64928a23b5bdb
-      internalID: -430959534
+      spriteID: cc25cc86634e6e68a9161d5c40446684
+      internalID: 1861982108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_124
+      name: Archer-Green_124
       rect:
         serializedVersion: 2
         x: 137
         y: 73
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2754,20 +2754,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c60375483afca408a5123db6d6dfb4
-      internalID: -980627005
+      spriteID: 6f5263242deb043f198c7ddbbcdfbe7c
+      internalID: -405995006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_125
+      name: Archer-Green_125
       rect:
         serializedVersion: 2
         x: 169
         y: 73
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2775,20 +2775,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c94a23476c274834d97311a4123563f9
-      internalID: 326136850
+      spriteID: 55961043927f142c0b835d1c46088495
+      internalID: -146580116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_126
+      name: Archer-Green_126
       rect:
         serializedVersion: 2
         x: 200
         y: 73
-        width: 15
-        height: 17
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2796,20 +2796,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6345e7c75e26b440b3f1a7925d9e35c
-      internalID: 948643482
+      spriteID: 9d10c36688a490ba1a3f573cbc0032ed
+      internalID: -2079445469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_127
+      name: Archer-Green_127
       rect:
         serializedVersion: 2
         x: 233
         y: 73
-        width: 14
-        height: 17
+        width: 13
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2817,269 +2817,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f307225265f1a1042a13cfd41c252477
-      internalID: -478838298
+      spriteID: f10e7985f8cbb29b0beb9a5d619da431
+      internalID: 521493690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_128
+      name: Archer-Green_128
       rect:
         serializedVersion: 2
         x: 264
-        y: 73
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75845dbe957a8cf40b5264fd77441b44
-      internalID: -711550971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_129
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 73
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 305ca450f449f6449a1c69be1adb9051
-      internalID: 15526604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_130
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 73
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b72e854a7d9d0554ea44cbb4bde549d3
-      internalID: 1778055285
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_131
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 73
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e693efc57985784785a6e457bf2c2f0
-      internalID: -833793314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_132
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 73
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1ca332ca186f5842b3a59d6a8d7992e
-      internalID: -670427759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_133
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 73
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2733100a6b439e64e8c90a687d510cef
-      internalID: 156511757
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_134
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 73
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 807e874fa862c5546b4bde9f5adab3a0
-      internalID: 1080656633
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_135
-      rect:
-        serializedVersion: 2
-        x: 489
-        y: 73
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74ce91fad1738b141890981bfd6556f3
-      internalID: 662095580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_136
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 73
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5230cc6d0d4644c419cceb5f62d92a2e
-      internalID: 1434546906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_137
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 73
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac1bf383447b4da4f87f001be94ab548
-      internalID: 459095251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_138
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 73
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59855d1aa5d98114cb1e40a53399ffab
-      internalID: 2034778852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_139
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 72
-        width: 14
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e920d45e35044ca46a090214d684cc78
-      internalID: 1226120934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_140
-      rect:
-        serializedVersion: 2
-        x: 649
         y: 73
         width: 14
         height: 19
@@ -3090,20 +2838,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4808fc549c928684ab89e8e08d113133
-      internalID: -778413473
+      spriteID: 8745a34f4b1411018b521d88ddfd61dc
+      internalID: -1542266391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_141
+      name: Archer-Green_129
       rect:
         serializedVersion: 2
-        x: 681
+        x: 296
+        y: 73
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bc9abe3bb2f217b8c32d07b3de14b0
+      internalID: -718530488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_130
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 73
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a411ea15e9b66a3badeb74acfc2934
+      internalID: -1119934605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_131
+      rect:
+        serializedVersion: 2
+        x: 360
         y: 73
         width: 14
-        height: 18
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3111,20 +2901,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cb8105db0f0bb74cab984e0a9e91cae
-      internalID: 275054877
+      spriteID: 9f053f76043d09d938dee4c2f5b9779f
+      internalID: 29669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_142
+      name: Archer-Green_132
       rect:
         serializedVersion: 2
-        x: 714
-        y: 66
-        width: 15
-        height: 18
+        x: 393
+        y: 73
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3132,20 +2922,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d04eb71c521af4380cb457e2afc170
-      internalID: -1623979376
+      spriteID: 0186ef40c11bfef179566944933ae710
+      internalID: 943973878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_143
+      name: Archer-Green_133
       rect:
         serializedVersion: 2
-        x: 746
-        y: 67
-        width: 15
-        height: 17
+        x: 425
+        y: 73
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3153,186 +2943,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53c8df671aa6404ebb7b01619f7b33f
-      internalID: 1918983138
+      spriteID: ee5f736f56dd23499a8af736498ace79
+      internalID: 1823824498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_144
+      name: Archer-Green_134
       rect:
         serializedVersion: 2
-        x: 9
-        y: 41
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1332829d2122cf44aa24be21a63e8b23
-      internalID: -273396065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_145
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 41
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10aaf101f5562b94ba421e3c25349c4f
-      internalID: -768028705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_146
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 40
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 610e72397e060554d9fa704e6c571d9e
-      internalID: -898457186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_147
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 40
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f17557aa8a9395643b68d75976ec2f44
-      internalID: 449929403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_148
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 41
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6f66c113cf4c1742a92ab10dab1c69b
-      internalID: -58241542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_149
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 41
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8006a4b0ad99344cbc3a82fe91f979e
-      internalID: 1101367534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_150
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 41
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e6db4c3d95f10d2479526860f83eec8c
-      internalID: -589861365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_151
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 41
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46603e8479b26dd4ea945ceedfbbe35c
-      internalID: -278238328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_152
-      rect:
-        serializedVersion: 2
-        x: 263
-        y: 41
+        x: 454
+        y: 73
         width: 16
         height: 18
       alignment: 0
@@ -3342,146 +2964,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4323305dad946b544b9265aa49814ce6
-      internalID: 1978213438
+      spriteID: 207ad3ed55096ecd08152424459f810b
+      internalID: 610937075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_153
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 41
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a154a5ebd29302f419d46e4d6495dfc0
-      internalID: -1794619972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_154
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 41
-        width: 15
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e4373e596d73f243858bfe8350b74b1
-      internalID: 1537777925
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_155
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 41
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 772746e7236e82e439a40641870bdee5
-      internalID: -128549242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_156
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 41
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 749f1ce51ee54ff49a9b3dc2bd745438
-      internalID: 739654916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_157
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 41
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44bcf02c3c3da6344b256f35401a9a5c
-      internalID: -1929175561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_158
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 41
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c017bd90c4766047a7256c367ea2461
-      internalID: -1393793963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_159
+      name: Archer-Green_135
       rect:
         serializedVersion: 2
         x: 489
-        y: 41
-        width: 14
-        height: 18
+        y: 73
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3489,20 +2985,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9200926c89a8d041b0ec7369813c3cb
-      internalID: 1489328158
+      spriteID: 2ed5e238ae112ab6f838c3b352f099c4
+      internalID: 1447600374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_160
+      name: Archer-Green_136
       rect:
         serializedVersion: 2
         x: 521
-        y: 41
-        width: 14
-        height: 18
+        y: 73
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3510,40 +3006,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b355e41b2c0cc6e4e9f8b022546a9139
-      internalID: 1187315998
+      spriteID: 91a89adb701fff6cca436091e40f26d9
+      internalID: -1863907408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_161
+      name: Archer-Green_137
       rect:
         serializedVersion: 2
         x: 553
-        y: 41
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f59c9aea1f8a8dc4e94efda2f78bdfbc
-      internalID: 1942915371
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_162
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 41
-        width: 14
+        y: 73
+        width: 13
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3552,19 +3027,61 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 857adc7e554ecbb48a8d210e078f1b52
-      internalID: -1892125155
+      spriteID: 9b85a6c6afbe42556a019ad7d1f73c7f
+      internalID: 1566614188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_163
+      name: Archer-Green_138
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce5259c7270b5bba8a144e8847a3926
+      internalID: -294300551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_139
       rect:
         serializedVersion: 2
         x: 619
-        y: 41
-        width: 14
+        y: 72
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e13c693ddb6d6a509eb754f5fee10b0
+      internalID: -312257416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_140
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 73
+        width: 13
         height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3573,17 +3090,101 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff069ded121ef594689b0d230cea3a3c
-      internalID: 1250577532
+      spriteID: c0d7ab35527c8b26c94505b2541622f2
+      internalID: -370667296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_164
+      name: Archer-Green_141
       rect:
         serializedVersion: 2
-        x: 649
+        x: 681
+        y: 73
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb20ffa48055db06911882ab846c9e9
+      internalID: 568307521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_142
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 65
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3417f10b4b64fe11eb3eb03f8297ece8
+      internalID: -2119390243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_143
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 66
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd49015cb20b1aea292a912004c93eff
+      internalID: 1044076158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_144
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 41
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29741eba26a79d18be9152de2913b13
+      internalID: -1062839797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_145
+      rect:
+        serializedVersion: 2
+        x: 41
         y: 41
         width: 14
         height: 19
@@ -3594,17 +3195,164 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4776e271256226542af1ef3a849edf20
-      internalID: -2061220956
+      spriteID: 213e37c2046b57c88ad5f82de345c5b7
+      internalID: -762136132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_165
+      name: Archer-Green_146
       rect:
         serializedVersion: 2
-        x: 681
+        x: 73
+        y: 40
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4334488c2db2269eb8d4ca1446c18c8d
+      internalID: 773506069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_147
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 40
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa97fb23498fb7ac5863a99ee6c39217
+      internalID: -321965039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_148
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c96298b619983daaa8ba259d2c28dda
+      internalID: 1013681969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_149
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ccf268d8506bfe9bf199f23a7ec434
+      internalID: 480691112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_150
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7d8fbb6573d34efbc9ab304121fe72
+      internalID: 1759949900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_151
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 41
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfc4da5434ce575481f2d0883c22ffd
+      internalID: -795536533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_152
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49a7a32a66b97280b9203592044debd
+      internalID: -1072441426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_153
+      rect:
+        serializedVersion: 2
+        x: 297
         y: 41
         width: 14
         height: 18
@@ -3615,17 +3363,290 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9d108556a3af0e45949d838ecbc32c0
-      internalID: -227811520
+      spriteID: 8eb6e15c7cf5b9a8d8c94fe95c6188f2
+      internalID: -1481598541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_166
+      name: Archer-Green_154
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 41
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f97ff918687ac948a396e37f6d97bc1
+      internalID: 468761484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_155
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 41
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf656ef3514674e6a7f843a50a54b30
+      internalID: 83060283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_156
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba65a76dee9e0508589c3446a33d685c
+      internalID: 1765109010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_157
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a0d41c1749556cf90622cb22b6ecf4
+      internalID: -1491941165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_158
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 41
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c0b76e42af7ec8fb55e632b8db5cf1
+      internalID: 238077874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_159
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd94e12b057162959903f3c54dd8e1f
+      internalID: 622524498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_160
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c17e4fed6e7bd6c93f55636e200e18
+      internalID: 178957216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_161
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 41
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a282d4fe4bb7f9f8d7b260e98bd578
+      internalID: 1975140984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_162
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 41
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceed2b8b8fe3b9c7b439249467fadef
+      internalID: 1851774221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_163
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 41
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5356a148e4cfc40a349a19627e1e8b
+      internalID: -1008583706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_164
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 41
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fa81b82d85e35269ba15efdabbe394
+      internalID: -2032869026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_165
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 41
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7a2170e579d30d49b9343a2cfbc1f1
+      internalID: -1334762410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_166
       rect:
         serializedVersion: 2
         x: 712
+        y: 37
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01401ad8d95fa11b195483e0bf90024f
+      internalID: 920931427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_167
+      rect:
+        serializedVersion: 2
+        x: 744
         y: 39
         width: 21
         height: 14
@@ -3636,61 +3657,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b446f9e19cc68a499f46923fd3d1a62
-      internalID: -1988156189
+      spriteID: be214217f47b4f71daa6a2bd26fc1bf2
+      internalID: -1880737973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_167
+      name: Archer-Green_168
       rect:
         serializedVersion: 2
-        x: 744
-        y: 40
-        width: 21
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14b7dd076af49144a8ceaebce1f55074
-      internalID: 2058672831
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_168
-      rect:
-        serializedVersion: 2
-        x: 9
+        x: 10
         y: 9
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 758d3dfe00e3710499f65d1a4a986e1e
-      internalID: -2108330534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_169
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 9
-        width: 14
+        width: 12
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3699,20 +3678,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed1e504249c20c40977da1bde232ff5
-      internalID: -1720075544
+      spriteID: 533335e7f7dbfacc58ddc5443f0c735e
+      internalID: -1421844572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_170
+      name: Archer-Green_169
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd8a12028c8fe3bf8ddff11b57b49a4
+      internalID: -828623419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_170
       rect:
         serializedVersion: 2
         x: 73
         y: 8
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3720,20 +3720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74eec4ccf473f9c4a8269989975c2e1c
-      internalID: -1775879409
+      spriteID: 7ae973c9f3a93735bb42d8cbe927c435
+      internalID: 1422516509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_171
+      name: Archer-Green_171
       rect:
         serializedVersion: 2
-        x: 105
+        x: 106
         y: 8
-        width: 14
-        height: 18
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3741,20 +3741,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38d8210e33074ba4aa583581f46add47
-      internalID: -4108903
+      spriteID: 6fc1ea37ed2d3ccb1859ab96aa2c2595
+      internalID: -91967225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_172
+      name: Archer-Green_172
       rect:
         serializedVersion: 2
-        x: 137
+        x: 138
         y: 9
-        width: 14
-        height: 18
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3762,20 +3762,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e51758e1e95ffa84dbd897723cace40e
-      internalID: -1526990526
+      spriteID: adc281a55605fe8f4a4c44544f91cca8
+      internalID: -1645993193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_173
+      name: Archer-Green_173
       rect:
         serializedVersion: 2
-        x: 169
+        x: 170
         y: 9
-        width: 14
-        height: 18
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3783,20 +3783,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75817602954e9c745b89ad2a7ed1bae2
-      internalID: 420172756
+      spriteID: b8a892113bc97c39b8d03c0fe19aa2a1
+      internalID: 1161765189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_174
+      name: Archer-Green_174
       rect:
         serializedVersion: 2
         x: 200
         y: 9
-        width: 15
-        height: 17
+        width: 14
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3804,20 +3804,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f509cb2107d866840bd173ddcdd06b0e
-      internalID: -1250979369
+      spriteID: 2050a07445b2788ea9ac6c00501fbef4
+      internalID: 2131506553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_175
+      name: Archer-Green_175
       rect:
         serializedVersion: 2
         x: 233
         y: 9
-        width: 14
-        height: 17
+        width: 13
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3825,20 +3825,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53f2de6e12d75c642830cdc3b83ed237
-      internalID: 1410401697
+      spriteID: fefced85b2292d9819d007fb360a30fa
+      internalID: 2088115142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_176
+      name: Archer-Green_176
       rect:
         serializedVersion: 2
         x: 265
         y: 9
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3846,20 +3846,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edb7026031e851649b3441caa85d52a9
-      internalID: 566224322
+      spriteID: bd3ac010b1a225c1586b77320fa05c19
+      internalID: 1708082957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_177
+      name: Archer-Green_177
       rect:
         serializedVersion: 2
         x: 296
         y: 8
-        width: 15
-        height: 18
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3867,20 +3867,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6f22a832e8ed1544a998a3bf90f68a8
-      internalID: 1115232075
+      spriteID: 86173b5f73f9c387babc766ed5fcc4f5
+      internalID: -1913596635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_178
+      name: Archer-Green_178
       rect:
         serializedVersion: 2
         x: 328
         y: 8
-        width: 15
-        height: 18
+        width: 14
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3888,19 +3888,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c11ecd5579624424580c497c9633c36e
-      internalID: 1993423899
+      spriteID: dedca113ed9234dae8793a570c88cac4
+      internalID: -392664991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_179
+      name: Archer-Green_179
       rect:
         serializedVersion: 2
         x: 360
         y: 8
-        width: 15
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d115e3bad70978f14af65f672f3073e5
+      internalID: -1369260766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_180
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 9
+        width: 12
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3909,20 +3930,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 711e65f747bbfa241b11b4ce30904aad
-      internalID: 407557625
+      spriteID: 09708d70e6b7ff42a9ebca9fe8a126f1
+      internalID: -1637908478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_180
+      name: Archer-Green_181
       rect:
         serializedVersion: 2
-        x: 393
+        x: 426
         y: 9
-        width: 14
-        height: 18
+        width: 12
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3930,40 +3951,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f471d0aa5d6d7074fa00b9b566a0b1b9
-      internalID: -1045746725
+      spriteID: 57a7148d81e4ab70b9a7c7b90d5b5c49
+      internalID: 168154150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_181
-      rect:
-        serializedVersion: 2
-        x: 425
-        y: 9
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b88566a01921c6b49b04e9188cf8b3a6
-      internalID: -2038279301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_182
+      name: Archer-Green_182
       rect:
         serializedVersion: 2
         x: 455
         y: 8
-        width: 16
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7e487498bab9293a5bd4aef86ff935
+      internalID: 13716610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_183
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88d4433e8afccc799cbfabfde608275
+      internalID: -1712044230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_184
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 9
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c343db24f6eaeb955ba937fd8d0fb78c
+      internalID: 147163986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_185
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 9
+        width: 12
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -3972,20 +4035,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b8d8818f2deeaf42847edd3a203e220
-      internalID: -764904061
+      spriteID: f312cc36ff63dafcd8bb84c8ce762ab9
+      internalID: -1410851727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_183
+      name: Archer-Green_186
       rect:
         serializedVersion: 2
-        x: 489
+        x: 586
         y: 9
-        width: 14
-        height: 18
+        width: 13
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3993,83 +4056,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17a0a7b5acda7c242b26f55e85b941b6
-      internalID: 2129299645
+      spriteID: e786569936fa9df368fe486fdfb619e7
+      internalID: 936049126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_184
-      rect:
-        serializedVersion: 2
-        x: 521
-        y: 9
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe2f6c9f6c038a84499d5efa91e8807a
-      internalID: 483406120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_185
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 9
-        width: 14
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc52a48ee2ff97142837a147582bf6a0
-      internalID: 1591232045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_186
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 9
-        width: 14
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7e77f9b256d7794ea6d3585f047db6b
-      internalID: -1302242311
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_187
+      name: Archer-Green_187
       rect:
         serializedVersion: 2
         x: 619
         y: 10
-        width: 14
-        height: 19
+        width: 13
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4077,19 +4077,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 693f20d431ad0024881155c8e92c32bb
-      internalID: -1043179597
+      spriteID: 9cad50ccd96d55e3e84fe7fefd4a54a1
+      internalID: 236360721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_188
+      name: Archer-Green_188
       rect:
         serializedVersion: 2
-        x: 649
+        x: 650
         y: 9
-        width: 14
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6e478f16625086ba371c0703245974
+      internalID: -1641529158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Archer-Green_189
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 9
+        width: 12
         height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -4098,17 +4119,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 488cdcbedae3ac44daf9e40aea1112fc
-      internalID: 357744102
+      spriteID: 88e888816d59ff959a9e8d220cba1bfc
+      internalID: 55961091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_189
+      name: Archer-Green_190
       rect:
         serializedVersion: 2
-        x: 681
+        x: 714
         y: 9
         width: 14
         height: 18
@@ -4119,41 +4140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c95ef1066f9c29749bb9b8d1eab1a252
-      internalID: 2049508289
+      spriteID: 070811391e6e5e635b2d393dcec8e319
+      internalID: -253048604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mage-Red_190
-      rect:
-        serializedVersion: 2
-        x: 714
-        y: 9
-        width: 15
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f4f9b7989453a24492140293105cba9
-      internalID: -1966901868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mage-Red_191
+      name: Archer-Green_191
       rect:
         serializedVersion: 2
         x: 746
         y: 9
-        width: 15
-        height: 17
+        width: 14
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4161,8 +4161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d55a9fe9c28f784fa86d3d9b08d3ac0
-      internalID: 1011840771
+      spriteID: bbc833e8271a8f7928dc1bad4536d8fb
+      internalID: -2132659461
       vertices: []
       indices: 
       edges: []
@@ -4178,198 +4178,198 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mage-Red_0: 270569351
-      Mage-Red_1: -1666636864
-      Mage-Red_10: -1223864140
-      Mage-Red_100: -2126105554
-      Mage-Red_101: 2074406336
-      Mage-Red_102: -2078133556
-      Mage-Red_103: 2048175409
-      Mage-Red_104: 1152972318
-      Mage-Red_105: -999775506
-      Mage-Red_106: 349465166
-      Mage-Red_107: -1409936063
-      Mage-Red_108: -566391555
-      Mage-Red_109: 1571897050
-      Mage-Red_11: 474468832
-      Mage-Red_110: 888209779
-      Mage-Red_111: 987738230
-      Mage-Red_112: -1857146075
-      Mage-Red_113: 1020758292
-      Mage-Red_114: 830483808
-      Mage-Red_115: 1583406989
-      Mage-Red_116: 767601907
-      Mage-Red_117: 372896069
-      Mage-Red_118: 149804736
-      Mage-Red_119: 2019590275
-      Mage-Red_12: -557863449
-      Mage-Red_120: 22352990
-      Mage-Red_121: -410001344
-      Mage-Red_122: -843024203
-      Mage-Red_123: -430959534
-      Mage-Red_124: -980627005
-      Mage-Red_125: 326136850
-      Mage-Red_126: 948643482
-      Mage-Red_127: -478838298
-      Mage-Red_128: -711550971
-      Mage-Red_129: 15526604
-      Mage-Red_13: 178965658
-      Mage-Red_130: 1778055285
-      Mage-Red_131: -833793314
-      Mage-Red_132: -670427759
-      Mage-Red_133: 156511757
-      Mage-Red_134: 1080656633
-      Mage-Red_135: 662095580
-      Mage-Red_136: 1434546906
-      Mage-Red_137: 459095251
-      Mage-Red_138: 2034778852
-      Mage-Red_139: 1226120934
-      Mage-Red_14: -1044675496
-      Mage-Red_140: -778413473
-      Mage-Red_141: 275054877
-      Mage-Red_142: -1623979376
-      Mage-Red_143: 1918983138
-      Mage-Red_144: -273396065
-      Mage-Red_145: -768028705
-      Mage-Red_146: -898457186
-      Mage-Red_147: 449929403
-      Mage-Red_148: -58241542
-      Mage-Red_149: 1101367534
-      Mage-Red_15: -1250815859
-      Mage-Red_150: -589861365
-      Mage-Red_151: -278238328
-      Mage-Red_152: 1978213438
-      Mage-Red_153: -1794619972
-      Mage-Red_154: 1537777925
-      Mage-Red_155: -128549242
-      Mage-Red_156: 739654916
-      Mage-Red_157: -1929175561
-      Mage-Red_158: -1393793963
-      Mage-Red_159: 1489328158
-      Mage-Red_16: -618688803
-      Mage-Red_160: 1187315998
-      Mage-Red_161: 1942915371
-      Mage-Red_162: -1892125155
-      Mage-Red_163: 1250577532
-      Mage-Red_164: -2061220956
-      Mage-Red_165: -227811520
-      Mage-Red_166: -1988156189
-      Mage-Red_167: 2058672831
-      Mage-Red_168: -2108330534
-      Mage-Red_169: -1720075544
-      Mage-Red_17: -1556231839
-      Mage-Red_170: -1775879409
-      Mage-Red_171: -4108903
-      Mage-Red_172: -1526990526
-      Mage-Red_173: 420172756
-      Mage-Red_174: -1250979369
-      Mage-Red_175: 1410401697
-      Mage-Red_176: 566224322
-      Mage-Red_177: 1115232075
-      Mage-Red_178: 1993423899
-      Mage-Red_179: 407557625
-      Mage-Red_18: 1093032448
-      Mage-Red_180: -1045746725
-      Mage-Red_181: -2038279301
-      Mage-Red_182: -764904061
-      Mage-Red_183: 2129299645
-      Mage-Red_184: 483406120
-      Mage-Red_185: 1591232045
-      Mage-Red_186: -1302242311
-      Mage-Red_187: -1043179597
-      Mage-Red_188: 357744102
-      Mage-Red_189: 2049508289
-      Mage-Red_19: 150141795
-      Mage-Red_190: -1966901868
-      Mage-Red_191: 1011840771
-      Mage-Red_2: 47478661
-      Mage-Red_20: 277386771
-      Mage-Red_21: -79054973
-      Mage-Red_22: 230771444
-      Mage-Red_23: 1027778238
-      Mage-Red_24: 1152956834
-      Mage-Red_25: -61936679
-      Mage-Red_26: 483247102
-      Mage-Red_27: -803466382
-      Mage-Red_28: 1256755898
-      Mage-Red_29: -97843313
-      Mage-Red_3: -252139807
-      Mage-Red_30: -1129064865
-      Mage-Red_31: -2117574820
-      Mage-Red_32: 264178172
-      Mage-Red_33: 1002593236
-      Mage-Red_34: 167129632
-      Mage-Red_35: 1945953991
-      Mage-Red_36: -1466905368
-      Mage-Red_37: -833701491
-      Mage-Red_38: 811066594
-      Mage-Red_39: 1336937907
-      Mage-Red_4: 841540198
-      Mage-Red_40: -881381736
-      Mage-Red_41: -606725431
-      Mage-Red_42: -1085332577
-      Mage-Red_43: -163549791
-      Mage-Red_44: 266536175
-      Mage-Red_45: 1759772725
-      Mage-Red_46: 12325299
-      Mage-Red_47: -822831902
-      Mage-Red_48: 882896440
-      Mage-Red_49: -1232481330
-      Mage-Red_5: 2062619398
-      Mage-Red_50: -402612022
-      Mage-Red_51: -396279327
-      Mage-Red_52: 1584402911
-      Mage-Red_53: 89386155
-      Mage-Red_54: -462490843
-      Mage-Red_55: 1217186774
-      Mage-Red_56: -1868379712
-      Mage-Red_57: -1056955890
-      Mage-Red_58: -2111141013
-      Mage-Red_59: 1292679599
-      Mage-Red_6: 1962849030
-      Mage-Red_60: 1309761653
-      Mage-Red_61: 2142809082
-      Mage-Red_62: -928750458
-      Mage-Red_63: -551131406
-      Mage-Red_64: 1599582572
-      Mage-Red_65: -1210191144
-      Mage-Red_66: 1673012234
-      Mage-Red_67: 1297288671
-      Mage-Red_68: -2083986775
-      Mage-Red_69: -1482545593
-      Mage-Red_7: -2128474147
-      Mage-Red_70: 1147420508
-      Mage-Red_71: -943052776
-      Mage-Red_72: 1502284056
-      Mage-Red_73: -958087027
-      Mage-Red_74: -942445237
-      Mage-Red_75: 1807163005
-      Mage-Red_76: -1085970492
-      Mage-Red_77: -619341951
-      Mage-Red_78: -595657236
-      Mage-Red_79: -793907558
-      Mage-Red_8: -925259668
-      Mage-Red_80: 963586543
-      Mage-Red_81: 864883249
-      Mage-Red_82: 1014802570
-      Mage-Red_83: -337722927
-      Mage-Red_84: 1132437349
-      Mage-Red_85: 1376015909
-      Mage-Red_86: -22339770
-      Mage-Red_87: -1487504141
-      Mage-Red_88: 1212715536
-      Mage-Red_89: -588869746
-      Mage-Red_9: 1048673540
-      Mage-Red_90: -1780936190
-      Mage-Red_91: 1985613098
-      Mage-Red_92: 655917279
-      Mage-Red_93: 1638513812
-      Mage-Red_94: 1838820930
-      Mage-Red_95: -1513918687
-      Mage-Red_96: -2014526496
-      Mage-Red_97: 1568812295
-      Mage-Red_98: -22014018
-      Mage-Red_99: 1905176756
+      Archer-Green_0: -597081661
+      Archer-Green_1: -1614643317
+      Archer-Green_10: 1835105554
+      Archer-Green_100: 2067966994
+      Archer-Green_101: -1001070369
+      Archer-Green_102: 45375999
+      Archer-Green_103: 1886339544
+      Archer-Green_104: 1377696507
+      Archer-Green_105: 1857461748
+      Archer-Green_106: -2011998950
+      Archer-Green_107: -1605317066
+      Archer-Green_108: 101637354
+      Archer-Green_109: 2027235613
+      Archer-Green_11: -291412378
+      Archer-Green_110: -915912772
+      Archer-Green_111: 166776252
+      Archer-Green_112: -1393534104
+      Archer-Green_113: -661129973
+      Archer-Green_114: 431208509
+      Archer-Green_115: 505475221
+      Archer-Green_116: -1562616790
+      Archer-Green_117: 1104169511
+      Archer-Green_118: -757881122
+      Archer-Green_119: -1702638644
+      Archer-Green_12: -335047326
+      Archer-Green_120: -700181799
+      Archer-Green_121: 901841350
+      Archer-Green_122: -762418472
+      Archer-Green_123: 1861982108
+      Archer-Green_124: -405995006
+      Archer-Green_125: -146580116
+      Archer-Green_126: -2079445469
+      Archer-Green_127: 521493690
+      Archer-Green_128: -1542266391
+      Archer-Green_129: -718530488
+      Archer-Green_13: 1210099416
+      Archer-Green_130: -1119934605
+      Archer-Green_131: 29669
+      Archer-Green_132: 943973878
+      Archer-Green_133: 1823824498
+      Archer-Green_134: 610937075
+      Archer-Green_135: 1447600374
+      Archer-Green_136: -1863907408
+      Archer-Green_137: 1566614188
+      Archer-Green_138: -294300551
+      Archer-Green_139: -312257416
+      Archer-Green_14: -1369235934
+      Archer-Green_140: -370667296
+      Archer-Green_141: 568307521
+      Archer-Green_142: -2119390243
+      Archer-Green_143: 1044076158
+      Archer-Green_144: -1062839797
+      Archer-Green_145: -762136132
+      Archer-Green_146: 773506069
+      Archer-Green_147: -321965039
+      Archer-Green_148: 1013681969
+      Archer-Green_149: 480691112
+      Archer-Green_15: -1616340744
+      Archer-Green_150: 1759949900
+      Archer-Green_151: -795536533
+      Archer-Green_152: -1072441426
+      Archer-Green_153: -1481598541
+      Archer-Green_154: 468761484
+      Archer-Green_155: 83060283
+      Archer-Green_156: 1765109010
+      Archer-Green_157: -1491941165
+      Archer-Green_158: 238077874
+      Archer-Green_159: 622524498
+      Archer-Green_16: -96164467
+      Archer-Green_160: 178957216
+      Archer-Green_161: 1975140984
+      Archer-Green_162: 1851774221
+      Archer-Green_163: -1008583706
+      Archer-Green_164: -2032869026
+      Archer-Green_165: -1334762410
+      Archer-Green_166: 920931427
+      Archer-Green_167: -1880737973
+      Archer-Green_168: -1421844572
+      Archer-Green_169: -828623419
+      Archer-Green_17: 1214242502
+      Archer-Green_170: 1422516509
+      Archer-Green_171: -91967225
+      Archer-Green_172: -1645993193
+      Archer-Green_173: 1161765189
+      Archer-Green_174: 2131506553
+      Archer-Green_175: 2088115142
+      Archer-Green_176: 1708082957
+      Archer-Green_177: -1913596635
+      Archer-Green_178: -392664991
+      Archer-Green_179: -1369260766
+      Archer-Green_18: 696278633
+      Archer-Green_180: -1637908478
+      Archer-Green_181: 168154150
+      Archer-Green_182: 13716610
+      Archer-Green_183: -1712044230
+      Archer-Green_184: 147163986
+      Archer-Green_185: -1410851727
+      Archer-Green_186: 936049126
+      Archer-Green_187: 236360721
+      Archer-Green_188: -1641529158
+      Archer-Green_189: 55961091
+      Archer-Green_19: 1569142501
+      Archer-Green_190: -253048604
+      Archer-Green_191: -2132659461
+      Archer-Green_2: 967635340
+      Archer-Green_20: 1012317555
+      Archer-Green_21: -1042769899
+      Archer-Green_22: 2071113267
+      Archer-Green_23: 233990711
+      Archer-Green_24: 319340595
+      Archer-Green_25: -398759840
+      Archer-Green_26: 772087485
+      Archer-Green_27: -725226821
+      Archer-Green_28: 1620984050
+      Archer-Green_29: 705803471
+      Archer-Green_3: 357644138
+      Archer-Green_30: -69965563
+      Archer-Green_31: 122305091
+      Archer-Green_32: 1552366961
+      Archer-Green_33: -67824043
+      Archer-Green_34: -420966177
+      Archer-Green_35: 295141099
+      Archer-Green_36: 1285292389
+      Archer-Green_37: -1190148598
+      Archer-Green_38: 1706764170
+      Archer-Green_39: -125676426
+      Archer-Green_4: 393627135
+      Archer-Green_40: -1840558206
+      Archer-Green_41: -1670093482
+      Archer-Green_42: -485585490
+      Archer-Green_43: -843372124
+      Archer-Green_44: -1005359541
+      Archer-Green_45: -566873266
+      Archer-Green_46: -1624533538
+      Archer-Green_47: 1293669378
+      Archer-Green_48: 1153944976
+      Archer-Green_49: -620943252
+      Archer-Green_5: -2129367873
+      Archer-Green_50: -388096121
+      Archer-Green_51: 935947253
+      Archer-Green_52: 716147328
+      Archer-Green_53: -1039628925
+      Archer-Green_54: 859020643
+      Archer-Green_55: 1272618129
+      Archer-Green_56: 1664870857
+      Archer-Green_57: -1625095998
+      Archer-Green_58: 2004946446
+      Archer-Green_59: 1998907461
+      Archer-Green_6: -675828103
+      Archer-Green_60: 1001807104
+      Archer-Green_61: -1172787842
+      Archer-Green_62: -1362313961
+      Archer-Green_63: -503333535
+      Archer-Green_64: -1730293445
+      Archer-Green_65: 779510212
+      Archer-Green_66: -1943488585
+      Archer-Green_67: -1269709987
+      Archer-Green_68: -33249735
+      Archer-Green_69: -1968767835
+      Archer-Green_7: 165542907
+      Archer-Green_70: 695246504
+      Archer-Green_71: 861325156
+      Archer-Green_72: 1184798253
+      Archer-Green_73: 742308
+      Archer-Green_74: 966657082
+      Archer-Green_75: 1680211975
+      Archer-Green_76: 1819212123
+      Archer-Green_77: -1082185305
+      Archer-Green_78: 1647261204
+      Archer-Green_79: 2093058452
+      Archer-Green_8: -1548695278
+      Archer-Green_80: 874118439
+      Archer-Green_81: 1414778198
+      Archer-Green_82: -1223354174
+      Archer-Green_83: 1618261962
+      Archer-Green_84: 2007207472
+      Archer-Green_85: 1609245309
+      Archer-Green_86: 485946497
+      Archer-Green_87: 368973066
+      Archer-Green_88: 1883636626
+      Archer-Green_89: 758408932
+      Archer-Green_9: 1706573306
+      Archer-Green_90: 542142807
+      Archer-Green_91: -1746737462
+      Archer-Green_92: -1777071542
+      Archer-Green_93: -1579654294
+      Archer-Green_94: -241356774
+      Archer-Green_95: 1644666488
+      Archer-Green_96: -834124526
+      Archer-Green_97: -449853538
+      Archer-Green_98: 182573043
+      Archer-Green_99: -1242449530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

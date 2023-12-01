@@ -23,10 +23,6 @@ public class GlobalVariables : MonoBehaviour
 
     [Header("Choose award")]
     public string finalChoose = "Coins";
-    
-    public List<SerializableDictionary> serializedSprites = new List<SerializableDictionary>();
-
-    public Dictionary<string, Sprite> sprites = new Dictionary<string, Sprite>();
 
     [Header("Player")]
     public int lastPlayerLevel = 1;
@@ -68,17 +64,4 @@ public class GlobalVariables : MonoBehaviour
         }
     }
 
-    void OnValidate()
-    {
-        // This method is called when changes are made in the Inspector
-        // Update the 'sprites' dictionary from 'serializedSprites'
-        sprites.Clear();
-        foreach (var item in serializedSprites)
-        {
-            if (!sprites.ContainsKey(item.key))
-            {
-                sprites.Add(item.key, item.value);
-            }
-        }
-    }
 }

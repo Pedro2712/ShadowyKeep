@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: 1d2711dbf55046dcc8b911816d3a2a96
   - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 139dbb6bae81ade7780d2ddcae228c0f
+  - enabled: 1
     path: Assets/Scenes/Salas/Sala1.unity
     guid: 6de2be1872740ee45b48513bc9bdc52e
   - enabled: 1

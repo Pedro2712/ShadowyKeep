@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Dialogue : MonoBehaviour
 {
     public Sprite profile;
-    public Canvas KeyF;
+    public bool store;
     public string[] speechTxt;
     public string actorName;
 
@@ -15,6 +15,7 @@ public class Dialogue : MonoBehaviour
 
     private DialogueControl dc;
     private bool onRadios;
+    private bool inside = false;
 
     private void Start()
     {
@@ -23,10 +24,12 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && onRadios && !dc.getisRunning())
+        if ( onRadios && !dc.getisRunning() && !inside)
         {
+            dc.isStore(store);
             dc.Speech(profile, speechTxt, actorName);
-        }
+            inside = true;
+        }  
     }
 
     private void FixedUpdate()
@@ -38,12 +41,10 @@ public class Dialogue : MonoBehaviour
     {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, playerLayer);
 
-        onRadios = hit != null;
+        onRadios = (hit != null);
 
-        // Ativa ou desativa o objeto keyspace com base na interação e no diálogo em andamento.
-        if (KeyF != null)
-        {
-            KeyF.gameObject.SetActive(onRadios && !dc.getisRunning());
+        if (!onRadios && inside) {
+            inside = false;
         }
     }
 

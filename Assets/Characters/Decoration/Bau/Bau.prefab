@@ -386,6 +386,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1619f9811b8497408ced0e9edfb4d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameSprites:
+  - Coins
+  - Speed
+  - Health
+  - Strength
+  - Defense
+  sprites:
+  - {fileID: -859973333, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+  - {fileID: -490427613, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+  - {fileID: 212529247, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+  - {fileID: -302321857, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
+  - {fileID: -1386878860, guid: 67b8de7464ffe8542b67c5f4e061ab00, type: 3}
   virtualCamera: {fileID: 8442466993347090477}
   luz: {fileID: 3148178858118434850}
   particle: {fileID: 6738506782755136422}
@@ -5614,8 +5626,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.69945, y: 0.016599953, z: 0}
-    m_Extent: {x: 3.49505, y: 1.7367, z: 0}
+    m_Center: {x: 0.70609987, y: 0.011750042, z: 0}
+    m_Extent: {x: 3.4998999, y: 1.7362499, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

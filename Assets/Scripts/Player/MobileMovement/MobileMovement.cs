@@ -35,7 +35,7 @@ public class MobileMovement : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>();
         movement = movementVector;
         isWalking = (movement.x != 0 || movement.y != 0);
-        
+        Debug.LogError("Movement: " + movement);
         if(isWalking){
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
