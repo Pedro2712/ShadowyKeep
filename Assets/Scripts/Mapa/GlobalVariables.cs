@@ -32,14 +32,20 @@ public class GlobalVariables : MonoBehaviour
     public int selectedItemId;
 
     public int coins = 1000;   // valor inicial para teste da loja
-    public float speed = 0;
-    public int strength = 0;
-    public int defense = 0;
-    public int lucky = 0;
+    public float boughtSpeed = 0;
+    public int boughtStrength = 0;
+    public int boughtDefense = 0;
+    public int boughtLucky = 0;
 
-    public int life = 0;
-    public int mana = 0;
-    public int stamina = 0;
+    public int boughtStamina = 0;
+    public int boughtMana = 0;
+    public int boughtHealth = 0;
+
+    public float tempSpeed = 0;
+    public int tempStrength = 0;
+    public int tempDefense = 0;
+    public int tempMaxHealth = 0;
+    public int tempMaxStamina = 0;
     
     public int simpleAttack = 1;
     public int poisonAttack = 0;

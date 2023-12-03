@@ -77,8 +77,8 @@ public class RewardedAdsButton : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
             player.entity.currentStamina = player.entity.maxStamina;
             
             // Atualizando Global Variables
-            GlobalVariables.instance.life = player.entity.maxHealth;    
-            GlobalVariables.instance.stamina = player.entity.maxStamina;
+            // GlobalVariables.instance.life = player.entity.maxHealth;    
+            // GlobalVariables.instance.stamina = player.entity.maxStamina;
 
             // Manda o Player para a posição de respawn
             player.transform.position = respawnLocation.position;

@@ -14,7 +14,5 @@ public class CoinsManager : MonoBehaviour
     void Update()
     {
         coinsCount.text = player.entity.coins.ToString();
-        // GlobalVariables.instance.coins = player.entity.coins;
-
     }
 }

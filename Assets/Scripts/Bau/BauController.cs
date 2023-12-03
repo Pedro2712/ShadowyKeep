@@ -133,25 +133,33 @@ public class BauController : MonoBehaviour
         {
             case "Coins":
                 buffValue = CoinsBuff();
-                player.entity.coins += (int) buffValue;
-                GlobalVariables.instance.coins = player.entity.coins;
+                GlobalVariables.instance.coins += (int) buffValue;
+                player.manager.UpdateCoins(player.entity, GlobalVariables.instance.coins);
                 break;
             case "Speed":
                 buffValue = SpeedBuff();
-                player.entity.speed += buffValue;
+                GlobalVariables.instance.tempSpeed += buffValue;
+                player.manager.UpdateSpeed(GlobalVariables.instance.boughtSpeed, GlobalVariables.instance.tempSpeed);
                 break;
             case "Health":
                 buffValue = HealthBuff();
-                player.entity.maxHealth += (int) buffValue;
+                GlobalVariables.instance.tempMaxHealth += (int) buffValue;
+                player.manager.UpdateHealth(GlobalVariables.instance.boughtHealth, GlobalVariables.instance.tempMaxHealth);
                 break;
             case "Strength":
                 buffValue = StrengthBuff();
-                player.entity.strength += (int) buffValue;
+                GlobalVariables.instance.tempStrength += (int) buffValue;
+                player.manager.UpdateStrength(GlobalVariables.instance.boughtStrength, GlobalVariables.instance.tempStrength);
                 break;
             case "Defense":
                 buffValue = DefenseBuff();
-                player.entity.defense += (int) buffValue;
+                GlobalVariables.instance.tempDefense += (int) buffValue;
+                player.manager.UpdateDefense(GlobalVariables.instance.boughtDefense, GlobalVariables.instance.tempDefense);
                 break;
+            // case "Stamina":
+            //     buffValue = StaminaBuff();
+            //     GlobalVariables.instance.tempMaxStamina += (int) buffValue;
+            //     player.manager.UpdateStamina(GlobalVariables.instance.boughtStamina, GlobalVariables.instance.tempMaxStamina);
             // case "CooldownReduce":
             //     player.entity.cooldown -= 0.1f;
             //     break;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+using static GlobalVariables;
 public class ControllerAtributo : MonoBehaviour
 {
     public Player player;
@@ -17,9 +18,12 @@ public class ControllerAtributo : MonoBehaviour
 
     public void Open() {
         animator.SetBool("isOpen", true);
-        strength.text = player.entity.strength.ToString();
-        defense.text = player.entity.defense.ToString();
-        speed.text = player.entity.speed.ToString("F1");
+        int playerStrength = player.entity.strength + GlobalVariables.instance.boughtStrength + GlobalVariables.instance.tempStrength;
+        int playerDefense = player.entity.defense + GlobalVariables.instance.boughtDefense + GlobalVariables.instance.tempDefense;
+        float playerSpeed = player.entity.speed + GlobalVariables.instance.boughtSpeed + GlobalVariables.instance.tempSpeed;
+        strength.text = playerStrength.ToString();
+        defense.text = playerDefense.ToString();
+        speed.text = playerSpeed.ToString("F1");
         
     }
 
