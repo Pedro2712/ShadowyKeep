@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+using static GlobalVariables;
+
 public class CoinsManager : MonoBehaviour
 {
     public Player player;
@@ -12,5 +14,7 @@ public class CoinsManager : MonoBehaviour
     void Update()
     {
         coinsCount.text = player.entity.coins.ToString();
+        // GlobalVariables.instance.coins = player.entity.coins;
+
     }
 }

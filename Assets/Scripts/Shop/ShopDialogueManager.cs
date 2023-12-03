@@ -13,24 +13,24 @@ public class ShopDialogueManager : MonoBehaviour
     [Header("Shop Manager")]
     private ShopManager manager;
 
-    void Start()
+    private void Start()
     {
         manager = FindObjectOfType<ShopManager>();
     }
 
-    public void enableDialogue()
+    public void EnableDialogue()
     {
         attributeDialogueBox.SetActive(true);
     }
 
-    public void disableDialogue()
+    public void DisableDialogue()
     {
         attributeDialogueBox.SetActive(false);
     }
 
     public void StartDialogue(SelectedItem item)
     {
-        Debug.LogWarning("--- Start conversation ---");
+        // Debug.LogWarning("--- Start conversation ---");
 
         string itemName = manager.getName(item.id); 
         string typeOfItem = manager.getTypeOfItem(item.id);
@@ -55,7 +55,7 @@ public class ShopDialogueManager : MonoBehaviour
             manager.buyNewATtack(itemSelected);
         }
 
-        disableDialogue();
+        DisableDialogue();
     }
     
 }

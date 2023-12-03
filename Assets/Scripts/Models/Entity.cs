@@ -28,12 +28,12 @@ public class Entity
     public int staminaCost = 5;
 
     [Header("Stats")]
+    public float speed = 0;
     public int strength = 1;
+    public int defense = 1;
+    public int damage = 1;
     public int resistence = 1;
     public int inteligence = 1;
-    public int damage = 1;
-    public int defense = 1;
-    public float speed = 2f;
 
     [Header("Combat")]
     public bool inCombat = false;
