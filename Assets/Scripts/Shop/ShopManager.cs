@@ -21,6 +21,10 @@ public class ShopManager : MonoBehaviour
     private string buyMode;
     private int valueOwned;
 
+    [Header("Manager Sound")]
+    public ShopManagerMusic managerMusic;
+
+
     [Header("Store")]
     private Dictionary<int, Item> storeItens = new Dictionary<int, Item>();
 
@@ -196,9 +200,13 @@ public class ShopManager : MonoBehaviour
             // Atualiza moedas
             GlobalVariables.instance.coins -= itemPrice;
             CoinsText.text = "Coins : " +  GlobalVariables.instance.coins.ToString();
+
+            managerMusic.buySound();
         }else{
             // TODO : Animação de "compra bloqueada"  
             Debug.LogWarning(" [TODO] Não é possível adquirir o item : " + itemName);
+            
+            managerMusic.deniedSound();
         }
     }
 
@@ -213,9 +221,13 @@ public class ShopManager : MonoBehaviour
             // e o numero 0 significa que não foi desbloqueado
             storeItem.value = 1.0f;
             updateGlobalVariablevalue(itemName, storeItem.value);
+
+            managerMusic.buySound();
         }else{
             //TODO : Animação de "compra bloqueada"  
            Debug.LogWarning(" [TODO] Não é possível adquirir o ataque : " + itemName);
+
+           managerMusic.deniedSound();
         }
 
     }
