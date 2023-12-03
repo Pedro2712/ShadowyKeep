@@ -59,7 +59,12 @@ public class ManagerSpawner : MonoBehaviour
           
           while(count_enemies < qtd_enemies ){
                spawnedEnemy = Instantiate(enemiesToSpawn[count_enemies], selectedSpawnLocations[count_enemies].position, Quaternion.identity);
-               spawnedEnemy.GetComponent<Enemy>().entity.level = Mathf.Min(difficulty, spawnedEnemy.GetComponent<Enemy>().entity.maxLevel);
+               if (spawnedEnemy.GetComponent<Enemy>() != null){
+                    spawnedEnemy.GetComponent<Enemy>().entity.level = Mathf.Min(difficulty, spawnedEnemy.GetComponent<Enemy>().entity.maxLevel);
+               }
+               else if (spawnedEnemy.GetComponent<Enemy>() != null){
+                    spawnedEnemy.GetComponent<EnemyRange>().entity.level = Mathf.Min(difficulty, spawnedEnemy.GetComponent<EnemyRange>().entity.maxLevel);
+               }
                count_enemies+=1;
           }
           enemiesToSpawn.Clear();

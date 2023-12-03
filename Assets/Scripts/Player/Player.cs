@@ -143,10 +143,11 @@ public class Player : MonoBehaviour
     {
         if (collider.CompareTag("Damage") && !entity.dead)
         {
+
             Enemy enemy = collider.GetComponentInParent<Enemy>();
             Boss boss = collider.GetComponentInParent<Boss>();
             FireballController fireball = collider.GetComponentInParent<FireballController>();
-
+            AttackHit attackHit = collider.GetComponentInParent<AttackHit>();
             if (enemy != null){
                 ApplyDamage(enemy.entity);
             }
@@ -155,6 +156,16 @@ public class Player : MonoBehaviour
             }
             else if (fireball != null){
                 ApplyDamage(BossFireball.entity);
+            }
+            else if (attackHit != null) {
+                EnemyRange enemyRange = attackHit.GetComponentInParent<EnemyRange>();
+
+                if (enemyRange != null){
+                    ApplyDamage(enemyRange.entity);
+                    if (attackHit != null){
+                        Destroy(attackHit.gameObject);
+                    }
+                }
             }
 
             Vector3 direction = (transform.position - collider.transform.position);
