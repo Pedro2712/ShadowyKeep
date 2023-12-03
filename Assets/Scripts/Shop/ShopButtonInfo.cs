@@ -16,10 +16,10 @@ public class ShopButtonInfo : MonoBehaviour
     public void Start()
     {   
         manager = FindObjectOfType<ShopManager>();
-        manager.createItem(ItemID);
+        manager.CreateItem(ItemID);
 
         int itemPrice = manager.getPrice(ItemID);
-        double itemActualValue = manager.getActualValue(ItemID);
+        double itemActualValue = manager.getValue(ItemID);
         string typeOfItem = manager.getTypeOfItem(ItemID);
 
         if(typeOfItem == "attribute"){
@@ -40,8 +40,8 @@ public class ShopButtonInfo : MonoBehaviour
     }
 
     // Ajeitar essa funçao para atualizar o valor do texto do valor atual
-    void FixedUpdate() {        
-        double itemActualValue = manager.getActualValue(ItemID);
+    private void FixedUpdate() {        
+        double itemActualValue = manager.getValue(ItemID);
         string typeOfItem = manager.getTypeOfItem(ItemID);
         
         if(typeOfItem == "attribute"){

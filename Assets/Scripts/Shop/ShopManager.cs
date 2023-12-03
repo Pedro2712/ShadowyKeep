@@ -12,7 +12,7 @@ public class Item
 {
     public string name;
     public int price;
-    public double actualValue;
+    public float value;
     public int id;
 }
 
@@ -43,19 +43,60 @@ public class ShopManager : MonoBehaviour
     public TextMeshProUGUI CoinsText;
     public TextMeshProUGUI LevelInfoText;
     
-    void Start()
+    private void Start()
     {
         CoinsText.text = "Coins : " + GlobalVariables.instance.coins.ToString();
         LevelInfoText.text = "Level : " + GlobalVariables.instance.lastPlayerLevel.ToString();
     }
 
-    public void createItem(int id)
-    {   
-        Item newItem = new Item{name = allNameItens[id], 
-                              price = itensPrice[id], 
-                              actualValue = GlobalVariables.instance.speed, 
-                              id = id
-                              };
+    public void CreateItem(int id)
+    {
+        string itemName = allNameItens[id];
+        int itemPrice = itensPrice[id];
+        float itemValue = 0.0f;
+
+        switch (itemName) {
+            case "Speed":
+                itemValue = (float) GlobalVariables.instance.speed;
+                break;
+            case "Strength":
+                itemValue = (float) GlobalVariables.instance.strength;
+                break;
+            case "Defense":
+                itemValue = (float) GlobalVariables.instance.defense;
+                break;
+            case "Lucky":
+                itemValue = (float) GlobalVariables.instance.lucky;
+                break;
+            case "Stamina":
+                itemValue = (float) GlobalVariables.instance.stamina;
+                break;
+            case "Mana":
+                itemValue = (float) GlobalVariables.instance.mana;
+                break;
+            case "Life":
+                itemValue = (float) GlobalVariables.instance.life;
+                break;
+            case "PoisonAttack":
+                itemValue = (float) GlobalVariables.instance.poisonAttack;
+                break;
+            case "ExplosaoArcana":
+                itemValue = (float) GlobalVariables.instance.explosaoArcana;
+                break;
+            case "LifeOrDeath":
+                itemValue = (float) GlobalVariables.instance.lifeOrDeath;
+                break;
+            case "InvocacaoProfana":
+                itemValue = (float) GlobalVariables.instance.invocacaoProfana;
+                break;
+        } 
+        Item newItem = new Item{    
+                                    name = itemName, 
+                                    price = itemPrice, 
+                                    value = itemValue, 
+                                    id = id
+                                };
+    
         storeItens.Add(newItem.id, newItem);
     }
    
@@ -71,10 +112,10 @@ public class ShopManager : MonoBehaviour
         return foundItem.price;
     }
 
-    public double getActualValue(int itemId)
+    public float getValue(int itemId)
     {
         Item foundItem = storeItens[itemId];
-        return foundItem.actualValue;
+        return foundItem.value;
     }
 
     public string getTypeOfItem(int itemId)
@@ -89,53 +130,54 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public double calculateGain(int itemId)
+    public float calculateGain(int itemId)
     {
         Item foundItem = storeItens[itemId];
         string itemName = foundItem.name;
 
         if(itemName == "Stamina" || itemName == "Mana" || itemName == "Life"){
-            return 10.0;
+            return 10.0f;
         }else{
-            return 0.5;
+            return 0.5f;
         }
     }
 
-    private void updateGlobalVariablevalue(string name, double newValue)
+    private void updateGlobalVariablevalue(string name, float newValue)
     {   
-        if(name == "Speed"){
-            GlobalVariables.instance.speed = newValue;
-            Debug.LogError(" Update speed  : " + GlobalVariables.instance.speed);
-        }else if(name == "Strength"){
-            GlobalVariables.instance.strength = newValue;
-            Debug.LogError(" Update strength  : " + GlobalVariables.instance.strength);
-        }else if(name == "Defense"){
-            GlobalVariables.instance.defense = newValue;
-            Debug.LogError(" Update defense  : " + GlobalVariables.instance.defense);
-        }else if(name == "Lucky"){
-            GlobalVariables.instance.lucky = newValue;
-            Debug.LogError(" Update lucky  : " + GlobalVariables.instance.lucky);
-        }else if(name == "Stamina"){
-            GlobalVariables.instance.stamina = newValue;
-            Debug.LogError(" Update stamina  : " + GlobalVariables.instance.stamina);
-        }else if(name == "Mana"){
-            GlobalVariables.instance.mana = newValue;
-            Debug.LogError(" Update mana  : " + GlobalVariables.instance.mana);
-        }else if(name == "Life"){
-            GlobalVariables.instance.life = newValue;
-            Debug.LogError(" Update life  : " + GlobalVariables.instance.life);
-        }else if(name == "PoisonAttack"){
-            GlobalVariables.instance.poisonAttack = newValue;
-            Debug.LogError(" Update poisonAttack  : " + GlobalVariables.instance.poisonAttack);
-        }else if(name == "ExplosaoArcana"){
-            GlobalVariables.instance.explosaoArcana = newValue;
-            Debug.LogError(" Update explosaoArcana  : " + GlobalVariables.instance.explosaoArcana);
-        }else if(name == "LifeOrDeath"){
-            GlobalVariables.instance.lifeOrDeath = newValue;
-            Debug.LogError(" Update lifeOrDeath  : " + GlobalVariables.instance.lifeOrDeath);
-        }else if(name == "InvocacaoProfana"){
-            GlobalVariables.instance.invocacaoProfana = newValue;
-            Debug.LogError(" Update invocacaoProfana  : " + GlobalVariables.instance.invocacaoProfana);
+        switch (name) {
+            case "Speed":
+                GlobalVariables.instance.speed = newValue;
+                break;
+            case "Strength":
+                GlobalVariables.instance.strength = (int) newValue;
+                break;
+            case "Defense":
+                GlobalVariables.instance.defense = (int) newValue;
+                break;
+            case "Lucky":
+                GlobalVariables.instance.lucky = (int) newValue;
+                break;
+            case "Stamina":
+                GlobalVariables.instance.stamina = (int) newValue;
+                break;
+            case "Mana":
+                GlobalVariables.instance.mana = (int) newValue;
+                break;
+            case "Life":
+                GlobalVariables.instance.life = (int) newValue;
+                break;
+            case "PoisonAttack":
+                GlobalVariables.instance.poisonAttack = (int) newValue;
+                break;
+            case "ExplosaoArcana":
+                GlobalVariables.instance.explosaoArcana = (int) newValue;
+                break;
+            case "LifeOrDeath":
+                GlobalVariables.instance.lifeOrDeath = (int) newValue;
+                break;
+            case "InvocacaoProfana":
+                GlobalVariables.instance.invocacaoProfana = (int) newValue;
+                break;
         }
     }
 
@@ -145,20 +187,18 @@ public class ShopManager : MonoBehaviour
         int itemPrice = storeItem.price;
         string itemName  = storeItem.name;
 
-        Debug.LogError(" > Item : " + itemName + " =====");
-
         if(GlobalVariables.instance.coins >= itemPrice){ 
             
             // Sempre aumentamos de 1 em 1 unidade?
-            storeItem.actualValue = storeItem.actualValue + calculateGain(id); 
-            updateGlobalVariablevalue(itemName, storeItem.actualValue);
+            storeItem.value += calculateGain(id);
+            updateGlobalVariablevalue(itemName, storeItem.value);
             
             // Atualiza moedas
             GlobalVariables.instance.coins -= itemPrice;
             CoinsText.text = "Coins : " +  GlobalVariables.instance.coins.ToString();
         }else{
             // TODO : Animação de "compra bloqueada"  
-            Debug.LogError(" [TODO] Não é possível adquirir o item : " + itemName);
+            Debug.LogWarning(" [TODO] Não é possível adquirir o item : " + itemName);
         }
     }
 
@@ -168,18 +208,14 @@ public class ShopManager : MonoBehaviour
         int itemPrice = storeItem.price;
         string itemName  = storeItem.name;
 
-        Debug.LogError(" > Novo Ataque : " + itemName + " =====");
-
-        if(GlobalVariables.instance.lastPlayerLevel >= itemPrice){ 
-           Debug.LogError(" [TODO] Desbloquear novo ataque  " + itemName);
-
+        if(GlobalVariables.instance.lastPlayerLevel >= itemPrice){
             // Em Global variables o número 1 significa que o ataque foi desbloqueado 
             // e o numero 0 significa que não foi desbloqueado
-            storeItem.actualValue = 1.0;
-            updateGlobalVariablevalue(itemName, storeItem.actualValue);
+            storeItem.value = 1.0f;
+            updateGlobalVariablevalue(itemName, storeItem.value);
         }else{
             //TODO : Animação de "compra bloqueada"  
-           Debug.LogError(" [TODO] Não é possível adquirir o ataque : " + itemName);
+           Debug.LogWarning(" [TODO] Não é possível adquirir o ataque : " + itemName);
         }
 
     }

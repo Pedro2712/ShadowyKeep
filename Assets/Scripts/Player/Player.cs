@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+using static GlobalVariables;
+
 public class Player : MonoBehaviour
 {
-    public Entity entity = new Entity();
+    public Entity entity = new();
 
     [Header("Player Regen System")]
     public bool regenHPEnabled = true;
@@ -68,6 +70,12 @@ public class Player : MonoBehaviour
         entity.level = GlobalVariables.instance.lastPlayerLevel;
         entity.experienceToNextLevel = GlobalVariables.instance.lastExperienceToNextLevel;
 
+        manager.UpdateHealth(GlobalVariables.instance.life);
+        manager.UpdateStamina(GlobalVariables.instance.stamina);
+        manager.UpdateStrength(GlobalVariables.instance.strength);
+        manager.UpdateDefense(GlobalVariables.instance.defense);
+        manager.UpdateSpeed(GlobalVariables.instance.speed);
+
         StartCoroutine(RegenHealth());
         StartCoroutine(RegenStamina());
     }
@@ -84,7 +92,7 @@ public class Player : MonoBehaviour
         {
             entity.level += 1;
             GlobalVariables.instance.lastPlayerLevel = entity.level;
-            entity.experience = entity.experience - entity.experienceToNextLevel;
+            entity.experience -= entity.experienceToNextLevel;
             entity.experienceToNextLevel += 100;
             GlobalVariables.instance.lastExperienceToNextLevel = entity.experienceToNextLevel;
 

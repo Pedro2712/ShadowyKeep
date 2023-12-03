@@ -6,7 +6,6 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public Player player;
-    
     public ManagerSFX managerSFX;
     public float collisionOffset = 0.05f;
     public Rigidbody2D rb;
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     private bool TryMove(Vector2 direction)
     {
         if (!player.entity.dead) {
-            rb.MovePosition(rb.position + direction * player.entity.speed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * player.manager.CalculateSpeed(player.entity) * Time.fixedDeltaTime);
             return true;
         }
         return false;

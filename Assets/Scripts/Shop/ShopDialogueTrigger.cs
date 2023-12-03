@@ -8,14 +8,14 @@ public class ShopDialogueTrigger : MonoBehaviour
     private ShopDialogueManager dialogueManager;
     private ShopManager manager;
 
-    void Start(){
+    private void Start(){
         dialogueManager = FindObjectOfType<ShopDialogueManager>();
         manager = FindObjectOfType<ShopManager>();
     }
 
     public void TriggerDialogue()
     {   
-        dialogueManager.enableDialogue();
+        dialogueManager.EnableDialogue();
         dialogueManager.StartDialogue(item);
 
         // Varivel que controla qual item foi selecionado
@@ -24,7 +24,7 @@ public class ShopDialogueTrigger : MonoBehaviour
 
     public void EndDialogue()
     {   
-        dialogueManager.disableDialogue();
+        dialogueManager.DisableDialogue();
     }
 
 }

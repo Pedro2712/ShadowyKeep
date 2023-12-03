@@ -7,7 +7,6 @@ public class MobileMovement : MonoBehaviour
 {
     //[SerializeField] private float velocidade = 4; // Velocidade que o personagem irá se mover
     public Player player;
-
     public ManagerSFX managerSFX;
     public float collisionOffset = 0.05f;
     private Vector2 myInput; // Vector2 que armazena os inputs do joystick de movimento
@@ -35,7 +34,7 @@ public class MobileMovement : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>();
         movement = movementVector;
         isWalking = (movement.x != 0 || movement.y != 0);
-        Debug.LogError("Movement: " + movement);
+        // Debug.LogError("Movement: " + movement);
         if(isWalking){
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
@@ -52,7 +51,7 @@ public class MobileMovement : MonoBehaviour
     private bool TryMove(Vector2 direction)
     {
         if (!player.entity.dead) {
-            rb.MovePosition(rb.position + direction * player.entity.speed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + direction * player.manager.CalculateSpeed(player.entity) * Time.fixedDeltaTime);
             return true;
         }
         return false;
