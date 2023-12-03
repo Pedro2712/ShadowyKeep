@@ -44,7 +44,7 @@ public class Door : MonoBehaviour
 
                 } else {
                     
-                    int randomIndex = 1;//Random.Range(0, NumberOfRooms);
+                    int randomIndex = Random.Range(0, NumberOfRooms);
 
                     // Garante que a sala escolhida não seja a mesma que a última visitada
                     while (randomIndex == GlobalVariables.instance.lastVisitedIndex) {

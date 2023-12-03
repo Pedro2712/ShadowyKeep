@@ -36,9 +36,14 @@ public class Player : MonoBehaviour
     private Vector3 lastPosition;
     public Animator animator;
     public Boss BossFireball;
-    public ManagerSFX managerSFX;
 
     public GameObject LevelUp;
+
+    [Header("Music and Sounds")]
+    public ManagerSFX managerSFX;
+
+    [Header("Ads")]
+    private ActivateAds activateAds;
 
     void Start()
     {
@@ -199,23 +204,11 @@ public class Player : MonoBehaviour
             animator.SetTrigger("isDead");
             entity.dead = true;
             GlobalVariables.instance.roomsVisited = 0;
-            StartCoroutine(DelayedGameOver());
+
+            // Activate Ads Script ativa a talea de GameOver ou de Ads
+            activateAds = FindObjectOfType<ActivateAds>();
+            activateAds.loadAds();
         }
     }
 
-    private IEnumerator DelayedGameOver(){
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(3);
-    }
-
-    
-    // Comentado para uso mobile : Função associada ao botão no arquivo MobileAttack
-    // void OnSimpleSwordAttack(){
-    //     if (entity.currentStamina >= entity.staminaCost)
-    //     {
-    //         entity.currentStamina -= entity.staminaCost;
-    //         animator.SetTrigger("attack");
-    //         managerSFX.swordSound();
-    //     }
-    // }
 }
