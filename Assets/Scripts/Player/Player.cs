@@ -56,6 +56,12 @@ public class Player : MonoBehaviour
         rb = GetComponent <Rigidbody2D>();
         lastPosition = transform.position;
 
+        manager.UpdateHealth(GlobalVariables.instance.boughtHealth, GlobalVariables.instance.tempMaxHealth);
+        manager.UpdateStamina(GlobalVariables.instance.boughtStamina, GlobalVariables.instance.tempMaxStamina);
+        manager.UpdateStrength(GlobalVariables.instance.boughtStrength, GlobalVariables.instance.tempStrength);
+        manager.UpdateDefense(GlobalVariables.instance.boughtDefense, GlobalVariables.instance.tempDefense);
+        manager.UpdateSpeed(GlobalVariables.instance.boughtSpeed, GlobalVariables.instance.tempSpeed);
+
         entity.maxHealth = manager.CalculateHealth(entity);
         entity.maxStamina = manager.CalculateStamina(entity);
 
@@ -74,12 +80,6 @@ public class Player : MonoBehaviour
 
         entity.level = GlobalVariables.instance.lastPlayerLevel;
         entity.experienceToNextLevel = GlobalVariables.instance.lastExperienceToNextLevel;
-
-        manager.UpdateHealth(GlobalVariables.instance.life);
-        manager.UpdateStamina(GlobalVariables.instance.stamina);
-        manager.UpdateStrength(GlobalVariables.instance.strength);
-        manager.UpdateDefense(GlobalVariables.instance.defense);
-        manager.UpdateSpeed(GlobalVariables.instance.speed);
 
         StartCoroutine(RegenHealth());
         StartCoroutine(RegenStamina());
@@ -203,11 +203,20 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("isDead");
             entity.dead = true;
-            GlobalVariables.instance.roomsVisited = 0;
 
             // Activate Ads Script ativa a talea de GameOver ou de Ads
             activateAds = FindObjectOfType<ActivateAds>();
             activateAds.loadAds();
+            
+            if (entity.dead)
+            {
+                GlobalVariables.instance.roomsVisited = 0;
+                GlobalVariables.instance.tempSpeed = 0;
+                GlobalVariables.instance.tempStrength = 0;
+                GlobalVariables.instance.tempDefense = 0;
+                GlobalVariables.instance.tempMaxHealth = 0;
+                GlobalVariables.instance.tempMaxStamina = 0;
+            }
         }
     }
 

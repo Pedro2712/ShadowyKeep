@@ -61,25 +61,25 @@ public class ShopManager : MonoBehaviour
 
         switch (itemName) {
             case "Speed":
-                itemValue = (float) GlobalVariables.instance.speed;
+                itemValue = (float) GlobalVariables.instance.boughtSpeed;
                 break;
             case "Strength":
-                itemValue = (float) GlobalVariables.instance.strength;
+                itemValue = (float) GlobalVariables.instance.boughtStrength;
                 break;
             case "Defense":
-                itemValue = (float) GlobalVariables.instance.defense;
+                itemValue = (float) GlobalVariables.instance.boughtDefense;
                 break;
             case "Lucky":
-                itemValue = (float) GlobalVariables.instance.lucky;
+                itemValue = (float) GlobalVariables.instance.boughtLucky;
                 break;
             case "Stamina":
-                itemValue = (float) GlobalVariables.instance.stamina;
+                itemValue = (float) GlobalVariables.instance.boughtStamina;
                 break;
             case "Mana":
-                itemValue = (float) GlobalVariables.instance.mana;
+                itemValue = (float) GlobalVariables.instance.boughtMana;
                 break;
             case "Life":
-                itemValue = (float) GlobalVariables.instance.life;
+                itemValue = (float) GlobalVariables.instance.boughtHealth;
                 break;
             case "PoisonAttack":
                 itemValue = (float) GlobalVariables.instance.poisonAttack;
@@ -141,8 +141,10 @@ public class ShopManager : MonoBehaviour
 
         if(itemName == "Stamina" || itemName == "Mana" || itemName == "Life"){
             return 10.0f;
-        }else{
+        }else if(itemName == "Speed"){
             return 0.5f;
+        }else{
+            return 1.0f;
         }
     }
 
@@ -150,25 +152,25 @@ public class ShopManager : MonoBehaviour
     {   
         switch (name) {
             case "Speed":
-                GlobalVariables.instance.speed = newValue;
+                GlobalVariables.instance.boughtSpeed = newValue;
                 break;
             case "Strength":
-                GlobalVariables.instance.strength = (int) newValue;
+                GlobalVariables.instance.boughtStrength = (int) newValue;
                 break;
             case "Defense":
-                GlobalVariables.instance.defense = (int) newValue;
+                GlobalVariables.instance.boughtDefense = (int) newValue;
                 break;
             case "Lucky":
-                GlobalVariables.instance.lucky = (int) newValue;
+                GlobalVariables.instance.boughtLucky = (int) newValue;
                 break;
             case "Stamina":
-                GlobalVariables.instance.stamina = (int) newValue;
+                GlobalVariables.instance.boughtStamina = (int) newValue;
                 break;
             case "Mana":
-                GlobalVariables.instance.mana = (int) newValue;
+                GlobalVariables.instance.boughtMana = (int) newValue;
                 break;
             case "Life":
-                GlobalVariables.instance.life = (int) newValue;
+                GlobalVariables.instance.boughtHealth = (int) newValue;
                 break;
             case "PoisonAttack":
                 GlobalVariables.instance.poisonAttack = (int) newValue;
