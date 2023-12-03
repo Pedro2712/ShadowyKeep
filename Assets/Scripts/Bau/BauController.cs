@@ -111,6 +111,7 @@ public class BauController : MonoBehaviour
             KeyF.gameObject.SetActive(false);
             icon.sprite = sortSprites[GlobalVariables.instance.finalChoose];
             buff = GlobalVariables.instance.finalChoose;
+            isClicked = false;
             StartCoroutine(OpenChest());
         }
         else {

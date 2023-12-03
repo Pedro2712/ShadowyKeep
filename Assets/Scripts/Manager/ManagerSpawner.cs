@@ -29,7 +29,7 @@ public class ManagerSpawner : MonoBehaviour
 
         // Spawna inimigos na sala:
         int qtd_enemies = 10;
-        int playerLevel = playerGO.GetComponent<Player>().entity.level;
+        int playerLevel = GlobalVariables.instance.lastPlayerLevel;
         int maxLevel = playerGO.GetComponent<Player>().entity.maxLevel;
         int difficulty  = CalculateEnemyDifficulty(playerLevel, maxLevel);
 
@@ -62,7 +62,7 @@ public class ManagerSpawner : MonoBehaviour
                if (spawnedEnemy.GetComponent<Enemy>() != null){
                     spawnedEnemy.GetComponent<Enemy>().entity.level = Mathf.Min(difficulty, spawnedEnemy.GetComponent<Enemy>().entity.maxLevel);
                }
-               else if (spawnedEnemy.GetComponent<Enemy>() != null){
+               else if (spawnedEnemy.GetComponent<EnemyRange>() != null){
                     spawnedEnemy.GetComponent<EnemyRange>().entity.level = Mathf.Min(difficulty, spawnedEnemy.GetComponent<EnemyRange>().entity.maxLevel);
                }
                count_enemies+=1;

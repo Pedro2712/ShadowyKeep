@@ -30,15 +30,15 @@ public class PlayerMovement : MonoBehaviour
         double numerador = Math.Exp(2 * x) - 1;
         double denominador = Math.Exp(2 * x) + 1;
 
-        // Verifica se o denominador não é zero antes de fazer a divisão
+        // Verifica se o denominador nï¿½o ï¿½ zero antes de fazer a divisï¿½o
         if (denominador != 0)
         {
             return numerador / denominador;
         }
         else
         {
-            // Tratar caso o denominador seja zero (evitar divisão por zero)
-            Console.WriteLine("Erro: Divisão por zero.");
+            // Tratar caso o denominador seja zero (evitar divisï¿½o por zero)
+            Console.WriteLine("Erro: Divisï¿½o por zero.");
             return double.NaN; // Retorna NaN (Not a Number) para indicar um resultado indefinido
         }
     }
@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
     public void MovePlayer(Vector2 movementValue)
     {
         movement = TravaVelocidade(movementValue);
-        print(movement);
 
         isWalking = (movement.x != 0 || movement.y != 0);
 

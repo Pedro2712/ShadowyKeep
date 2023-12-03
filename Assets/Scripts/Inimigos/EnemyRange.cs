@@ -27,7 +27,7 @@ public class EnemyRange : MonoBehaviour
     private Vector2 targetPositionTilted;
     private bool onRange;
     private bool facingRight = true;
-    private float cooldownTimer = 1f;
+    private float cooldownTimer = 2f;
 
     public float attackRange = 3f;
 

@@ -19,7 +19,7 @@ public class GlobalVariables : MonoBehaviour
     [Header("Rooms")]
     public int lastVisitedIndex = -1;
     public int roomsVisited = 0;
-    public int totalRooms = 2;
+    public int totalRooms = 6;
 
     [Header("Choose award")]
     public string finalChoose = "Coins";
