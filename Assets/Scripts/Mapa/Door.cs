@@ -35,6 +35,7 @@ public class Door : MonoBehaviour
         canvas.gameObject.SetActive(onRadios);
         KeyF.gameObject.SetActive(onRadios);
 
+
         if (onRadios) {
             if(isClicked){
 
@@ -50,7 +51,6 @@ public class Door : MonoBehaviour
                         randomIndex = Random.Range(0, NumberOfRooms);
 
                     }
-
                     GlobalVariables.instance.lastVisitedIndex = randomIndex;
                     GlobalVariables.instance.roomsVisited++;
                     switchScript.ChooseIcon();
