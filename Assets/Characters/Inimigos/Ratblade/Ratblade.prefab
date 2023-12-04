@@ -195,30 +195,32 @@ MonoBehaviour:
     level: 0
     experience: 0
     experienceToNextLevel: 100
+    maxLevel: 50
+    coins: 0
     currentHealth: 0
     maxHealth: 0
     currentMana: 0
     maxMana: 0
     currentStamina: 0
     maxStamina: 0
+    staminaCost: 5
+    speed: 2
     strength: 1
+    defense: 1
+    damage: 1
     resistence: 1
     inteligence: 1
-    damage: 1
-    defense: 1
-    speed: 2
     inCombat: 0
     cooldown: 1
     target: {fileID: 0}
     dead: 0
-  manager: {fileID: 0}
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
   attackHitBox: {fileID: 5807028322467578871}
   detectionRadius: 5
   attackRange: 1
-  knockbackForce: 25
+  knockbackForce: 15
   enemy: {fileID: 7023158848413782914}
   EnemyCanvas: {fileID: 1484548777060836405}
   health: {fileID: 5551184079946569668}
