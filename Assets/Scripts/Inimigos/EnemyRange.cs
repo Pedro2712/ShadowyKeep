@@ -56,8 +56,8 @@ public class EnemyRange : MonoBehaviour
 
     BoxCollider2D boxCollider;
 
-    public GameObject projectilePrefab;  
-    public float projectileSpeed = 5f;  
+    public GameObject projectilePrefab;
+    public float projectileSpeed = 5f;
 
     private void Awake()
     {
