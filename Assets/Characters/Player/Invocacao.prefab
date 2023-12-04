@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1844105934902816912}
   - component: {fileID: 2453492166660665056}
   - component: {fileID: 4589016273594186675}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Invocacao
   m_TagString: weapon
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000000059604645, y: -0.0037572384}

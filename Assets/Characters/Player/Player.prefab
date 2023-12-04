@@ -184,7 +184,7 @@ MonoBehaviour:
   - {x: -0.08599424, y: -0.791963, z: -0.000000029802322}
   m_ShapePathHash: -231704897
   m_Mesh: {fileID: 0}
-  m_InstanceId: -66428
+  m_InstanceId: 48242
   m_LocalBounds:
     m_Center: {x: -0.06975293, y: -0.20041817, z: 0}
     m_Extent: {x: 0.36994863, y: 0.5922907, z: 0}
@@ -525,8 +525,10 @@ MonoBehaviour:
   knockbackForce: 10
   animator: {fileID: 5870936099426227733}
   BossFireball: {fileID: 0}
-  managerSFX: {fileID: 0}
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 5
   LevelUp: {fileID: 5509911617205210668, guid: 1026d8b44c699894b96c5652cad9a384, type: 3}
+  managerSFX: {fileID: 0}
 --- !u!114 &8950642322381573819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +545,8 @@ MonoBehaviour:
   HitBoxAttackRight: {fileID: 7096128647888949464}
   HitBoxAttackLeft: {fileID: 7347849697688958916}
   HitBoxAttackDown: {fileID: 191284599706385462}
+  projectilePrefab: {fileID: 4911911381180177669, guid: 896cf78978c725a479a287a2beed9b20, type: 3}
+  projectileSpeed: 5
 --- !u!95 &5870936099426227733
 Animator:
   serializedVersion: 5

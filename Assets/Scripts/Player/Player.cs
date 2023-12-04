@@ -36,8 +36,6 @@ public class Player : MonoBehaviour
     private Vector3 lastPosition;
     public Animator animator;
     public Boss BossFireball;
-    public GameObject projectilePrefab;  
-    public float projectileSpeed = 5f; 
 
     public GameObject LevelUp;
 

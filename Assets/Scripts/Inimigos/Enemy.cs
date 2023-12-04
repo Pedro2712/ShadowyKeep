@@ -258,12 +258,15 @@ public class Enemy : MonoBehaviour
 
     private void Attack()
     {
-        if (entity.target != null && !entity.target.GetComponent<Player>().entity.dead)
+        if (entity.target != null && entity.target.tag == "Player")
         {
-            rb.velocity = Vector2.zero;
-            animator.SetTrigger("Attack");
+            if (!entity.target.GetComponent<Player>().entity.dead)
+            {
+                rb.velocity = Vector2.zero;
+                animator.SetTrigger("Attack");
 
-            PlaySound();
+                PlaySound();
+            }
         }
     }
 
