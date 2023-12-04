@@ -31,7 +31,7 @@ public class GlobalVariables : MonoBehaviour
     // ---- Store ---
     public int selectedItemId;
 
-    public int coins = 500;   // valor inicial para teste da loja
+    public int coins = 300;   // valor inicial para teste da loja
     public float boughtSpeed = 0;
     public int boughtStrength = 0;
     public int boughtDefense = 0;
