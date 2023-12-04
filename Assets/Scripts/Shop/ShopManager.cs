@@ -40,7 +40,7 @@ public class ShopManager : MonoBehaviour
                       "PoisonAttack", "ExplosaoArcana", "LifeOrDeath", "InvocacaoProfana"}
     );
     public List<int> itensPrice = new List<int>(
-        new int[] {35, 40, 40, 30, 450, 400, 500, 15, 40, 50, 60}
+        new int[] {35, 40, 40, 30, 450, 400, 500, 15, 40, 50, 20}
     );
     
     [Header("Text Infos")]
@@ -212,7 +212,7 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public void buyNewATtack(int id)
+    public void buyNewAttack(int id)
     {
         Item storeItem = storeItens[id];
         int itemPrice = storeItem.price;

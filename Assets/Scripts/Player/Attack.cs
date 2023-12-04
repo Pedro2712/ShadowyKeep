@@ -8,6 +8,8 @@ public class Attack : MonoBehaviour
     public GameObject HitBoxAttackRight;
     public GameObject HitBoxAttackLeft;
     public GameObject HitBoxAttackDown;
+    public GameObject projectilePrefab;
+    public float projectileSpeed = 5f;
 
     public void EnableHitBoxAttackTop()
     {
@@ -17,7 +19,7 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("HitBoxAttackTop não foi atribuído no Inspector.");
+            Debug.LogWarning("HitBoxAttackTop nï¿½o foi atribuï¿½do no Inspector.");
         }
     }
     
@@ -29,7 +31,7 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("HitBoxAttackRight não foi atribuído no Inspector.");
+            Debug.LogWarning("HitBoxAttackRight nï¿½o foi atribuï¿½do no Inspector.");
         }
     }
     
@@ -41,7 +43,7 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("HitBoxAttackLeft não foi atribuído no Inspector.");
+            Debug.LogWarning("HitBoxAttackLeft nï¿½o foi atribuï¿½do no Inspector.");
         }
     }
     public void EnableHitBoxAttackDown()
@@ -52,7 +54,7 @@ public class Attack : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("HitBoxAttackDown não foi atribuído no Inspector.");
+            Debug.LogWarning("HitBoxAttackDown nï¿½o foi atribuï¿½do no Inspector.");
         }
     }
 
@@ -61,5 +63,48 @@ public class Attack : MonoBehaviour
         HitBoxAttackRight.SetActive(false);
         HitBoxAttackLeft.SetActive(false);
         HitBoxAttackDown.SetActive(false);
+    }
+
+    private void LaunchProjectile(string direction)
+    {
+        Vector2 spawnPosition = transform.position;
+        Vector2 directionVector = Vector2.zero;
+
+        switch (direction)
+        {
+            case "top":
+                directionVector = Vector2.up;
+                break;
+            case "right":
+                directionVector = Vector2.right;
+                break;
+            case "down":
+                directionVector = Vector2.down;
+                break;
+            case "left":
+                directionVector = Vector2.left;
+                break;
+        }
+
+        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
+        projectile.transform.SetParent(transform);
+        projectile.SetActive(true);
+        StartCoroutine(MoveProjectile(projectile, directionVector));
+    }
+
+    private IEnumerator MoveProjectile(GameObject projectile, Vector2 direction)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < 3f && projectile != null) // Tempo de vida do projÃ©til (ajuste conforme necessÃ¡rio)
+        {
+            float step = projectileSpeed * Time.deltaTime;
+            projectile.transform.Translate(direction * step);
+            elapsedTime += Time.deltaTime;
+
+            yield return null;
+        }
+
+        Destroy(projectile);
     }
 }
