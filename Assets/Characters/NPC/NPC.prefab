@@ -173,10 +173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: -1614643317, guid: 5e66f19e293df3310b51f09fc46b31c5, type: 3}
-  KeyF: {fileID: 0}
+  store: 0
   speechTxt:
   - Entrar na loja  ?
-  actorName: "Sebasti\xE3o"
+  actorName: Will Tratado
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
