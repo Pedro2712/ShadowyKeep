@@ -8,7 +8,7 @@ public class ManagerSFX : MonoBehaviour
     public AudioSource srcMonster;
     public AudioSource srcBackground;
 
-    public AudioClip walk, sword, cocadaemon, shadon, rats, levelUp, bossCleave, bossSmash, bossFireBreath, bossFireBall;
+    public AudioClip walk, sword, cocadaemon, shadon, rats, levelUp, bossCleave, bossSmash, bossFireBreath, bossFireBall, invocacaoProfana;
     
     private List<AudioClip> backgroundMusics;
 
@@ -33,6 +33,12 @@ public class ManagerSFX : MonoBehaviour
     public void swordSound(){
         srcPlayer.loop = false;
         srcPlayer.clip = sword;
+        srcPlayer.Play();
+    }
+
+    public void invocacaoProfanaSound(){
+        srcPlayer.loop = false;
+        srcPlayer.clip = invocacaoProfana;
         srcPlayer.Play();
     }
 

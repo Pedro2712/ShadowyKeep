@@ -61,6 +61,7 @@ public class Player : MonoBehaviour
         manager.UpdateStrength(GlobalVariables.instance.boughtStrength, GlobalVariables.instance.tempStrength);
         manager.UpdateDefense(GlobalVariables.instance.boughtDefense, GlobalVariables.instance.tempDefense);
         manager.UpdateSpeed(GlobalVariables.instance.boughtSpeed, GlobalVariables.instance.tempSpeed);
+        manager.UpdateCoins(entity, GlobalVariables.instance.coins);
 
         entity.maxHealth = manager.CalculateHealth(entity);
         entity.maxStamina = manager.CalculateStamina(entity);

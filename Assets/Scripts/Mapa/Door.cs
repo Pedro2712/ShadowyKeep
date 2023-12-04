@@ -52,9 +52,9 @@ public class Door : MonoBehaviour
 
                     }
                     GlobalVariables.instance.lastVisitedIndex = randomIndex;
-                    GlobalVariables.instance.roomsVisited++;
+                    GlobalVariables.instance.roomsVisited = GlobalVariables.instance.roomsVisited + 1;
                     switchScript.ChooseIcon();
-
+                    
                     SceneManager.LoadScene("Sala" + (randomIndex + 1));
                 
             }

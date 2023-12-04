@@ -56,8 +56,8 @@ public class EnemyRange : MonoBehaviour
 
     BoxCollider2D boxCollider;
 
-    public GameObject projectilePrefab;  
-    public float projectileSpeed = 5f;  
+    public GameObject projectilePrefab;
+    public float projectileSpeed = 5f;
 
     private void Awake()
     {
@@ -287,11 +287,14 @@ public class EnemyRange : MonoBehaviour
 
     private void Attack()
     {
-        if (entity.target != null && !entity.target.GetComponent<Player>().entity.dead)
+        if (entity.target != null && entity.target.tag == "Player")
         {
-            rb.velocity = Vector2.zero;            
-            animator.SetTrigger("Attack");
-            PlaySound();
+            if (!entity.target.GetComponent<Player>().entity.dead)
+            {
+                rb.velocity = Vector2.zero;            
+                animator.SetTrigger("Attack");
+                PlaySound();
+            }
         }
     }
 

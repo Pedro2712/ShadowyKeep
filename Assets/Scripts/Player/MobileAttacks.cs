@@ -18,4 +18,13 @@ public class MobileAttacks : MonoBehaviour
             managerSFX.swordSound();
         }
     }
+
+    public void InvocacaoProfana(){
+        if (player.entity.currentStamina >= player.entity.staminaCost)
+        {
+            player.entity.currentStamina -= player.entity.staminaCost;
+            animator.SetTrigger("invocacaoProfana");
+            managerSFX.invocacaoProfanaSound(); // mudar para som de invocacao profana
+        }
+    }
 }

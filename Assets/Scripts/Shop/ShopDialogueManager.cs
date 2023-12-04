@@ -52,7 +52,7 @@ public class ShopDialogueManager : MonoBehaviour
         if(typeOfItem == "attribute"){
             manager.buyAttribute(itemSelected);
         }else{
-            manager.buyNewATtack(itemSelected);
+            manager.buyNewAttack(itemSelected);
         }
 
         DisableDialogue();

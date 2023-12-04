@@ -677,7 +677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "DISPON\xCDVEL"
+  m_text: EM BREVE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4166cd2d85e74d64f892184eaad90168, type: 2}
   m_sharedMaterial: {fileID: 464890170786224281, guid: 4166cd2d85e74d64f892184eaad90168, type: 2}
@@ -686,8 +686,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278255375
-  m_fontColor: {r: 0.05724919, g: 1, b: 0, a: 1}
+    rgba: 4279042303
+  m_fontColor: {r: 1, g: 0, b: 0.050980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1899,7 +1899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Invoca\xE7\xE3o de criaturas ou entidades para atacar o inimigo."
+  m_text: "Invoca\xE7\xE3o de uma magia poderosa que atinge inimigos distantes."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5362,13 +5362,18 @@ MonoBehaviour:
   lastExperienceToNextLevel: 100
   selectedItemId: 0
   coins: 1000
-  speed: 5
-  strength: 2
-  defense: 3
-  lucky: 0
-  life: 100
-  mana: 150
-  stamina: 100
+  boughtSpeed: 0
+  boughtStrength: 0
+  boughtDefense: 0
+  boughtLucky: 0
+  boughtStamina: 0
+  boughtMana: 0
+  boughtHealth: 0
+  tempSpeed: 0
+  tempStrength: 0
+  tempDefense: 0
+  tempMaxHealth: 0
+  tempMaxStamina: 0
   simpleAttack: 1
   poisonAttack: 0
   explosaoArcana: 0
@@ -8303,7 +8308,7 @@ MonoBehaviour:
   - ExplosaoArcana
   - LifeOrDeath
   - InvocacaoProfana
-  itensPrice: 2300000028000000280000001e000000c201000090010000f40100000f00000028000000320000003c000000
+  itensPrice: 2300000028000000280000001e000000c201000090010000f40100000f000000280000003200000014000000
   CoinsText: {fileID: 903644064}
   LevelInfoText: {fileID: 1924451179}
 --- !u!4 &1266086755
@@ -11310,7 +11315,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EM BREVE
+  m_text: "DISPON\xCDVEL"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4166cd2d85e74d64f892184eaad90168, type: 2}
   m_sharedMaterial: {fileID: 464890170786224281, guid: 4166cd2d85e74d64f892184eaad90168, type: 2}
@@ -11319,8 +11324,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279042303
-  m_fontColor: {r: 1, g: 0, b: 0.049562454, a: 1}
+    rgba: 4278255375
+  m_fontColor: {r: 0.05882353, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11583,9 +11588,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1280, y: 720}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -12677,8 +12682,8 @@ RectTransform:
   m_LocalScale: {x: 0.92929, y: 0.92929, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 238475134}
   - {fileID: 340499547}
+  - {fileID: 238475134}
   m_Father: {fileID: 1340534136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
