@@ -40,7 +40,7 @@ public class ShopManager : MonoBehaviour
                       "PoisonAttack", "ExplosaoArcana", "LifeOrDeath", "InvocacaoProfana"}
     );
     public List<int> itensPrice = new List<int>(
-        new int[] {35, 40, 40, 30, 450, 400, 500, 15, 40, 50, 20}
+        new int[] {35, 40, 40, 30, 450, 400, 500, 140, 100, 60, 20}
     );
     
     [Header("Text Infos")]

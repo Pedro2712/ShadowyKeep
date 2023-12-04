@@ -221,7 +221,7 @@ MonoBehaviour:
     resistence: 1
     inteligence: 1
     inCombat: 0
-    cooldown: 1
+    cooldown: 3
     target: {fileID: 0}
     dead: 0
   playerLayer:
@@ -230,7 +230,7 @@ MonoBehaviour:
   attackHitBox: {fileID: 6998539728560834460}
   detectionRadius: 5
   attackRange: 1.6
-  knockbackForce: 15
+  knockbackForce: 10
   enemy: {fileID: 7503365948495314867}
   EnemyCanvas: {fileID: 1064670506879977102}
   health: {fileID: 6293096111798089087}

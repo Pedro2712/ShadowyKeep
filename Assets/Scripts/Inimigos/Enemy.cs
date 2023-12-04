@@ -264,10 +264,22 @@ public class Enemy : MonoBehaviour
             {
                 rb.velocity = Vector2.zero;
                 animator.SetTrigger("Attack");
-
-                PlaySound();
+                StartCoroutine(WaitForAttackAnimation());
             }
         }
+    }
+
+    private IEnumerator WaitForAttackAnimation(){
+        string attackAnimationName = "Attack";
+
+        while (!animator.GetCurrentAnimatorClipInfo(0)[0].clip.name.Equals(attackAnimationName))
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+        PlaySound();
     }
 
     private void PlaySound() {
